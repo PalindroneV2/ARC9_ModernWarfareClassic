@@ -313,9 +313,18 @@ SWEP.Attachments = {
     {
         PrintName = "Underbarrel",
         Bone = "j_gun",
-        Pos = Vector(7.5, 0, -1.5),
+        Pos = Vector(6.5, 0, -1.5),
         Ang = Angle(0, 0, 0),
         Category = {"cod_grips"},
+    },
+    {
+        PrintName = "Tactical Bottom",
+        DefaultCompactName = "TAC B",
+        Bone = "j_gun",
+        Pos = Vector(9.3, 0, -1.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+        Category = {"cod_tactical"},
     },
     {
         PrintName = "Firing Group",
