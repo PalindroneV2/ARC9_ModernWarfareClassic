@@ -182,19 +182,22 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local ironsightpos = Vector(-3.37, -3, 0.65)
+local ironsightang = Angle(0, 0, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-3.37, -3, 0.65),
-    Ang = Angle(0, 0, 0),
+    Pos = ironsightpos,
+    Ang = ironsightang,
     Magnification = 1.1,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     AssociatedSlot = 1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1.675, -1.5, 0),
-    Ang = Angle(0, 0, -2.5),
+    Pos = ironsightpos / 2,
+    Ang = ironsightang / 2,
 }
 
 SWEP.HoldTypeHolstered = "passive"
@@ -239,7 +242,29 @@ SWEP.BarrelLength = 0 -- = 25
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
+    ["cod_extrairons_rear"] = {
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0.5,0, 1.4)
+            },
+        },
+    },
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+    local newpos = ironsightpos
+    local newang = ironsightang
+    local magni = 1.1
+
+    if attached["cod_extrairons_rear"] then
+        newpos = Vector(-3.37, -3, 0.75)
+        newang = Angle(0, -0.05, 0)
+    end
+
+    return {Pos = newpos, Ang = newang, Magnification = magni, ViewModelFOV = 50, CrosshairInSights = false,}
+end
 
 SWEP.Hook_ModifyBodygroups = function(self, data)
 
@@ -247,13 +272,16 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     local attached = data.elements
 
     if attached["stock_l"] then
-        vm:SetBodygroup(4,1)
+        vm:SetBodygroup(3,1)
     end
     if attached["stock_m"] then
-        vm:SetBodygroup(4,2)
+        vm:SetBodygroup(3,2)
     end
     if attached["mount"] then
-        vm:SetBodygroup(2,1)
+        vm:SetBodygroup(1,1)
+    end
+    if attached["cod_extrairons_rear"] or attached["cod_extrairons_front"] then
+        vm:SetBodygroup(1,2)
     end
 
     local ub = 0
@@ -263,7 +291,7 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     if attached["mwc_mk"] then
         ub = 2
     end
-    vm:SetBodygroup(3,ub)
+    vm:SetBodygroup(2,ub)
 
     local camo = 0
     if attached["universal_camo"] then
@@ -323,7 +351,15 @@ SWEP.Attachments = {
         Bone = "j_gun",
         Pos = Vector(4, 0-0.02, 1.7),
         Ang = Angle(0, 0, 0),
-        Category = {"cod_optic"},
+        Category = {"cod_optic", "cod_rail_riser", "cod_extrairons_rear"},
+        InstalledElements = {"mount"},
+    },
+    {
+        PrintName = "Front Sight",
+        Bone = "j_gun",
+        Pos = Vector(15.5,0, 1.4),
+        Ang = Angle(0, 0, 0),
+        Category = {"cod_extrairons_front"},
         InstalledElements = {"mount"},
     },
     {
@@ -340,7 +376,7 @@ SWEP.Attachments = {
         Bone = "j_gun",
         Pos = Vector(12.75, 0, -1.2),
         Ang = Angle(0, 0, 0),
-        Category = {"mwc_m320", "cod_grips"},
+        Category = {"mwc_m320", "mwc_mk", "cod_grips"},
     },
     {
         PrintName = "Tactical Left",
@@ -636,6 +672,134 @@ SWEP.Animations = {
     },
     ["exit_sprint_glsetup"] = {
         Source = "sprint_out_glsetup",
+        Time = 1,
+    },
+
+    ["idle_mk"] = {
+        Source = "idle_mk",
+        Time = 1 / 30,
+    },
+    ["draw_mk"] = {
+        Source = "draw_mk",
+        Time = 1,
+    },
+    ["holster_mk"] = {
+        Source = "holster_mk",
+        Time = 0.75,
+    },
+    ["ready_mk"] = {
+        Source = "first_draw_mk",
+        Time = 1.25,
+        EventTable = {
+            {s = "ARC9_MW3E.M4M16_Chamber", t = 1 / 35},
+        },
+    },
+    ["fire_mk"] = {
+        Source = {"fire_mk"},
+        Time = 0.5,
+        EjectAt = 0,
+        EventTable = {
+            {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
+        },
+    },
+    ["fire_iron_mk"] = {
+        Source = {"fire_ads_mk"},
+        Time = 0.5,
+        EjectAt = 0,
+        EventTable = {
+            {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
+        },
+    },
+    ["reload_mk"] = {
+        Source = "reload_mk",
+        Time = 2,
+        EventTable = {
+            {s = "ARC9_MW3E.M4M16_MagOut", t = 0.15},
+            {s = "ARC9_MW3E.M4M16_MagIn", t = 1.1}
+        },
+    },
+    ["reload_empty_mk"] = {
+        Source = "reload_empty_mk",
+        Time = 2.5,
+        EventTable = {
+            {s = "ARC9_MW3E.M4M16_MagOut", t = 0.15},
+            {s = "ARC9_MW3E.M4M16_MagIn", t = 1.1},
+            {s = "ARC9_MW3E.M4M16_Chamber", t = 1.65}
+        },
+    },
+    ["enter_sprint_mk"] = {
+        Source = "sprint_in_mk",
+        Time = 1,
+    },
+    ["idle_sprint_mk"] = {
+        Source = "sprint_loop_mk",
+        Time = 30 / 40
+    },
+    ["exit_sprint_mk"] = {
+        Source = "sprint_out_mk",
+        Time = 1,
+    },
+
+    --- UMBK IN ANIMS ---
+    ["idle_mksetup"] = {
+        Source = "idle_mksetup",
+        Time = 1 / 30,
+    },
+    ["enter_ubgl_mksetup"] = {
+        Source = "mksetup_in",
+        EventTable = {
+            {s = "ARC9_COD4E.W1200_Pump", t = 1 / 30 },
+            -- {s = "ARC9_MWC.MK_Fwd", t = 10 / 30 },
+        },
+    },
+    ["exit_ubgl_mksetup"] = {
+        Source = "mksetup_out",
+    },
+    ["fire_mksetup"] = {
+        Source = "fire_mksetup",
+        Time = 7 / 30,
+    },
+    ["cycle_mksetup"] = {
+        Source = "pump_mksetup",
+        Time = 0.5,
+        EventTable = {
+            {s = "ARC9_COD4E.W1200_Pump", t = 1 / 30 },
+            -- {s = "ARC9_MWC.MK_Fwd", t = 10 / 30 },
+        }
+    },
+    ["reload_ubgl_start_mksetup"] = {
+        Source = "reload_in_mksetup",
+        Time = 35 / 30,
+        EventTable = {
+            {s = "ARC9_MWC.MK_Shell", t = 20 / 30},
+        },
+        RestoreAmmo = 1,
+    },
+    ["reload_ubgl_insert_mksetup"] = {
+        Source = "reload_loop_mksetup",
+        Time = 33 / 30,
+        EventTable = {
+            {s = "ARC9_MWC.MK_Shell", t = 15 / 30},
+        }
+    },
+    ["reload_ubgl_finish_mksetup"] = {
+        Source = "reload_out_mksetup",
+        Time = 50 / 30,
+        EventTable = {
+            {s = "ARC9_COD4E.W1200_Pump", t = 15 / 30 },
+            -- {s = "ARC9_MW3E.SPAS12_Fwd", t = 25 / 30 },
+        }
+    },
+    ["enter_sprint_mksetup"] = {
+        Source = "sprint_in_mksetup",
+        Time = 1,
+    },
+    ["idle_sprint_mksetup"] = {
+        Source = "sprint_loop_mksetup",
+        Time = 30 / 40
+    },
+    ["exit_sprint_mksetup"] = {
+        Source = "sprint_out_mksetup",
         Time = 1,
     },
 }

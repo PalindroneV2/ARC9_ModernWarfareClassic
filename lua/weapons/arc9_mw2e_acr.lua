@@ -181,19 +181,22 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local ironsightpos = Vector(-3.365, -2, 0.22)
+local ironsightang = Angle(0.025, -0.25, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-3.365, -2, 0.22),
-    Ang = Angle(0.025, -0.25, 0),
+    Pos = ironsightpos,
+    Ang = ironsightang,
     Magnification = 1.1,
     AssociatedSlot = 1,
     CrosshairInSights = false,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1.5525, -1, -0.25),
-    Ang = Angle(0.0125, -0.125, -2.5),
+    Pos = ironsightpos / 2,
+    Ang = ironsightang / 2,
 }
 
 SWEP.HoldTypeHolstered = "passive"
@@ -239,7 +242,29 @@ SWEP.BarrelLength = 0 -- = 25
 SWEP.ExtraSightDist = 5
 
 SWEP.AttachmentElements = {
+    ["cod_extrairons_rear"] = {
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0.75, 0, 2.1)
+            },
+        },
+    },
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+    local newpos = ironsightpos
+    local newang = ironsightang
+    local magni = 1.1
+
+    if attached["cod_extrairons_rear"] then
+        newpos = Vector(-3.365, -2, 0.025)
+        newang = Angle(0.025, 0, 0)
+    end
+
+    return {Pos = newpos, Ang = newang, Magnification = magni, ViewModelFOV = 50, CrosshairInSights = false,}
+end
 
 SWEP.Hook_ModifyBodygroups = function(self, data)
 
@@ -322,10 +347,19 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Bone = "j_gun",
-        Pos = Vector(3, 0, 2.3),
+        Pos = Vector(3, 0, 2.225),
         Ang = Angle(0, 0, 0),
-        Category = {"cod_optic"},
+        Category = {"cod_optic", "cod_rail_riser","cod_extrairons_rear"},
         InstalledElements = {"mainoptic"},
+    },
+    {
+        PrintName = "Front Sight",
+        Bone = "j_gun",
+        Pos = Vector(16.25,0, 2.1),
+        Ang = Angle(0, 0, 0),
+        Category = {"cod_extrairons_front"},
+        InstalledElements = {"mainoptic"},
+        ExcludeElements = {"cod_optic"},
     },
     {
         PrintName = "Muzzle",

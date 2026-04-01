@@ -405,15 +405,6 @@ SWEP.Attachments = {
         ExcludeElements = {"mp5k"},
     },
     {
-        PrintName = "Tactical Left",
-        DefaultCompactName = "TAC L",
-        Bone = "j_gun",
-        Pos = Vector(8, -0.9, 2.2),
-        Ang = Angle(0, 0, 90),
-        Icon_Offset = Vector(0, 0, -1),
-        Category = {"cod_tactical"},
-    },
-    {
         PrintName = "Firing Group",
         DefaultCompactName = "S-1-3-F",
         Bone = "j_gun",

@@ -218,7 +218,7 @@ ATT.DistantShootSound = ""
 
 ATT.Trivia = {
     Manufacturer = "IMI",
-    Calibre = ".44 Magnum",
+    Calibre = ".50 Action Express",
     Mechanism = "Rotating Bolt",
     Country = "USA",
     Year = 1983,
@@ -226,3 +226,62 @@ ATT.Trivia = {
 }
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_mag_50")
+
+ATT = {}
+
+ATT.PrintName = [[M6D 12.7mm Conversion]]
+ATT.CompactName = [[M6D]]
+ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
+ATT.Description = [[Converts the sidearm into the M6D Personal Defense Weapon System. 
+This upsized frame fires 12.7x40mm Semi-Armor-Piercing High-Explosive (SAPHE) rounds, effectively turning a pistol into a hand-cannon capable of taking down shielded targets. 
+The internal recoil-compensation allows for high kinetic impact, though the massive caliber limits magazine capacity and increases kick.]]
+ATT.CustomPros = {
+    ["Semi-Armor-Piercing High-Explosive Rounds"] = "",
+}
+ATT.CustomCons = {}
+ATT.SortOrder = 5
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+
+ATT.Category = {"mw3_p99_conversion"}
+ATT.ClipSize = 12
+
+ATT.Ammo = "357"
+
+ATT.DamageMaxMult = 2
+ATT.DamageMinMult = 3
+
+ATT.SpreadMult = 0.75
+ATT.RangeMaxMult = 1.5
+ATT.RangeMinMult = 2.5
+
+ATT.RecoilMult = 5
+ATT.RecoilUpMult = 1.4
+ATT.RecoilSideMult = 1.2
+
+ATT.PenetrationMult = 2.0 -- SAPHE rounds punch through cover
+ATT.PhysBulletMuzzleVelocity = 600 * 39.37
+
+ATT.ActivateElements = {"halomagnum"}
+
+ATT.ShootSound = "ARC9_MW3E.Eagle_50"
+ATT.ShootSoundSilenced = "ARC9_MW3E.Eagle_50"
+ATT.DistantShootSound = ""
+
+ATT.Trivia = {
+    Manufacturer = "Misriah Armory",
+    Calibre = "12.7x40mm SAPHE",
+    Mechanism = "Short Recoil / Semi-Automatic",
+    Country = "Mars",
+    Year = 2525,
+    Games = [[Halo: Combat Evolved]],
+}
+
+ATT.MuzzleParticle = "muzzleflash_pistol_deagle" -- Used for some muzzle effects.
+
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.ShellPitch = 90
+ATT.ShellScale = 2
+ATT.RPM = 210
+
+ARC9.LoadAttachment(ATT, "mw3e_p99_halomagnum")

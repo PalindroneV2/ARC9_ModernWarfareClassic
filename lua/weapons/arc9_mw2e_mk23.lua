@@ -32,6 +32,8 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos        =    Vector(-10.75, 5, -3.75),
     Ang        =    Angle(-6, 0, 180),
+    TPIKPos        =    Vector(-13, 3, 0),
+    TPIKAng        =    Angle(0, 0, 180),
     Bone    =    "ValveBiped.Bip01_R_Hand",
     Scale = 1.1,
 }
@@ -243,7 +245,7 @@ SWEP.IronSightsHook = function(self)
         newang = Angle(0.125, -0.225, 0)
     end
 
-    return {Pos = newpos, Ang = newang, Magnification = 1.1, ViewModelFOV = 50, CrosshairInSights = false,}
+    return {Pos = newpos, Ang = newang, Magnification = 1.1, ViewModelFOV = 60, CrosshairInSights = false,}
 end
 
 SWEP.CustomizePosHook = function(self)

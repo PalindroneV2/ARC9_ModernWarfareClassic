@@ -31,6 +31,8 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos        =    Vector(-10.25, 5.4, -4.75),
     Ang        =    Angle(-6, 2, 180),
+    TPIKPosReloadOffset = Vector(0, 0, 0), -- reload offset if arms stretching too much during reloads
+    TPIKAngReloadOffset = Angle(0, 0, 0),
     Bone    =    "ValveBiped.Bip01_R_Hand",
     Scale = 1.1,
 }

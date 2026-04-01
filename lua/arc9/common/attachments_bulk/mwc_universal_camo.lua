@@ -65,13 +65,13 @@ ATT.FullColorIcon = true
 ATT.CompactName = "MCMILLAN"
 ATT.Icon = Material("entities/mwc_camos/cod4/m14ghillie.png")
 ATT.Category = "universal_camo"
-ATT.Description = [[Only color this blends in with is the blood of your enemies.]]
+ATT.Description = [[50,000 people used to live here. Now it's a ghost town.]]
 ATT.MenuCategory = "ARC9 - Camos"
 ATT.CustomCamoTexture = "models/weapons/arc9/cod4/camos/m14ghillie"
 ATT.Folder = "MWC CAMOS/COD4"
 ATT.CustomCamoScale = 1.9
 
-ARC9.LoadAttachment(ATT, "cod4_camo_commando_tiger")
+ARC9.LoadAttachment(ATT, "cod4_camo_mcmillan")
 
 ATT = {}
 
@@ -365,7 +365,7 @@ ATT.FullColorIcon = true
 ATT.CompactName = "SNAKE"
 ATT.Icon = Material("entities/mwc_camos/mw3/snake.png")
 ATT.Category = "universal_camo"
-ATT.Description = [[Blends well in desert environments.]]
+ATT.Description = [[Snakeskin boots on a Saturday Night. Kicking down doors, tryin' to make it happen! Swing, don't mis in the wicked fight! And then we'll start to stroll, sway and roll, take control! Yeah!]]
 ATT.MenuCategory = "ARC9 - Camos"
 ATT.CustomCamoTexture = "models/weapons/arc9/mw3/camos/snake"
 ATT.Folder = "MWC CAMOS/MW3"
