@@ -33,7 +33,7 @@ SWEP.WorldModelOffset = {
     Scale = 1,
 }
 SWEP.NoTPIK = true
-SWEP.ViewModelFOVBase = 60
+SWEP.ViewModelFOVBase = 75
 
 SWEP.DefaultBodygroups = "00000000000000"
 
