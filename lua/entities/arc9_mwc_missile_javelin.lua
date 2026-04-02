@@ -38,3 +38,41 @@ ENT.NoReacquire = true
 if CLIENT then
     killicon.Add( "arc9_mwc_missile_javelin", "arc9/weaponicons/arc9_bo1_rpg7", Color( 255, 255, 255, 255 ) )
 end
+
+if SERVER then
+    -- We use Think to check the altitude before it hits the skybox
+    function ENT:Think()
+        -- 1. Standard Base Thinking (Required for steering/movement)
+        if self.BaseClass.Think then self.BaseClass.Think(self) end
+
+        -- 2. Skybox Detection & Correction
+        local tr = util.TraceLine({
+            start = self:GetPos(),
+            endpos = self:GetPos() + Vector(0, 0, 256), -- Check 256 units above
+            filter = self,
+            mask = MASK_NPCWORLDSTATIC -- This hits world brushes (like the sky)
+        })
+
+        -- If we are about to hit the sky (or the map's ceiling)
+        if tr.HitSky or (tr.Hit and tr.HitNormal:Dot(Vector(0, 0, -1)) > 0.7) then
+            local phys = self:GetPhysicsObject()
+            if IsValid(phys) then
+                -- Force the missile to level out or dive
+                local velocity = phys:GetVelocity()
+                velocity.z = -math.abs(velocity.z * 0.5) -- Flip vertical velocity downward
+                phys:SetVelocity(velocity)
+                -- Tell the seeker to stop climbing
+                self.TopAttack = false
+                self.TopAttackHeight = self:GetPos().z -- Cap the height right here
+                -- Force angles to look toward the target (if one exists)
+                if IsValid(self.Target) then
+                    local targetDir = (self.Target:GetPos() - self:GetPos()):GetNormalized()
+                    self:SetAngles(targetDir:Angle())
+                end
+            end
+        end
+
+        self:NextThink(CurTime())
+        return true
+    end
+end

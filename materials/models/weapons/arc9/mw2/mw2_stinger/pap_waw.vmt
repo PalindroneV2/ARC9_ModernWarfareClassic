@@ -1,0 +1,26 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/pap/pap_blue_burn"
+	"$bumpmap" "models/weapons/arc9/pap/pap_n"
+	$phongexponenttexture "models/weapons/arc9/pap/pap_blue_burn_s"
+	$envmapmask "models/weapons/arc9/pap/pap_blue_burn_s"
+	$normalmapalphaenvmapmask 1
+	
+	$phong "1"
+	$phongexponent	"15"
+	$phongboost "1"
+	$phongfresnelranges "[2 5 4]"
+	$phongtint "[1.6 1.6 2]"
+	$phongalbedotint "1"
+	
+	$envmap "env_cubemap"
+	$envmaptint "[.1 .1 .2]"
+	$envmapfresnel "0.5"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "1"
+	"$rimlightboost"	"1"
+	"$rimmask" "1"
+
+	"$nocull" "1"
+}

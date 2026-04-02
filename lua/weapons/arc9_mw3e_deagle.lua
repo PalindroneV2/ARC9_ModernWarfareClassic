@@ -37,7 +37,7 @@ SWEP.WorldModelOffset = {
     Bone    =    "ValveBiped.Bip01_R_Hand",
     Scale = 1.1,
 }
-SWEP.ViewModelFOVBase = 75
+SWEP.ViewModelFOVBase = 60
 
 SWEP.DefaultBodygroups = "00000000000000"
 
@@ -45,8 +45,9 @@ SWEP.DamageMax = 55
 SWEP.DamageMin = 35 -- damage done at maximum range
 SWEP.RangeMax = 4000
 SWEP.RangeMin = 1000
-SWEP.Penetration = 4
+SWEP.Penetration = 12
 SWEP.DamageType = DMG_BULLET
+SWEP.RicochetChance = 0.25
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.EntityMuzzleVelocity = 10000
 

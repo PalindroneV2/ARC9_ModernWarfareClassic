@@ -111,7 +111,9 @@ ATT.Free = true
 
 ATT.Category = {"mw3e_deagle_skin"}
 ATT.ActivateElements = {"annihilator"}
-ATT.DamageType = DMG_BLAST
+ATT.ExplosionRadius = 20 -- Range of the blast in Source units
+ATT.ExplosionDamage = 50  -- Damage at the center of the blast
+ATT.ExplosionEffect = "ManhackSparks"
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_handcannon")
 
@@ -259,14 +261,22 @@ ATT.RecoilMult = 5
 ATT.RecoilUpMult = 1.4
 ATT.RecoilSideMult = 1.2
 
-ATT.PenetrationMult = 2.0 -- SAPHE rounds punch through cover
+ATT.PenetrationMult = 5.0 -- SAPHE rounds punch through cover
 ATT.PhysBulletMuzzleVelocity = 600 * 39.37
+
+ATT.TracerNumOverride = 1 -- Every shot is a tracer
+ATT.TracerSizeOverride = 4 -- Base was 1; 4 makes it a thick "beam"
+ATT.TracerColorOverride = Color(255, 120, 0) -- High-saturation Orange
 
 ATT.ActivateElements = {"halomagnum"}
 
 ATT.ShootSound = "ARC9_MW3E.Eagle_50"
 ATT.ShootSoundSilenced = "ARC9_MW3E.Eagle_50"
 ATT.DistantShootSound = ""
+
+ATT.ExplosionRadius = 20 -- Range of the blast in Source units
+ATT.ExplosionDamage = 15  -- Damage at the center of the blast
+ATT.ExplosionEffect = "ManhackSparks"
 
 ATT.Trivia = {
     Manufacturer = "Misriah Armory",

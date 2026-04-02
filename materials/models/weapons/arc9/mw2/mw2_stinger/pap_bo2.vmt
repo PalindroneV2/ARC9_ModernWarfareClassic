@@ -1,0 +1,26 @@
+VertexlitGeneric
+{
+	$basetexture "models/weapons/arc9/bo1/plastic"
+	$bumpmap	"models/weapons/arc9/bo1/plastic"
+	$selfillum 1
+	$selfillummask "models/weapons/arc9/pap/pap_cosmic_s"
+
+	$detail	"models/weapons/arc9/pap/pap_cosmic"
+	$detailscale 4
+	$detailblendmode 2
+	$detailblendfactor 1
+
+	$envmap                    		 env_cubemap
+	$envmaptint                 		"[.01 .01 .01]"
+	$normalmapalphaenvmapmask   	1
+	Proxies
+	{
+		TextureScroll
+		{
+			texturescrollvar $detailtexturetransform
+			texturescrollrate .05
+			texturescrollangle 210
+		}
+	}
+	
+}

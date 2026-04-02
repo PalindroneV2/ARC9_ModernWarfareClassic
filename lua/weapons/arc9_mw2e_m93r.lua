@@ -38,7 +38,7 @@ SWEP.WorldModelOffset = {
     Bone    =    "ValveBiped.Bip01_R_Hand",
     Scale = 1.1,
 }
-SWEP.ViewModelFOVBase = 75
+SWEP.ViewModelFOVBase = 60
 
 SWEP.DefaultBodygroups = "00000000000000"
 
@@ -319,23 +319,20 @@ end
 
 SWEP.Hook_TranslateAnimation = function (self, anim)
     local attached = self:GetElements()
-    if attached["elite"] and attached["fcg_bst"] and (anim == "reload" or anim == "reload_empty") then
-        local newanim = anim
-        newanim = "elite_" .. anim .. "_bst"
-        print(newanim)
-        return newanim
-    end
+    local newanim = anim
+    local cselite = ""
+    local sufi = ""
     if attached["fcg_bst"] then
-        return anim .. "_bst"
+        sufi = "_bst"
     end
     if attached["tacknife"] then
-        return anim .. "_k"
+        sufi = "_k"
     end
     if attached["elite"] then
-        local newanim = anim
-        newanim = "elite_" .. anim
-        return newanim
+        cselite = "elite_"
     end
+    newanim = cselite .. anim .. sufi
+    return newanim
 end
 
 --TEST 3
@@ -381,6 +378,7 @@ SWEP.Attachments = {
         Pos = Vector(3, 0, -4),
         Ang = Angle(0, 0, 0),
         Category = {"mwc_tac_knife"},
+        Hidden  = true,
     },
     {
         PrintName = "Fire Control Group",

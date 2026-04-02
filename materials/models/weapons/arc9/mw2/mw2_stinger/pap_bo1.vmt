@@ -1,0 +1,24 @@
+VertexlitGeneric
+{
+	$basetexture	"models/weapons/arc9/pap/pap_circuit_c"
+	$bumpmap	"models/weapons/arc9/pap/pap_circuit_n"
+	"$phongexponenttexture" "models/weapons/arc9/pap/pap_bo1_env"
+	"$envmapmask" "models/weapons/arc9/pap/pap_bo1_env"
+	$normalmapalphaenvmapmask	1
+
+    $detailblendmode 0
+    $detailblendfactor 1
+	$detailscale 1
+	$detail "models/weapons/arc9/pap/pap_circuit"
+
+	$phong                      		1
+	$phongboost                         "1"
+	$phongfresnelranges         "[20 50 40]"
+	$phongalbedotint             "1"
+	$phongtint	"[0.5 0.1 0.1]"
+
+	$envmap 	env_cubemap
+	$envmaptint   "[0.01 0.01 0.01]"
+	$envmapfresnel "0.1"
+	"$nocull" "1"
+}

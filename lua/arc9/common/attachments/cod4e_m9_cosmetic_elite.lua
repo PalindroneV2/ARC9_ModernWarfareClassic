@@ -14,3 +14,6 @@ ATT.Category = {
 ATT.ActivateElements = {"elite"}
 
 ATT.ShootSound = "ARC9_COD4E.Elite_Fire"
+
+ATT.InstallSound = "^weapons/arc9/palindrone_misc/cs_moveout.wav"
+-- ATT.UninstallSound = "^weapons/arc9/palindrone_misc/re2_cancel.wav"
