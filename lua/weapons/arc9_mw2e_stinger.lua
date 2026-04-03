@@ -443,15 +443,15 @@ SWEP.Animations = {
     },
     ["enter_sights"] = {
         Source = "ads_up",
-        Time = 1,
+        Time = 0.45,
     },
     ["idle_iron"] = {
         Source = {"idle_ads"},
-        Time = 5,
+        Time = 1 / 35,
     },
     ["exit_sights"] = {
         Source = "ads_down",
-        Time = 1,
+        Time = 0.45,
     },
     ["ready"] = {
         Source = "first_draw",
