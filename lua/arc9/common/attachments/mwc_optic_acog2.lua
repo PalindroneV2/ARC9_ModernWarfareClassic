@@ -44,23 +44,10 @@ ATT.Sights = {
         IgnoreExtra = false,
         Disassociate = true
     },
-    {
-        Pos = Vector(0, 8, -2.425),
-        Ang = Angle(0, 0, 0),
-        ViewModelFOV = 60,
-        Magnification = 1,
-        IgnoreExtra = true,
-        Disassociate = true
-    },
 }
 
-ATT.HoloSight = true
-ATT.HoloSightReticle = Material("hud/arc9_mwc/reticles/mwc_reddot.png", "mips smooth")
-ATT.HoloSightSize = 50
-ATT.HoloSightColorable = true
-
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 3
+ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 8
 ATT.RTScopeRes = 512
 ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
