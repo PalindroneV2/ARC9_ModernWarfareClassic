@@ -45,7 +45,7 @@ SWEP.RangeMin = 1000
 SWEP.Penetration = 0
 SWEP.DamageType = nil
 SWEP.ShootEnt = "arc9_mwc_smaw_missile" -- Set to an entity to launch it out of this weapon.
-SWEP.ShootEntForce = 12500
+SWEP.ShootEntForce = 6000
 SWEP.ShootEntityData = {}
 
 -- SWEP.PhysBulletMuzzleVelocity = 960 * 39.37

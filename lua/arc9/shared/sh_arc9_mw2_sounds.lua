@@ -928,6 +928,27 @@ sound.Add( {
     }
 } )
 
+-- MWC Stinger --
+
+sound.Add( {
+    name = "ARC9_MW2E.Stinger_Lift",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/ARC9/mw2e_stinger/reload_lift.wav",
+    }
+} )
+sound.Add( {
+    name = "ARC9_MW2E.Stinger_Open",
+    channel = CHAN_ITEM,
+    volume = 1.0,
+    level = 100,
+    sound = {
+        "^weapons/ARC9/mw2e_stinger/open.wav",
+    }
+} )
+
 -- MWC Javelin --
 
 sound.Add( {

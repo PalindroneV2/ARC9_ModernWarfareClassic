@@ -35,6 +35,6 @@ ATT.EnterUBGLSound = "ARC9_MWC.M203_Open"
 ATT.ExitUBGLSound = "ARC9_MWC.M203_Close"
 
 ATT.ShootEntUBGL = "arc9_mwc_gp25_he"
-ATT.ShootEntForceUBGL = 15000
+ATT.ShootEntForceUBGL = 4000
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
