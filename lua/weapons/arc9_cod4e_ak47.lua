@@ -172,18 +172,41 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local ironpos = Vector(-2.55, -2, 0.65)
+local ironang = Angle(-0.0125, 0.5, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-2.55, -2, 0.65),
-    Ang = Angle(-0.0125, 0.5, 0),
+    Pos = ironpos,
+    Ang = ironang,
     Magnification = 1.1,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     AssociatedSlots = {1,2},
 }
 
 SWEP.SightMidPoint = { -- Where the gun should be at the middle of it's irons
-    Pos = Vector(-1.25, -2, -.25),
-    Ang = Angle(-1, 0.75, -1.5),
+    Pos = ironpos / 2,
+    Ang = ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+    local newpos = ironpos
+    local newang = ironang
+
+    if attached["tactical"] then
+        newpos = Vector(-2.55, -2, 0.8)
+        newang = Angle(0.025, -0.1, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "ar2"
@@ -248,19 +271,14 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     local camo = 0
     local tac = 0
 
-    local newpos = Vector(-2.55, -2, 0.65)
-    local newang = Angle(-0.0125, 0.5, 0)
-
     if attached["gold"] then
         camo = camo + 4
     end
     if attached["tactical"] then
         tac = 1
-        vm:SetBodygroup(1,2)
-        newpos = Vector(-2.55, -2, 0.8)
-        newang = Angle(0.025, -0.1, 0)
+        vm:SetBodygroup(1, 2)
         if attached["cod_optic_ak"] then
-            vm:SetBodygroup(1,0)
+            vm:SetBodygroup(1, 0)
         end
     end
     if attached["stock_h"] then
@@ -273,15 +291,9 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     if attached["bo1_pap"] then
         camo = camo + 2
     end
+
     vm:SetSkin(camo)
     vm:SetBodygroup(0, tac)
-
-    self.IronSights = {
-        Pos = newpos,
-        Ang = newang,
-        ViewModelFOV = 60,
-        Magnification = 1.1,
-    }
 end
 
 SWEP.Hook_TranslateAnimation = function (self, anim)

@@ -186,7 +186,7 @@ SWEP.IronSights = {
     Ang = Angle(0.025, 0, 0),
     Magnification = 1.1,
     AssociatedSlot = 1,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
@@ -230,7 +230,6 @@ SWEP.BipodAng = Angle(0, 0, 10)
 
 SWEP.CustomizePos = Vector(20.5, 30, 4.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-
 
 SWEP.BarrelLength = 0 -- = 25
 
@@ -286,7 +285,7 @@ SWEP.AttachmentElements = {
             Ang = Angle(0, 0.1, 0),
             Magnification = 1.1,
             AssociatedSlot = 1,
-            ViewModelFOV = 60,
+            ViewModelFOV = 50,
             CrosshairInSights = false,
         },
     },

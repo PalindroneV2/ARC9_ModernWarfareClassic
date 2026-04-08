@@ -245,7 +245,7 @@ SWEP.AttachmentElements = {
     ["cod_extrairons_rear"] = {
         AttPosMods = {
             [1] = {
-                Pos = Vector(0.5,0, 1.4)
+                Pos = Vector(0.5,0, 1.61)
             },
         },
     },
@@ -349,7 +349,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Bone = "j_gun",
-        Pos = Vector(4, 0-0.02, 1.7),
+        Pos = Vector(4, 0-0.02, 1.61),
         Ang = Angle(0, 0, 0),
         Category = {"cod_optic", "cod_rail_riser", "cod_extrairons_rear"},
         InstalledElements = {"mount"},
@@ -357,7 +357,7 @@ SWEP.Attachments = {
     {
         PrintName = "Front Sight",
         Bone = "j_gun",
-        Pos = Vector(15.5,0, 1.4),
+        Pos = Vector(15.5,0, 1.61),
         Ang = Angle(0, 0, 0),
         Category = {"cod_extrairons_front"},
         InstalledElements = {"mount"},

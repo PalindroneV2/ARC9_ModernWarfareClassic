@@ -29,10 +29,12 @@ SWEP.ViewModel = "models/weapons/arc9/c_mw2e_javelin.mdl"
 SWEP.WorldModel = "models/weapons/w_rocket_launcher.mdl"
 SWEP.WorldModelMirror = "models/weapons/arc9/c_mw2e_javelin.mdl"
 SWEP.MirrorVMWM = true
-SWEP.NoTPIKVMPos = true
+SWEP.NoTPIKVMPos = false
 SWEP.WorldModelOffset = {
     Pos        =    Vector(-15, 5, -3),
     Ang        =    Angle(-22, 7, 190),
+    TPIKPos        =    Vector(-9, 3, -6),
+    TPIKAng        =    Angle(0, 0, 180),
     Bone    =    "ValveBiped.Bip01_R_Hand",
     Scale = 1,
 }

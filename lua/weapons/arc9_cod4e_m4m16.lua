@@ -177,20 +177,49 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local ironpos = Vector(-2.75, -2, 0)
+local ironang = Angle(0, 0.7, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-2.76, -2, 0),
-    Ang = Angle(0.025, 0.7, 0),
+    Pos = ironpos,
+    Ang = ironang,
     Magnification = 1.1,
-    AssociatedSlot = 9,
-    ViewModelFOV = 60,
-    CrosshairInSights = false,
-    SwitchToSound = "", -- sound that plays when switching to this sight
+    ViewModelFOV = 50,
+    AssociatedSlots = {1,2},
 }
 
 SWEP.SightMidPoint = { -- Where the gun should be at the middle of it's irons
-    Pos = Vector(-1.38, -1, -0.5),
-    Ang = Angle(0.0125, 0.35, -2.5),
+    Pos = ironpos / 2,
+    Ang = ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+    local newpos = ironpos
+    local newang = ironang
+
+    if attached["barrel_m4"] or attached["barrel_mk18"] then
+        newpos = Vector(-2.75, -2, -0.03)
+        newang = Angle(0, 0.9, 0)
+    end
+    if attached["mwc_igrip"] then
+        newpos = Vector(-2.8, -2, 0.025)
+        newang = Angle(0, 0.75, 0)
+        if attached["barrel_m4"] or attached["barrel_mk18"] then
+            newpos = Vector(-2.8, -2, 0.025)
+            newang = Angle(0, 0.85, 0)
+        end
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "ar2"
@@ -235,42 +264,43 @@ SWEP.ExtraSightDist = 5
 
 SWEP.StandardPresets = {
     "[M4A1]XQAAAQD+AAAAAAAAAAA9iIIiM7hMNz0dhJSTKmZ7v+v6JvsiMe7L46vKInPcOgdSbKHQHqdcUGBYAdOyTdnkWxAY6v4mAitXeXatvSpaiwRZ4hlH+3PJ9xW+uYZwyuLQc7EnMcq4CWvgd0Ui7yHRcGzvWyVh1EtsQf0YElEBmReqyKpE649n6ljrai0KYvnBl2lO7OXRK+PuEDvnPEwg",
+    "[The OG]XQAAAQCHAQAAAAAAAAA9iIIiM7hMNz0dhJSTKmZ7v8x6r3r/T4NLNJp4K8MsTEC2iM3HxuxaGZRcGW35bbxHGfFrpZYVW87v7pEFdcUgyCRb3mR2TMXjjSIYhZkJpRoE1VLWsD7HszYU9tS+9ZM+GYsJa4iMdZ+3aRNEJiPcIk7YAFKdWRJYXURMpptLZ5gdOS1wBHcJhJwdzp8T695ABhnn5fihmqsFPNnSbxxuY3UBvOhcUT/2bJnC3Pq3AA==",
 }
 
 SWEP.AttachmentElements = {
     ["grip_cover"] = {
         Bodygroups = {
-            {4,2},
+            {5,4},
         },
     },
     ["top_cover"] = {
         Bodygroups = {
-            {5,1},
+            {6,1},
         },
     },
     ["right_cover"] = {
         Bodygroups = {
-            {6,1},
+            {7,1},
         },
     },
     ["left_cover"] = {
         Bodygroups = {
-            {7,1},
+            {8,1},
         },
     },
     ["stock_l"] = {
         Bodygroups = {
-            {3,1},
+            {4,0},
         },
     },
     ["stock_m"] = {
         Bodygroups = {
-            {3,2},
+            {4,1},
         },
     },
     ["stock_h"] = {
         Bodygroups = {
-            {3,3},
+            {4,2},
         },
     },
     ["barrel_m4"] = {
@@ -311,52 +341,62 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     local vm = data.model
     local attached = data.elements
     local barrel = 0
+    local irons = 0
     local snapPos = Vector(4, 0, 0)
     local snapAng = Angle(0, 0, 0)
 
     if attached["barrel_m203"] then
         vm:SetBodygroup(1,1)
-        barrel = 1
-        vm:SetBodygroup(4,2)
-        vm:SetBodygroup(5,1)
+        vm:SetBodygroup(3,1)
+        barrel = 0
+        vm:SetBodygroup(5,4)
         vm:SetBodygroup(6,1)
         vm:SetBodygroup(7,1)
+        vm:SetBodygroup(8,1)
     end
     if attached["barrel_m4"] then
         vm:SetBodygroup(1,2)
-        barrel = 2
-        vm:SetBodygroup(4,2)
-        vm:SetBodygroup(5,1)
+        vm:SetBodygroup(3,2)
+        irons = 1
+        barrel = 1
+        vm:SetBodygroup(5,4)
         vm:SetBodygroup(6,1)
         vm:SetBodygroup(7,1)
+        vm:SetBodygroup(8,1)
         snapPos = Vector(2, 0, 0)
     end
     if attached["barrel_mk18"] then
-        vm:SetBodygroup(1,2)
-        barrel = 3
-        vm:SetBodygroup(4,2)
-        vm:SetBodygroup(5,1)
+        irons = 1
+        barrel = 2
+        vm:SetBodygroup(3,2)
+        vm:SetBodygroup(5,4)
         vm:SetBodygroup(6,1)
         vm:SetBodygroup(7,1)
+        vm:SetBodygroup(8,1)
         snapPos = Vector(1, 0, 0)
     end
 
     if attached["mwc_m203"] then
-        vm:SetBodygroup(4,1)
+        vm:SetBodygroup(5,2)
         if barrel <= 1 then
-            vm:SetBodygroup(5,1)
-            vm:SetBodygroup(6,1)
-            vm:SetBodygroup(7,1)
-            vm:SetBodygroup(1,1)
-            barrel = 1
-        else
             vm:SetBodygroup(5,2)
+            vm:SetBodygroup(7,1)
+            vm:SetBodygroup(8,1)
+        else
+            vm:SetBodygroup(6,2)
         end
     end
 
-    if attached["mount"] then
-        vm:SetBodygroup(1,3)
+    if attached["mwc_igrip"] then
+        vm:SetBodygroup(5,3)
     end
+    if attached["cod_optic"] or attached["cod_rail_riser"] then
+        irons = 4
+    end
+    if attached["mwc_alt_irons"] then
+        irons = irons + 2
+    end
+    vm:SetBodygroup(1, irons)
 
     vm:SetBodygroup(2,barrel)
 
@@ -399,7 +439,7 @@ SWEP.HookP_NameChange = function(self, name)
     if attached["bo1_pap"] then
         gunname = "Skullpiercer"
         if attached["mwc_m203"] then
-            gunname = "Skullcrusher"
+            gunname = "The OG"
         end
         if attached["barrel_m4"] or attached["barrel_mk18"] then
             gunname = "Xeno Matter 4K"
@@ -419,8 +459,9 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
         if self:GetUBGL() then
             suffix = "_glsetup"
         end
-    else
-        suffix = ""
+    end
+    if attached["mwc_igrip"] then
+        suffix = "_m4"
     end
 
     return anim .. suffix
@@ -432,7 +473,7 @@ SWEP.Attachments = {
         Bone = "j_gun",
         Pos = Vector(3, 0, 3.3),
         Ang = Angle(0, 0, 0),
-        Category = {"cod_optic", "cod_rail_riser"},
+        Category = {"cod_optic", "cod_rail_riser", "mwc_alt_irons"},
         InstalledElements = {"mount"},
         ExcludeElements = {"bo1_ar15_toprail"},
     },
@@ -457,6 +498,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Category = {"mwc_stocks"},
         Installed = "mwc_stock_heavy",
+        Integral = true,
     },
     {
         PrintName = "Underbarrel",
@@ -464,7 +506,7 @@ SWEP.Attachments = {
         Bone = "j_gun",
         Pos = Vector(11, 0, 1.55),
         Ang = Angle(0, 0, 0),
-        Category = {"mwc_m203", "cod_grips"},
+        Category = {"mwc_m203", "cod_grips", "mwc_igrip"},
         InstalledElements = {"grip_cover"}
     },
     {
@@ -644,6 +686,102 @@ SWEP.Animations = {
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
+        Time = 1,
+    },
+
+    ["idle_m4"] = {
+        Source = "idle_m4",
+        Time = 1 / 30,
+    },
+    ["draw_m4"] = {
+        Source = "draw_m4",
+        Time = 0.5,
+    },
+    ["holster_m4"] = {
+        Source = "holster_m4",
+        Time = 0.5,
+    },
+    ["fire_m4"] = {
+        Source = {"fire_m4"},
+        Time = 0.5,
+        EjectAt = 0,
+    },
+    ["fire_iron_m4"] = {
+        Source = {"fire_ads_m4"},
+        Time = 0.5,
+        EjectAt = 0,
+    },
+    ["reload_m4"] = {
+        Source = "reload_m4",
+        Time = 2,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 0
+            },
+        },
+        EventTable = {
+            {s = "ARC9_COD4E.M4M16_MagOut", t = 0.15},
+            {s = "ARC9_COD4E.M4M16_MagIn", t = 1.1}
+        },
+    },
+    ["reload_empty_m4"] = {
+        Source = "reload_empty_m4",
+        Time = 2.5,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 0
+            },
+        },
+        EventTable = {
+            {s = "ARC9_COD4E.M4M16_MagOut", t = 0.15},
+            {s = "ARC9_COD4E.M4M16_MagIn", t = 1.1},
+            {s = "ARC9_COD4E.M4M16_Chamber", t = 1.65}
+        },
+    },
+    ["enter_sprint_m4"] = {
+        Source = "sprint_in_m4",
+        Time = 1,
+    },
+    ["idle_sprint_m4"] = {
+        Source = "sprint_loop_m4",
+        Time = 30 / 40
+    },
+    ["exit_sprint_m4"] = {
+        Source = "sprint_out_m4",
         Time = 1,
     },
 

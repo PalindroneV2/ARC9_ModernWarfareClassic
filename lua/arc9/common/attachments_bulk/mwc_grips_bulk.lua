@@ -33,6 +33,7 @@ ATT.CustomCons = {}
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false
+ATT.Folder = "MWC"
 
 ATT.Category = {"cod_grips"}
 
@@ -59,6 +60,7 @@ ATT.CustomCons = {}
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false
+ATT.Folder = "MWC"
 
 ATT.Category = {"cod_grips"}
 
@@ -85,6 +87,7 @@ ATT.CustomCons = {}
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false
+ATT.Folder = "MWC"
 
 ATT.Category = {"cod_grips"}
 

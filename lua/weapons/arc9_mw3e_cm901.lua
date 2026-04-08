@@ -179,7 +179,7 @@ SWEP.IronSights = {
     Pos = Vector(-2.825, 0, 0.125),
     Ang = Angle(0.025, 0, 0),
     Magnification = 1.1,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
@@ -275,6 +275,19 @@ SWEP.AttachmentElements = {
             },
         }
     },
+    ["extrarear"] = {
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(0, 0, 3.85),
+            },
+        },
+        IronSights = {
+            Pos = Vector(-2.825, 0, 0.09),
+            Ang = Angle(0.025, 0, 0),
+            Magnification = 1.1,
+            ViewModelFOV = 50,
+        },
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(self, data)
@@ -291,6 +304,11 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     end
     if attached["mount"] then
         irons = irons + 1
+    end
+    if attached["extrarear"] then
+        irons = irons + 3
+        vm:SetBodygroup(6,1)
+        vm:SetBodygroup(7,1)
     end
 
     vm:SetBodygroup(2, irons)
@@ -340,8 +358,17 @@ SWEP.Attachments = {
         Bone = "j_gun",
         Pos = Vector(4, 0, 3.85),
         Ang = Angle(0, 0, 0),
-        Category = {"cod_optic", "cod_rail_riser"},
+        Category = {"cod_optic", "cod_rail_riser", "cod_extrairons_rear"},
         InstalledElements = {"mount"},
+    },
+    {
+        PrintName = "Front Sight",
+        Bone = "j_gun",
+        Pos = Vector(14.6, 0, 3.85),
+        Ang = Angle(0, 0, 0),
+        Category = {"cod_extrairons_front"},
+        InstalledElements = {"mount"},
+        RequireElements = {"extrarear"},
     },
     {
         PrintName = "Muzzle",
@@ -393,7 +420,7 @@ SWEP.Attachments = {
         PrintName = "Tactical Top",
         DefaultCompactName = "TAC T",
         Bone = "j_gun",
-        Pos = Vector(12, 0, 3.5),
+        Pos = Vector(11, 0, 3.5),
         Ang = Angle(0, 0, 180),
         Category = {"cod_tactical_top"},
         ExcludeElements = {"mw3_psrscope"},
