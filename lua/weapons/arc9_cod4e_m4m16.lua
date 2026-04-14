@@ -177,7 +177,7 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
-local ironpos = Vector(-2.75, -2, 0)
+local ironpos = Vector(-2.76, -2, 0)
 local ironang = Angle(0, 0.7, 0)
 
 SWEP.IronSights = {
@@ -200,14 +200,14 @@ SWEP.IronSightsHook = function(self)
     local newang = ironang
 
     if attached["barrel_m4"] or attached["barrel_mk18"] then
-        newpos = Vector(-2.75, -2, -0.03)
+        newpos = Vector(-2.76, -2, -0.03)
         newang = Angle(0, 0.9, 0)
     end
     if attached["mwc_igrip"] then
-        newpos = Vector(-2.8, -2, 0.025)
+        newpos = Vector(-2.825, -2, 0.025)
         newang = Angle(0, 0.75, 0)
         if attached["barrel_m4"] or attached["barrel_mk18"] then
-            newpos = Vector(-2.8, -2, 0.025)
+            newpos = Vector(-2.825, -2, 0.025)
             newang = Angle(0, 0.85, 0)
         end
     end
@@ -263,7 +263,7 @@ SWEP.BarrelLength = 0 -- = 25
 SWEP.ExtraSightDist = 5
 
 SWEP.StandardPresets = {
-    "[M4A1]XQAAAQD+AAAAAAAAAAA9iIIiM7hMNz0dhJSTKmZ7v+v6JvsiMe7L46vKInPcOgdSbKHQHqdcUGBYAdOyTdnkWxAY6v4mAitXeXatvSpaiwRZ4hlH+3PJ9xW+uYZwyuLQc7EnMcq4CWvgd0Ui7yHRcGzvWyVh1EtsQf0YElEBmReqyKpE649n6ljrai0KYvnBl2lO7OXRK+PuEDvnPEwg",
+    "[M4A1]XQAAAQCfAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26HmiovXEOR9Bh1CcpkwFSBMorvnM0UT/fFBxl4ekTrOZ+mzeXD74MyuXxNNbhviM95LqqA8cgdUshIKP9uezwrolBuF7yswcaQott8xlmZHhKKowEJANcfFe0vqEqcQTzXbYBERl/1ktiWG40bOZ7xDmKBQkj33mkVk02aoNq8sTeW/TqzwwPQEAA==",
     "[The OG]XQAAAQCHAQAAAAAAAAA9iIIiM7hMNz0dhJSTKmZ7v8x6r3r/T4NLNJp4K8MsTEC2iM3HxuxaGZRcGW35bbxHGfFrpZYVW87v7pEFdcUgyCRb3mR2TMXjjSIYhZkJpRoE1VLWsD7HszYU9tS+9ZM+GYsJa4iMdZ+3aRNEJiPcIk7YAFKdWRJYXURMpptLZ5gdOS1wBHcJhJwdzp8T695ABhnn5fihmqsFPNnSbxxuY3UBvOhcUT/2bJnC3Pq3AA==",
 }
 

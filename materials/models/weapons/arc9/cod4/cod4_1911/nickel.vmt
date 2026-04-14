@@ -1,22 +1,22 @@
 VertexlitGeneric
 {
 	$basetexture	"models/weapons/arc9/cod4/cod4_1911/nickel"
-	"$bumpmap" "models/weapons/arc9/colors/normalmap"
+	"$bumpmap" "models/weapons/arc9/cod4/cod4_1911/1911cod4_n"
 	$phongexponenttexture "models/weapons/arc9/cod4/cod4_1911/nickel_s"
 	$envmapmask "models/weapons/arc9/cod4/cod4_1911/nickel_s"
-
-	$phong "1"
-//	$phongexponent	"100"
-	$phongboost "2.5"
-	$phongfresnelranges "[0.5 1.5 1.5]"
-	$phongtint "[.2 .65 1]"
-	$phongalbedotint "1"
 	
 	$normalmapalphaenvmapmask 1
 	
+	$phong "1"
+	$phongexponent	"20"
+	$phongboost "1"
+	$phongfresnelranges "[2 5 4]"
+	$phongtint "[.5 .5 .75]"
+	$phongalbedotint "1"
+
 	$envmap "env_cubemap"
-	$envmaptint "[.6 .6 .7]"
-	$envmapfresnel "[1]"
+	$envmaptint "[0.2 0.2 0.6]"
+	$envmapfresnel "1"
 
 	"$nocull" "1"
 }

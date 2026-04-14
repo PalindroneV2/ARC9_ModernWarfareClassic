@@ -19,7 +19,7 @@ VertexlitGeneric
 
 	"$nocull" "1"
 
-	$detailblendmode 4
+	$detailblendmode 0
 	$detailblendfactor 1
 	$detail "models/weapons/arc9/colors/black_detail"
 }

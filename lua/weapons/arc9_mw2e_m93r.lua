@@ -245,6 +245,10 @@ SWEP.AttachmentElements = {
     },
 }
 
+SWEP.StandardPresets = {
+    "[M93R]XQAAAQDsAAAAAAAAAAA9iIIiM7hMNz0dhJSTKnDUq3JQ4XEXkLATpYkvRBrZN1gMno0+2SxoKSt0UDpTTb1g6QYA42yyyf+bhe24FIa03zoj7l/79YR3a61Zes+5Y/A1n8+wUHLaakVtPjGhrtYB5yrByd7igr0wyblnLtvBtXAe/HpryeSZ6c2sAYa7pqGhqpEA",
+}
+
 SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model

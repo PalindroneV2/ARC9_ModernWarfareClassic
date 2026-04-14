@@ -2,8 +2,8 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = [[M855 5.56mm NATO Green Tip]]
-ATT.CompactName = [[Green Tip]]
+ATT.PrintName = [[M995 5.56mm NATO Black Tip]]
+ATT.CompactName = [[Black Tip]]
 ATT.Icon = Material("entities/mw3_generic.png")
 ATT.Description = [[Improved rifle rounds that offer better penetration and damage to target, as well as producing less fouling on the barrel.
 Comes in a 20 round STANAG magazine for better positon in prone.]]

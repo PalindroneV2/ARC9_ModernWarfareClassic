@@ -1,9 +1,9 @@
 VertexlitGeneric
 {
-	$basetexture	"models/weapons/arc9/cod4/cod4_1911/1911"
-	"$bumpmap" "models/weapons/arc9/colors/normalmap"
-	$phongexponenttexture "models/weapons/arc9/cod4/cod4_1911/1911_s"
-	$envmapmask "models/weapons/arc9/cod4/cod4_1911/1911_s"
+	$basetexture	"models/weapons/arc9/cod4/cod4_1911/1911cod4"
+	"$bumpmap" "models/weapons/arc9/cod4/cod4_1911/1911cod4_n"
+	$phongexponenttexture "models/weapons/arc9/cod4/cod4_1911/1911cod4_s"
+	$envmapmask "models/weapons/arc9/cod4/cod4_1911/1911cod4_s"
 	$normalmapalphaenvmapmask 1
 
 	"$blendtintbybasealpha" "1"
