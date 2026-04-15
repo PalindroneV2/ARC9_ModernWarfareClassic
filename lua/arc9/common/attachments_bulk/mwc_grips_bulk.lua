@@ -23,6 +23,32 @@ ARC9.LoadAttachment(ATT, "mwc_grip_integral")
 
 ATT = {}
 
+ATT.PrintName = "KAC Vertical Foregrip (COD4)"
+ATT.CompactName = [[KAC]]
+ATT.Icon = Material("entities/mwc_atts/ubs/mw2_grip.png", "mips smooth")
+ATT.Description = [[Vertical foregrip that goes under the weapon's handguard.
+Belongs to COD4.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 4
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+
+ATT.Category = {"cod_grips"}
+
+ATT.Model = "models/weapons/arc9/mwc_atts/cod4e_foregrip.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0.25, 0, -0.125)
+
+ATT.RecoilMult = 0.85
+ATT.RecoilUpMult = 0.85
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ARC9.LoadAttachment(ATT, "cod4e_grip_vertical")
+
+ATT = {}
+
 ATT.PrintName = "SCAR Foregrip"
 ATT.CompactName = [[SCAR]]
 ATT.Icon = Material("entities/mwc_atts/ubs/mw2_grip.png", "mips smooth")
