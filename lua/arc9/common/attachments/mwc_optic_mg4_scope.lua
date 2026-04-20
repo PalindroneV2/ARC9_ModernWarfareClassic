@@ -13,7 +13,7 @@ ATT.Free = false
 ATT.Folder = "SCOPE/MWC"
 
 ATT.Category = {"mw2_mg4_scope"}
-
+ATT.ActivateElements = {"mg4scope"}
 
 ATT.Model = "models/weapons/arc9/atts/mw2e_mg4_scope.mdl"
 ATT.Scale = 1

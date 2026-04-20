@@ -248,6 +248,16 @@ SWEP.AttachmentElements = {
             },
         },
     },
+    ["mg4_scoper"] = {
+        Bodygroups = {
+            {3,1}
+        },
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(1.45, 0.225, 3.4),
+            },
+        },
+    },
 }
 
 SWEP.Hook_ModifyBodygroups = function(self, data)
@@ -302,7 +312,7 @@ SWEP.Attachments = {
         Bone = "j_gun",
         Pos = Vector(1, 0.225, 4.1),
         Ang = Angle(0, 0, 0),
-        Category = {"cod_optic", "cod_rail_riser"},
+        Category = {"cod_optic", "cod_rail_riser","cod_optic_g36"},
         InstalledElements = {"mount"},
     },
     {
