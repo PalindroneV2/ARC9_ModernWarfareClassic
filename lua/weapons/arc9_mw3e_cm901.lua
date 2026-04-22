@@ -278,11 +278,11 @@ SWEP.AttachmentElements = {
     ["extrarear"] = {
         AttPosMods = {
             [1] = {
-                Pos = Vector(0, 0, 3.85),
+                Pos = Vector(0.25, 0, 3.875),
             },
         },
         IronSights = {
-            Pos = Vector(-2.825, 0, 0.09),
+            Pos = Vector(-2.825, 0, 0.0675),
             Ang = Angle(0.025, 0, 0),
             Magnification = 1.1,
             ViewModelFOV = 50,
@@ -364,7 +364,7 @@ SWEP.Attachments = {
     {
         PrintName = "Front Sight",
         Bone = "j_gun",
-        Pos = Vector(14.6, 0, 3.85),
+        Pos = Vector(14.5, 0, 3.875),
         Ang = Angle(0, 0, 0),
         Category = {"cod_extrairons_front"},
         InstalledElements = {"mount"},

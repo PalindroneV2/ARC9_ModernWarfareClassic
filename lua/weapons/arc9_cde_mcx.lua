@@ -306,12 +306,12 @@ SWEP.AttachmentElements = {
     ["cod_extrairons_rear"] = {
         AttPosMods = {
             [1] = {
-                Pos = Vector(0, 0, 3.65)
+                Pos = Vector(0, 0, 3.87)
             },
         },
         IronSights = {
-            Pos = Vector(-2.825, 0, 0.075),
-            Ang = Angle(0, 0.05, 0),
+            Pos = Vector(-2.825, 0, 0.05),
+            Ang = Angle(0, 0, 0),
             Magnification = 1.1,
             ViewModelFOV = 60,
             CrosshairInSights = false,
@@ -486,7 +486,7 @@ SWEP.Attachments = {
     {
         PrintName = "Front Iron",
         Bone = "j_gun",
-        Pos = Vector(14.75, 0, 3.65),
+        Pos = Vector(14.5, 0, 3.87),
         Ang = Angle(0, 0, 0),
         Category = {"cod_extrairons_front"},
         RequireElements = {"extrairon"},

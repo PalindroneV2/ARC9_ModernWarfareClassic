@@ -245,7 +245,7 @@ SWEP.AttachmentElements = {
     ["cod_extrairons_rear"] = {
         AttPosMods = {
             [1] = {
-                Pos = Vector(0.75, 0, 2.29)
+                Pos = Vector(0, 0, 2.29)
             },
         },
     },
@@ -259,8 +259,8 @@ SWEP.IronSightsHook = function(self)
     local magni = 1.1
 
     if attached["cod_extrairons_rear"] then
-        newpos = Vector(-3.365, -2, 0.025)
-        newang = Angle(0.025, 0, 0)
+        newpos = Vector(-3.365, -3, 0.06)
+        newang = Angle(0.025, -0.05, 0)
     end
 
     return {Pos = newpos, Ang = newang, Magnification = magni, ViewModelFOV = 50, CrosshairInSights = false,}

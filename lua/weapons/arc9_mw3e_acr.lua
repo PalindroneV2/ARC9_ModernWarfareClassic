@@ -259,7 +259,7 @@ SWEP.IronSightsHook = function(self)
     local magni = 1.1
 
     if attached["cod_extrairons_rear"] then
-        newpos = Vector(-3.37, -3, 0.75)
+        newpos = Vector(-3.37, -3, 0.735)
         newang = Angle(0, -0.05, 0)
     end
 
