@@ -172,9 +172,12 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local mw2e_m93r_ironpos = Vector(-2.4, 0, 1.7)
+local mw2e_m93r_ironang = Angle(-0.075, -2.1, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-2.4, 0, 1.7),
-    Ang = Angle(-0.075, -2.1, 0),
+    Pos = mw2e_m93r_ironpos,
+    Ang = mw2e_m93r_ironang,
     Magnification = 1.1,
     --AssociatedSlot = 9,
     ViewModelFOV = 60,
@@ -183,9 +186,28 @@ SWEP.IronSights = {
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1.2, 0, 0.4),
-    Ang = Angle(-0.0375, 0, -2.5),
+    Pos = mw2e_m93r_ironpos / 2,
+    Ang = mw2e_m93r_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = mw2e_m93r_ironpos
+    local newang = mw2e_m93r_ironang
+
+    if attached["fcg_bst"] then
+        newpos = Vector(-2.4, -1, 1.4)
+        newang = Angle(-0.05, -0.5, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "revolver"
@@ -255,8 +277,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     local attached = data.elements
     local color = 0
     local serration = 0
-    local newPos = Vector(-2.4, 0, 1.7)
-    local newAng = Angle(-0.075, -2.1, 0)
     local snapPos = Vector(0, -5, 2)
     local snapAng = Angle(0,0,0)
     if attached["stars"] then
@@ -278,8 +298,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
             serration = serration + 1
             vm:SetBodygroup(3,0)
         end
-        newPos = Vector(-2.4, -1, 1.4)
-        newAng = Angle(-0.05, -0.5, 0)
         snapAng = Angle(0,0,1.5)
     end
     if attached["stock_l"] then
@@ -287,14 +305,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     end
 
     vm:SetBodygroup(1,serration)
-
-    self.IronSights = {
-        Pos = newPos,
-        Ang = newAng,
-        Magnification = 1.1,
-        ViewModelFOV = 60,
-        CrosshairInSights = false,
-    }
     self.CustomizeSnapshotPos = snapPos
     self.CustomizeSnapshotAng = snapAng
 

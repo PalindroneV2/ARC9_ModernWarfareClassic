@@ -167,9 +167,12 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local mw3e_anaconda_ironpos = Vector(-1.76, 0, 0.55)
+local mw3e_anaconda_ironang = Angle(0.025, -0.45, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-1.76, 0, 0.55),
-    Ang = Angle(0.025, -0.45, 0),
+    Pos = mw3e_anaconda_ironpos,
+    Ang = mw3e_anaconda_ironang,
     Magnification = 1.1,
     AssociatedSlot = 1,
     ViewModelFOV = 60,
@@ -178,9 +181,28 @@ SWEP.IronSights = {
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-0.875, 0, -0.25),
-    Ang = Angle(0, -0.225, -2.5),
+    Pos = mw3e_anaconda_ironpos / 2,
+    Ang = mw3e_anaconda_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = mw3e_anaconda_ironpos
+    local newang = mw3e_anaconda_ironang
+
+    if attached["mwc_knife"] then
+        newpos = Vector(-1.85, 0, -0.7)
+        newang = Angle(0.0125, -0.45, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "revolver"
@@ -233,8 +255,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local newpos = Vector(-1.76, 0, 0.55)
-    local newang = Angle(0.025, -0.45, 0)
     local camo = 0
 
     if attached["anaconda_silver"] then
@@ -255,8 +275,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     if attached["mwc_knife"] then
         vm:SetBodygroup(4, 1)
-        newpos = Vector(-1.85, 0, -0.7)
-        newang = Angle(0.0125, -0.45, 0)
     end
 
     if attached["noirons"] then
@@ -268,13 +286,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     end
 
     vm:SetSkin(camo)
-
-    self.IronSights = {
-        Pos = newpos,
-        Ang = newang,
-        Magnification = 1.1,
-        ViewModelFOV = 60,
-    }
 
 end
 

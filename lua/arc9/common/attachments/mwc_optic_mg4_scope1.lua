@@ -26,6 +26,12 @@ ATT.DrawFunc = function(swep, model, wm)
     else
         model:SetSkin(0)
     end
+    if swep:GetElements()["mw3g36"] then
+        model:SetBodygroup(0,1)
+    end
+    if swep:GetElements()["mw3mg36"] then
+        model:SetBodygroup(0,2)
+    end
 end
 
 ATT.Sights = {

@@ -177,27 +177,27 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
-local ironpos = Vector(-2.76, -2, 0)
-local ironang = Angle(0, 0.7, 0)
+local cod4e_m4m16_ironpos = Vector(-2.76, -2, 0)
+local cod4e_m4m16_ironang = Angle(0, 0.7, 0)
 
 SWEP.IronSights = {
-    Pos = ironpos,
-    Ang = ironang,
+    Pos = cod4e_m4m16_ironpos,
+    Ang = cod4e_m4m16_ironang,
     Magnification = 1.1,
     ViewModelFOV = 50,
     AssociatedSlots = {1,2},
 }
 
 SWEP.SightMidPoint = { -- Where the gun should be at the middle of it's irons
-    Pos = ironpos / 2,
-    Ang = ironang / 2,
+    Pos = cod4e_m4m16_ironpos / 2,
+    Ang = cod4e_m4m16_ironang / 2,
 }
 
 SWEP.IronSightsHook = function(self)
     local attached = self:GetElements()
 
-    local newpos = ironpos
-    local newang = ironang
+    local newpos = cod4e_m4m16_ironpos
+    local newang = cod4e_m4m16_ironang
 
     if attached["barrel_m4"] or attached["barrel_mk18"] then
         newpos = Vector(-2.76, -2, -0.03)

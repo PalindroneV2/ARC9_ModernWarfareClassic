@@ -177,20 +177,46 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local mw3e_m4a1_ironpos = Vector(-2.825, -2, 0.2)
+local mw3e_m4a1_ironang = Angle(0.025, 0, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-2.825, -2, 0.2),
-    Ang = Angle(0.025, 0, 0),
+    Pos = mw3e_m4a1_ironpos,
+    Ang = mw3e_m4a1_ironang,
     Magnification = 1.1,
     AssociatedSlot = 1,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1.4125, -1, -0.4),
-    Ang = Angle(0, 0, -2.5),
+    Pos = mw3e_m4a1_ironpos / 2,
+    Ang = mw3e_m4a1_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = mw3e_m4a1_ironpos
+    local newang = mw3e_m4a1_ironang
+
+    if attached["classic_irons"] then
+        newpos = Vector(-2.825, -2, 0.125)
+        newang = Angle(0.05, -0.9, 0)
+    end
+    if attached["matech_irons"] then
+        newpos = Vector(-2.825, -2, 0.1)
+        newang = Angle(0.05, -0.2, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "ar2"
@@ -332,8 +358,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local newpos = Vector(-2.825, -2, 0.7)
-    local newang = Angle(0.05, 0, 0)
 
     local ub = 0
     if attached["cod_grips"] then
@@ -370,14 +394,10 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     if attached["classic_irons"] then
         rear = rear + 1
         front = front + 1
-        newpos = Vector(-2.825, -2, 0.125)
-        newang = Angle(0.05, -0.9, 0)
     end
     if attached["matech_irons"] then
         rear = rear + 2
         front = front + 2
-        newpos = Vector(-2.825, -2, 0.1)
-        newang = Angle(0.05, -0.2, 0)
         if attached["barrel_mw19"] then
             front = 6
             gas = 0
@@ -403,15 +423,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     vm:SetBodygroup(6,gas)
     vm:SetBodygroup(7,ub)
     vm:SetBodygroup(9,bipod)
-
-    self.IronSights = {
-        Pos = newpos,
-        Ang = newang,
-        Magnification = 1.1,
-        -- AssociatedSlot = 9,
-        CrosshairInSights = false,
-        ViewModelFOV = 60,
-    }
 
     local camo = 0
     if attached["universal_camo"] then

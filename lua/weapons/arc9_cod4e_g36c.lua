@@ -313,7 +313,7 @@ SWEP.Attachments = {
         Pos = Vector(1, 0.225, 4.1),
         Ang = Angle(0, 0, 0),
         Category = {"cod_optic", "cod_rail_riser","cod_optic_g36"},
-        InstalledElements = {"mount"},
+        InstalledElements = {"mount","cod4g36"},
     },
     {
         PrintName = "Muzzle",

@@ -190,18 +190,42 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local mw3e_spas12_ironpos = Vector(-3.65, -6, 1.9)
+local mw3e_spas12_ironang = Angle(0.1, 0.0125, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-3.65, -6, 1.9),
-    Ang = Angle(0.1, 0.0125, 0),
-    ViewModelFOV = 60,
+    Pos = mw3e_spas12_ironpos,
+    Ang = mw3e_spas12_ironang,
+    ViewModelFOV = 50,
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1.775, -4.5, 0),
-    Ang = Angle(0, 0.00125, -2.5),
+    Pos = mw3e_spas12_ironpos / 2,
+    Ang = mw3e_spas12_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = mw3e_spas12_ironpos
+    local newang = mw3e_spas12_ironang
+
+    if attached["stock_l"] then
+        newPos = Vector(-1, -6, 0.25)
+        newAng = Angle(0, 0, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
+
+
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "ar2"
@@ -246,13 +270,9 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local newPos = Vector(-3.75, -6, 1.5)
-    local newAng = Angle(0.05, 0.3, 0)
 
     if attached["stock_l"] then
         vm:SetBodygroup(2,1)
-        newPos = Vector(-1, -6, 0.25)
-        newAng = Angle(0, 0, 0)
     end
 
     if attached["stock_m"] then
@@ -271,13 +291,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
         camo = camo + 2
     end
     vm:SetSkin(camo)
-
-    self.IronSights = {
-        Pos = newPos,
-        Ang = newAng,
-        ViewModelFOV = 60,
-        Magnification = 1.1,
-    }
 
 end
 

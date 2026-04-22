@@ -181,20 +181,42 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local mw2e_famas_ironpos = Vector(-3.306, -3, -0.20)
+local mw2e_famas_ironang = Angle(0.025, 0, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-3.306, -3, -0.20),
-    Ang = Angle(0.025, 0, 0),
+    Pos = mw2e_famas_ironpos,
+    Ang = mw2e_famas_ironang,
     Magnification = 1.1,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     AssociatedSlot = 1,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1.65, -1.5, -0.6),
-    Ang = Angle(0.0125, 0, -2.5),
+    Pos = mw2e_famas_ironpos / 2,
+    Ang = mw2e_famas_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = mw2e_famas_ironpos
+    local newang = mw2e_famas_ironang
+
+    if attached["mwc_alt_irons"] then
+        newpos = Vector(-3.306, -3, 1.2)
+        newang = Angle(0.025, 0.4, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "ar2"
@@ -264,8 +286,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local newpos = Vector(-3.306, -3, -0.20)
-    local newang = Angle(0.025, 0, 0)
 
     if attached["mount"] then
         vm:SetBodygroup(1,0)
@@ -273,22 +293,11 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
         if attached["mwc_alt_irons"] then
             vm:SetBodygroup(1,1)
             vm:SetBodygroup(2,2)
-            newpos = Vector(-3.306, -3, 1.2)
-            newang = Angle(0.025, 0.4, 0)
         end
     end
     if self:GetBipod() then
         vm:SetBodygroup(3,1)
     end
-
-    self.IronSights = {
-        Pos = newpos,
-        Ang = newang,
-        Magnification = 1.1,
-        ViewModelFOV = 60,
-        AssociatedSlot = 1,
-        CrosshairInSights = false,
-    }
 
     local camo = 0
     if attached["universal_camo"] then

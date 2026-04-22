@@ -73,6 +73,7 @@ SWEP.ClipSize = 30 -- DefaultClip is automatically set.
 SWEP.SupplyLimit = 9
 SWEP.SecondarySupplyLimit = 9
 SWEP.ReloadTime = 1
+SWEP.DeployTime = 0.75
 
 SWEP.Crosshair = true
 SWEP.CanBlindFire = false
@@ -169,7 +170,7 @@ SWEP.ShellScale = 1.4
 SWEP.MuzzleEffectQCA = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectQCA = 2 -- which attachment to put the case effect on
 SWEP.ProceduralViewQCA = 1
-SWEP.CamQCA = 5
+SWEP.CamQCA = 3
 SWEP.NoShellEject = true
 SWEP.NoShellEjectManualAction = true
 
@@ -228,7 +229,7 @@ SWEP.SprintAng = SWEP.ActiveAng
 SWEP.BipodPos = Vector(0, 10,-4)
 SWEP.BipodAng = Angle(0, 0, 10)
 
-SWEP.CustomizePos = Vector(20.5, 30, 4.25)
+SWEP.CustomizePos = Vector(15.5, 30, 4.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 
 SWEP.BarrelLength = 0 -- = 25
@@ -239,60 +240,30 @@ SWEP.AttachmentElements = {
     ["barrel_k"] = {
         AttPosMods = {
             [3] = {
-                Pos = Vector(19.5, 0, 1.15),
+                Pos = Vector(17.5, 0, 1.15),
             },
         },
+        MuzzleEffectQCA = 4,
     },
     ["barrel_c"] = {
         AttPosMods = {
-            [2] = {
-                Pos = Vector(7, 0, 1.15),
-            },
             [3] = {
-                Pos = Vector(14.9, 0, 1.15),
-            },
-            [5] = {
-                Pos = Vector(12, 0, -0.1),
-            },
-            [6] = {
-                Pos = Vector(12.5, 1, 1),
-            },
-            [7] = {
-                Pos = Vector(12.5, -1, 1),
+                Pos = Vector(15.15, 0, 1.15),
             },
         },
-    },
-    ["barrel_mg"] = {
-        AttPosMods = {
-            [1] = {
-                Pos = Vector(4, -0.035, 2.5),
-            },
-            [3] = {
-                Pos = Vector(27.5, 0, 0.15),
-            },
-            [5] = {
-                Pos = Vector(12.5, 0, -1.1),
-            },
-            [6] = {
-                Pos = Vector(16, 1, 0),
-            },
-            [7] = {
-                Pos = Vector(16, -1, 0),
-            },
-        },
-        IronSights = {
-            Pos = Vector(-3.6125, -3, 0),
-            Ang = Angle(0, 0.1, 0),
-            Magnification = 1.1,
-            AssociatedSlot = 1,
-            ViewModelFOV = 50,
-            CrosshairInSights = false,
-        },
+        MuzzleEffectQCA = 5,
     },
     ["cod4_tasco"] = {
         AttPosMods = {
             [1] = {
                 Pos = Vector(0.5, -0.035, 3.6),
+            },
+        },
+    },
+    ["mg4_scoper"] = {
+        AttPosMods = {
+            [1] = {
+                Pos = Vector(1.93, -0.035, 2.8),
             },
         },
     },
@@ -302,40 +273,33 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local stock = 0
     local iron = 0
 
-    if attached["stock_m"] then
-        stock = stock + 1
-    end
     if attached["mount"] then
-       iron = 2
+       iron = 1
     end
     if attached["barrel_k"] then
-        vm:SetBodygroup(3,1)
+        vm:SetBodygroup(2,1)
     end
     if attached["barrel_c"] then
-        vm:SetBodygroup(3,2)
-        iron = 1
-        if attached["mount"] then
-           iron = iron + 1
-        end
-        vm:SetBodygroup(6,1)
+        vm:SetBodygroup(2,2)
     end
-    if attached["barrel_mg"] then
-        vm:SetBodygroup(0,1)
-        vm:SetBodygroup(1,1)
-        iron = 3
-        vm:SetBodygroup(3,3)
-        stock = stock + 1
-        if attached["mount"] then
-           iron = iron + 1
-        end
-    end
-    vm:SetBodygroup(2,iron)
-    vm:SetBodygroup(4,stock)
     if attached["mwc_m320"] then
-        vm:SetBodygroup(5,1)
+        vm:SetBodygroup(3,1)
+    end
+    if attached["mwc_mk"] then
+        vm:SetBodygroup(3,2)
+    end
+    vm:SetBodygroup(1,iron)
+    if attached["mg4_scoper"] then
+        vm:SetBodygroup(1, 1)
+        vm:SetBodygroup(4, 1)
+    end
+
+    local CUSTSTATE = self:GetCustomize()
+
+    if CUSTSTATE then
+        vm:SetBodygroup(6,1)
     end
 
     local camo = 0
@@ -360,8 +324,18 @@ SWEP.Hook_TranslateAnimation = function (self, anim)
             suffix = "_glsetup"
         end
     end
-    if attached["barrel_mg"] then
-        suffix = "_mg"
+    if attached["mwc_mk"] then
+        suffix = "_mk"
+        if self:GetUBGL() then
+            suffix = "_mksetup"
+        end
+    end
+
+    if anim == "enter_ubgl" and attached["mwc_mk"] then
+        return "enter_ubgl_mksetup"
+    end
+    if anim == "exit_ubgl" and attached["mwc_mk"] then
+        return "exit_ubgl_mksetup"
     end
 
     return anim .. suffix
@@ -378,14 +352,8 @@ SWEP.HookP_NameChange = function(self, name)
     if attached["barrel_c"] then
         gunname = "HK G36C"
     end
-    if attached["barrel_mg"] then
-        gunname = "HK MG36"
-    end
     if attached["bo1_pap"] then
         gunname = "SG-115 Jericho"
-        if attached["barrel_mg"] then
-            gunname = "SG-115 Drummer Boy"
-        end
     end
 
     return gunname
@@ -396,10 +364,10 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Bone = "j_gun",
         Scale = Vector(1, 1, 1),
-        Pos = Vector(2.25, -0.035, 3.625),
+        Pos = Vector(2.25, 0, 3.625),
         Ang = Angle(0, 0, 0),
-        Category = {"cod_optic"},
-        InstalledElements = {"mount"},
+        Category = {"cod_optic","cod_rail_riser","cod_optic_g36"},
+        InstalledElements = {"mount","mw3g36"},
     },
     {
         PrintName = "Barrel",
@@ -412,7 +380,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         Bone = "j_gun",
-        Pos = Vector(28.5, 0, 1.15),
+        Pos = Vector(21, 0, 1.15),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"cod_muzzle"},
@@ -430,15 +398,15 @@ SWEP.Attachments = {
         PrintName = "Underbarrel",
         DefaultCompactName = "UB",
         Bone = "j_gun",
-        Pos = Vector(15, 0, -0.1),
+        Pos = Vector(12, 0, -0.1),
         Ang = Angle(0, 0, 0),
-        Category = {"mwc_m320", "cod_grips"},
+        Category = {"mwc_m320", "mwc_mk", "cod_grips"},
     },
     {
         PrintName = "Tactical Right",
         DefaultCompactName = "TAC R",
         Bone = "j_gun",
-        Pos = Vector(17, 1, 1),
+        Pos = Vector(12.5, 1, 1),
         Ang = Angle(0, 0, -90),
         Category = {"cod_tactical"},
         InstalledElements = {"right_cover"},
@@ -447,7 +415,7 @@ SWEP.Attachments = {
         PrintName = "Tactical Left",
         DefaultCompactName = "TAC L",
         Bone = "j_gun",
-        Pos = Vector(17, -1, 1),
+        Pos = Vector(12.5, -1, 1),
         Ang = Angle(0, 0, 90),
         Category = {"cod_tactical"},
         InstalledElements = {"left_cover"},
@@ -525,7 +493,7 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"fire"},
-        Time = 9 / 30,
+        Time = 21 / 35,
         EjectAt = 0,
         EventTable = {
             {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
@@ -533,7 +501,7 @@ SWEP.Animations = {
     },
     ["fire_iron"] = {
         Source = {"fire_ads"},
-        Time = 9 / 30,
+        Time = 5 / 35,
         EjectAt = 0,
         EventTable = {
             {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
@@ -634,7 +602,7 @@ SWEP.Animations = {
     },
     ["fire_m203"] = {
         Source = {"fire_gl"},
-        Time = 0.5,
+        Time = 21 / 35,
         EjectAt = 0,
         EventTable = {
             {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
@@ -642,7 +610,7 @@ SWEP.Animations = {
     },
     ["fire_iron_m203"] = {
         Source = {"fire_ads_gl"},
-        Time = 0.5,
+        Time = 4 / 35,
         EjectAt = 0,
         EventTable = {
             {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
@@ -675,6 +643,72 @@ SWEP.Animations = {
     },
     ["exit_sprint_m203"] = {
         Source = "sprint_out_gl",
+        Time = 1,
+    },
+
+    --MK anims
+    ["idle_mk"] = {
+        Source = "idle_mk",
+        Time = 1 / 30,
+    },
+    ["draw_mk"] = {
+        Source = "draw_mk",
+        Time = 1,
+    },
+    ["holster_mk"] = {
+        Source = "holster_mk",
+        Time = 1,
+    },
+    ["ready_mk"] = {
+        Source = "first_draw_mk",
+        Time = 1.46,
+        EventTable = {
+            {s = "ARC9_MW3E.G36_Charge", t = 22 / 35}
+        },
+    },
+    ["fire_mk"] = {
+        Source = {"fire_mk"},
+        Time = 21 / 35,
+        EjectAt = 0,
+        EventTable = {
+            {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
+        },
+    },
+    ["fire_iron_mk"] = {
+        Source = {"fire_ads_mk"},
+        Time = 4 / 35,
+        EjectAt = 0,
+        EventTable = {
+            {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
+        },
+    },
+    ["reload_mk"] = {
+        Source = "reload_mk",
+        Time = 73 / 35,
+        EventTable = {
+            {s = "ARC9_MW3E.G36_MagOut", t = 11 / 35},
+            {s = "ARC9_MW3E.G36_MagIn", t = 30 / 35},
+        },
+    },
+    ["reload_empty_mk"] = {
+        Source = "reload_empty_mk",
+        Time = 97 / 35,
+        EventTable = {
+            {s = "ARC9_MW3E.G36_MagOut", t = 11 / 35},
+            {s = "ARC9_MW3E.G36_MagIn", t = 30 / 35},
+            {s = "ARC9_MW3E.G36_Charge", t = 55 / 35},
+        },
+    },
+    ["enter_sprint_mk"] = {
+        Source = "sprint_in_mk",
+        Time = 1,
+    },
+    ["idle_sprint_mk"] = {
+        Source = "sprint_loop_mk",
+        Time = 30 / 40
+    },
+    ["exit_sprint_mk"] = {
+        Source = "sprint_out_mk",
         Time = 1,
     },
 
@@ -723,110 +757,66 @@ SWEP.Animations = {
         Time = 1,
     },
 
-    ["idle_mg"] = {
-        Source = "idle_mg",
+    --- UMBK IN ANIMS ---
+    ["idle_mksetup"] = {
+        Source = "idle_mksetup",
         Time = 1 / 30,
     },
-    ["draw_mg"] = {
-        Source = "draw_mg",
-        Time = 1,
+    ["enter_ubgl_mksetup"] = {
+        Source = "mksetup_in",
+        EventTable = {
+            {s = "ARC9_COD4E.W1200_Pump", t = 1 / 30 },
+            -- {s = "ARC9_MWC.MK_Fwd", t = 10 / 30 },
+        },
     },
-    ["holster_mg"] = {
-        Source = "holster_mg",
-        Time = 1,
+    ["exit_ubgl_mksetup"] = {
+        Source = "mksetup_out",
     },
-    ["ready_mg"] = {
-        Source = "draw_mg",
-        Time = 1,
+    ["fire_mksetup"] = {
+        Source = "fire_mksetup",
+        Time = 7 / 30,
     },
-    ["fire_mg"] = {
-        Source = {"fire_mg"},
+    ["cycle_mksetup"] = {
+        Source = "pump_mksetup",
         Time = 0.5,
-        EjectAt = 0,
         EventTable = {
-            {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
-        },
+            {s = "ARC9_COD4E.W1200_Pump", t = 1 / 30 },
+            -- {s = "ARC9_MWC.MK_Fwd", t = 10 / 30 },
+        }
     },
-    ["fire_iron_mg"] = {
-        Source = {"fire_ads_mg"},
-        Time = 0.5,
-        EjectAt = 0,
+    ["reload_ubgl_start_mksetup"] = {
+        Source = "reload_in_mksetup",
+        Time = 35 / 30,
         EventTable = {
-            {s = "ARC9_MW3E.Mech_D", t = 1 / 35},
+            {s = "ARC9_MWC.MK_Shell", t = 20 / 30},
         },
+        RestoreAmmo = 1,
     },
-    ["reload_mg"] = {
-        Source = "reload_mg",
-        Time = 3.733,
+    ["reload_ubgl_insert_mksetup"] = {
+        Source = "reload_loop_mksetup",
+        Time = 33 / 30,
         EventTable = {
-            {s = "ARC9_MW3E.MG36_MagOut", t = 30 / 35},
-            {s = "ARC9_MW3E.MG36_MagIn", t = 90 / 35},
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 1
-            },
-            {
-                t = 0.85,
-                lhik = 0,
-                rhik = 1
-            },
-            {
-                t = 0.95,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+            {s = "ARC9_MWC.MK_Shell", t = 15 / 30},
+        }
     },
-    ["reload_empty_mg"] = {
-        Source = "reload_empty_mg",
-        Time = 4.533,
+    ["reload_ubgl_finish_mksetup"] = {
+        Source = "reload_out_mksetup",
+        Time = 50 / 30,
         EventTable = {
-            {s = "ARC9_MW3E.MG36_MagOut", t = 30 / 35},
-            {s = "ARC9_MW3E.MG36_MagIn", t = 90 / 35},
-            {s = "ARC9_MW3E.MG36_Charge", t = 130 / 35},
-            --{s = "ARC9_BO1.AK_BoltFwd", t = 95 / 35},
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 1
-            },
-            {
-                t = 0.65,
-                lhik = 0,
-                rhik = 1
-            },
-            {
-                t = 0.75,
-                lhik = 1,
-                rhik = 1
-            },
-        },
+            {s = "ARC9_COD4E.W1200_Pump", t = 15 / 30 },
+            -- {s = "ARC9_MW3E.SPAS12_Fwd", t = 25 / 30 },
+        }
     },
-    ["enter_sprint_mg"] = {
-        Source = "sprint_in_mg",
+    ["enter_sprint_mksetup"] = {
+        Source = "sprint_in_mksetup",
         Time = 1,
     },
-    ["idle_sprint_mg"] = {
-        Source = "sprint_loop_mg",
+    ["idle_sprint_mksetup"] = {
+        Source = "sprint_loop_mksetup",
         Time = 30 / 40
     },
-    ["exit_sprint_mg"] = {
-        Source = "sprint_out_mg",
+    ["exit_sprint_mksetup"] = {
+        Source = "sprint_out_mksetup",
         Time = 1,
     },
 }

@@ -170,9 +170,12 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local cod4e_deagle_ironpos = Vector(-2.0125, 0, 0.85)
+local cod4e_deagle_ironang = Angle(0.0125, 0, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-2.0125, 0, 0.85),
-    Ang = Angle(0.0125, 0, 0),
+    Pos = cod4e_deagle_ironpos,
+    Ang = cod4e_deagle_ironang,
     Magnification = 1.1,
     AssociatedSlot = 1,
     ViewModelFOV = 60,
@@ -181,9 +184,28 @@ SWEP.IronSights = {
 }
 
 SWEP.SightMidPoint = { -- Where the gun should be at the middle of it's irons
-    Pos = Vector(-1, 0, -0.1),
-    Ang = Angle(0, 0, -2.5),
+    Pos = cod4e_deagle_ironpos / 2,
+    Ang = cod4e_deagle_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = cod4e_deagle_ironpos
+    local newang = cod4e_deagle_ironang
+
+    if attached["tactical_eagle"] then
+        newpos = Vector(-2.0125, 0, 0.85)
+        newang = Angle(0.0125, 0, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "revolver"
@@ -245,8 +267,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local newpos = Vector(-2.0125, 0, 0.85)
-    local newang = Angle(0.0125, 0, 0)
     local model = 1
     local camo = 0
     if attached["classic_2tone"] then
@@ -259,8 +279,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     end
     if attached["tactical_eagle"] then
         model = 2
-        newpos = Vector(-2.0125, 0, 0.85)
-        newang = Angle(0.0125, 0, 0)
         camo = 1
     end
 
@@ -274,12 +292,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     end
 
     vm:SetSkin(camo)
-
-    self.IronSights = {
-        Pos = newpos,
-        Ang = newang,
-        Magnification = 1.1,
-    }
 
 end
 

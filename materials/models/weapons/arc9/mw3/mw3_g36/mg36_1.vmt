@@ -1,0 +1,20 @@
+VertexlitGeneric
+{
+	$basetexture	"models/weapons/arc9/mw3/mw3_g36/mg36"
+	//$color2 "[0.5 0.5 0.5]"
+	$bumpmap	"models/weapons/arc9/mw3/mw3_g36/mg36_n"
+	"$phongexponenttexture" "models/weapons/arc9/mw3/mw3_g36/mg36_s"
+	"$envmapmask" "models/weapons/arc9/mw3/mw3_g36/mg36_s"
+	$normalmapalphaenvmapmask 1
+	
+	"$blendtintbybasealpha" "1"
+	"$phong" "1"
+	"$phongboost" "1"
+	"$phongalbedotint" "2"
+	"$PhongFresnelRanges" "[ 2 5 4 ]"
+	"$envmap" "env_cubemap"
+	$envmapfresnel "0.01"
+	$envmaptint "[ .01 .01 .01 ]"
+
+	"$nocull" "1"
+}

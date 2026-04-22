@@ -1,6 +1,6 @@
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ARC9 - A COD" -- edit this if you like
+SWEP.Category = "ARC9 - COD Extras" -- edit this if you like
 SWEP.SubCategory = "Battle Rifles"
 SWEP.AdminOnly = false
 

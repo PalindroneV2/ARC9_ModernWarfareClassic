@@ -181,20 +181,50 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local mw3e_m16a4_ironpos = Vector(-2.825, -2, -0.125)
+local mw3e_m16a4_ironang = Angle(0, 0.7, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-2.825, -2, -0.125),
-    Ang = Angle(0, 0.7, 0),
+    Pos = mw3e_m16a4_ironpos,
+    Ang = mw3e_m16a4_ironang,
     Magnification = 1.1,
     AssociatedSlot = 1,
-    ViewModelFOV = 60,
+    ViewModelFOV = 50,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1.4125, -1, -0.45),
-    Ang = Angle(0, 0.35, -2.5),
+    Pos = mw3e_m16a4_ironpos / 2,
+    Ang = mw3e_m16a4_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = mw3e_m16a4_ironpos
+    local newang = mw3e_m16a4_ironang
+
+    if attached["m4_lowirons"] then
+        newpos = Vector(-2.825, -2, 0.7)
+        newang = Angle(0.05, 0, 0)
+    end
+    if attached["matech_irons"] then
+        newpos = Vector(-2.825, -2, -0.125)
+        newang = Angle(0.05, 1.75, 0)
+        if attached["barrel_mk12"] then
+            newpos = Vector(-2.825, -2, 0.1)
+            newang = Angle(0.05, -0.2, 0)
+        end
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "ar2"
@@ -257,8 +287,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local newpos = Vector(-2.825, -2, 0.125)
-    local newang = Angle(0.05, -0.9, 0)
 
     local ub = 0
     local barrel = 0
@@ -290,20 +318,14 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     if attached["m4_lowirons"] then
         rear = rear + 1
         front = front + 1
-        newpos = Vector(-2.825, -2, 0.7)
-        newang = Angle(0.05, 0, 0)
     end
     if attached["matech_irons"] then
         rear = rear + 2
         front = front + 1
-        newpos = Vector(-2.825, -2, -0.125)
-        newang = Angle(0.05, 1.75, 0)
         if barrel == 0 then gas = 1 end
         if barrel == 1 then
             gas = 2
             front = 4
-            newpos = Vector(-2.825, -2, 0.1)
-            newang = Angle(0.05, -0.2, 0)
         end
     end
     if (attached["cod_optic"] or attached["cod_rail_riser"]) and !attached["bo1_ar15_toprail"] then
@@ -321,15 +343,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     vm:SetBodygroup(6, ub)
     vm:SetBodygroup(8, gas)
     vm:SetBodygroup(9, cover)
-
-    self.IronSights = {
-        Pos = newpos,
-        Ang = newang,
-        Magnification = 1.1,
-        -- AssociatedSlot = 9,
-        CrosshairInSights = false,
-        ViewModelFOV = 60,
-    }
 
     if attached["universal_camo"] then
         vm:SetSkin(1)

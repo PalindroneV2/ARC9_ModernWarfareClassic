@@ -171,19 +171,62 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
+local mw3e_deagle_ironpos = Vector(-2.0125, 0, 0.75)
+local mw3e_deagle_ironang = Angle(0.025, 0.7, 0)
+
 SWEP.IronSights = {
-    Pos = Vector(-2.0125, 3, 0.75),
-    Ang = Angle(0.025, 0.7, 0),
+    Pos = mw3e_deagle_ironpos,
+    Ang = mw3e_deagle_ironang,
     Magnification = 1.1,
     AssociatedSlot = 1,
+    ViewModelFOV = 50,
     CrosshairInSights = false,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
 SWEP.SightMidPoint = {
-    Pos = Vector(-1, 1.5, -0.25),
-    Ang = Angle(0, 0.35, -2.5),
+    Pos = mw3e_deagle_ironpos / 2,
+    Ang = mw3e_deagle_ironang / 2,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+    local newpos = mw3e_deagle_ironpos
+    local newang = mw3e_deagle_ironang
+
+    if attached["classic_eagle"] then
+        newpos = Vector(-2.0125, 0, 0.85)
+        newang = Angle(0.0125, 0, 0)
+    end
+    if attached["classic_2tone"] then
+        newpos = Vector(-2.0125, 0, 0.85)
+        newang = Angle(0.0125, 0, 0)
+    end
+    if attached["classic_gold_eagle"] then
+        newpos = Vector(-2.0125, 0, 0.85)
+        newang = Angle(0.0125, 0, 0)
+    end
+    if attached["tactical_eagle"] then
+        newpos = Vector(-2.0125, 0, 0.85)
+        newang = Angle(0.0125, 0, 0)
+    end
+    if attached["annihilator"] then
+        newpos = Vector(-2, 0, 0.58)
+        newang = Angle(0.05, 0.95, 0)
+    end
+    if attached["hybrid_eagle"] then
+        newpos = Vector(-2.0125, 0, 0.85)
+        newang = Angle(0.0125, 0.1, 0)
+    end
+
+    return {
+        Pos = newpos,
+        Ang = newang,
+        ViewModelFOV = 50,
+        Magnification = 1.1,
+        CrosshairInSights = false,
+    }
+end
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "revolver"
@@ -236,8 +279,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     local vm = data.model
     local attached = data.elements
-    local newpos = Vector(-2.0125, 0, 0.87)
-    local newang = Angle(0.025, 0, 0)
     local model = 0
     local camo = 0
 
@@ -245,38 +286,26 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     if attached["silver_eagle"] then camo = 1 end
     if attached["classic_eagle"] then
         model = 1
-        newpos = Vector(-2.0125, 0, 0.85)
-        newang = Angle(0.0125, 0, 0)
         camo = 0
     end
     if attached["classic_2tone"] then
         model = 1
-        newpos = Vector(-2.0125, 0, 0.85)
-        newang = Angle(0.0125, 0, 0)
         camo = 1
     end
     if attached["classic_gold_eagle"] then
         model = 1
         camo = 2
-        newpos = Vector(-2.0125, 0, 0.85)
-        newang = Angle(0.0125, 0, 0)
     end
     if attached["tactical_eagle"] then
         model = 2
-        newpos = Vector(-2.0125, 0, 0.85)
-        newang = Angle(0.0125, 0, 0)
         camo = 1
     end
     if attached["annihilator"] then
         model = 3
-        newpos = Vector(-2, 0, 0.58)
-        newang = Angle(0.05, 0.95, 0)
         camo = 1
     end
     if attached["hybrid_eagle"] then
         model = 4
-        newpos = Vector(-2.0125, 0, 0.85)
-        newang = Angle(0.0125, 0.1, 0)
         camo = 1
     end
 
@@ -290,13 +319,6 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     end
 
     vm:SetSkin(camo)
-
-    self.IronSights = {
-        Pos = newpos,
-        Ang = newang,
-        Magnification = 1.1,
-        ViewModelFOV = 60,
-    }
 
 end
 
