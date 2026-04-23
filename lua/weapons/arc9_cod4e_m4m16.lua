@@ -378,7 +378,7 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
 
     if attached["mwc_m203"] then
         vm:SetBodygroup(5,2)
-        if barrel <= 1 then
+        if barrel < 1 then
             vm:SetBodygroup(5,2)
             vm:SetBodygroup(7,1)
             vm:SetBodygroup(8,1)
