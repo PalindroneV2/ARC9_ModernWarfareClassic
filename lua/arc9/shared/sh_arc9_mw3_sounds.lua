@@ -48,7 +48,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.G36_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -97,7 +97,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MG36_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -146,7 +146,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.Glock_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -195,7 +195,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.ACR_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -204,7 +204,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW3E.ACR_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -216,7 +216,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.RSASS_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.5,
     level = 100,
     sound = {
@@ -225,7 +225,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW3E.RSASS_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -274,7 +274,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.AK47_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -323,7 +323,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.CM901_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -372,7 +372,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.L86_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -431,7 +431,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.SCARL_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -490,7 +490,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.QBZ97_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -540,7 +540,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.FAD_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -589,7 +589,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MK14_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -639,7 +639,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.AWM_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -697,7 +697,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MSR_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -755,7 +755,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.Barrett_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -803,7 +803,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.AS50_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -861,7 +861,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.FiveSeven_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -921,7 +921,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.P99_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -971,7 +971,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.Anaconda_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1021,7 +1021,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MP9_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1080,7 +1080,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.PP90M1_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1139,7 +1139,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.P90_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1148,7 +1148,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW3E.P90_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -1207,7 +1207,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.FMG9_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1297,7 +1297,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MP7_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1347,7 +1347,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.M4_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1356,7 +1356,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW3E.M16_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1365,7 +1365,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW3E.M4M16_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -1415,7 +1415,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MK12SPR_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1464,7 +1464,7 @@ sound.Add( {
 
 sound.Add({
     name = "ARC9_MW3E.Eagle_357",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1473,7 +1473,7 @@ sound.Add({
 })
 sound.Add({
     name = "ARC9_MW3E.Eagle_44",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1482,7 +1482,7 @@ sound.Add({
 })
 sound.Add({
     name = "ARC9_MW3E.Eagle_50",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1492,7 +1492,7 @@ sound.Add({
 
 sound.Add({
     name = "ARC9_MW3E.Eagle_Ringoff",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1502,7 +1502,7 @@ sound.Add({
 
 sound.Add({
     name = "ARC9_BOCW.Eagle_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     level = 100,
     sound = {
         "^weapons/ARC9/mw3e_deagle/fire_cw.wav",
@@ -1557,7 +1557,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MP412_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1615,7 +1615,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.AK74u_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1664,7 +1664,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MP5_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1674,7 +1674,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MP5_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -1731,7 +1731,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.PM9_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1781,7 +1781,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.UMP45_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1791,7 +1791,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.SMG_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -1840,7 +1840,7 @@ sound.Add( {
 
 sound.Add({
     name = "ARC9_MW3E.KSG_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1977,7 +1977,7 @@ sound.Add( {
 
 sound.Add({
     name = "ARC9_MW3E.Striker_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1986,7 +1986,7 @@ sound.Add({
 })
 sound.Add({
     name = "ARC9_MW3E.Striker_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -2112,7 +2112,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.MK46_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -2189,7 +2189,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.PKP_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -2257,7 +2257,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW3E.M320_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -2315,7 +2315,7 @@ sound.Add( {
 
 sound.Add({
     name = "ARC9_MW3E.XM25_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -2324,7 +2324,7 @@ sound.Add({
 })
 sound.Add({
     name = "ARC9_MW3E.XM25_Decay",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     level = 100,
     sound = {
         "^weapons/ARC9/mw3e_XM25/fire/decay.wav",
@@ -2392,7 +2392,7 @@ sound.Add( {
 
 sound.Add({
     name = "ARC9_MW3E.SMAW_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {

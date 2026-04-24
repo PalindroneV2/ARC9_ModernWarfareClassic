@@ -3,7 +3,7 @@
 
 sound.Add( {
     name = "ARC9_COD4E.M4M16_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -13,7 +13,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.M4M16_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -62,7 +62,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.G36C_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -111,7 +111,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.AK47_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -160,7 +160,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.AK74u_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -209,7 +209,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.M14_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -269,7 +269,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.MP44_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -318,7 +318,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.G3_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -367,7 +367,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.M249_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     pitch = {65, 75},
     level = 100,
@@ -426,7 +426,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.M60_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     pitch = {65, 75},
     level = 100,
@@ -512,7 +512,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.RPD_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     pitch = {65, 75},
     level = 100,
@@ -589,7 +589,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.GP25_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -620,7 +620,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MWC.M203_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -660,7 +660,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.Dragunov_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -710,7 +710,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.M40_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     pitch = {65, 75},
@@ -761,7 +761,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.M82_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -811,7 +811,7 @@ sound.Add( {
 
 sound.Add({
     name = "ARC9_COD4E.W1200_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -850,7 +850,7 @@ sound.Add( {
 
 sound.Add({
     name = "ARC9_COD4E.M1014_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -889,7 +889,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.MP5_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -899,7 +899,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.MP5_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -938,7 +938,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.P90_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -947,7 +947,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_COD4E.P90_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -1016,7 +1016,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.Skorpion_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1066,7 +1066,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.UZI_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1116,7 +1116,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.1911_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1126,7 +1126,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.1911_Sil",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
@@ -1166,7 +1166,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.M9_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1206,7 +1206,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.Elite_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 0.75,
     level = 100,
     sound = {
@@ -1246,7 +1246,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_COD4E.RPG_Fire",
-    channel = CHAN_STATIC,
+    channel = CHAN_AUTO,
     volume = 1,
     level = 100,
     sound = {
