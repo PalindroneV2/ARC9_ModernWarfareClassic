@@ -19,7 +19,7 @@ SWEP.Credits = {
     Author = "Palindrone"
 }
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 SWEP.UseHands = true
 
@@ -29,8 +29,10 @@ SWEP.WorldModelMirror = "models/weapons/arc9/c_mw3e_mg36.mdl"
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
-    Pos        =    Vector(-8.75, 4, -5.6),
+    Pos        =    Vector(-7, 5.5, -6.2),
     Ang        =    Angle(-9, 2, 180),
+    TPIKPos        =    Vector(-7, 3, -5),
+    TPIKAng        =    Angle(-9, -2, 180),
     Bone    =    "ValveBiped.Bip01_R_Hand",
     Scale = 1.1,
 }
@@ -217,8 +219,8 @@ SWEP.IronSightsHook = function(self)
 end
 
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldType = "smg"
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldType = "AR2"
+SWEP.HoldTypeSights = "AR2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
