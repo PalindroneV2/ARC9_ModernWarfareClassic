@@ -43,8 +43,8 @@ SWEP.CustomBlendFactor = 1
 
 SWEP.DefaultBodygroups = "000000000"
 
-SWEP.DamageMax = 14
-SWEP.DamageMin = 6 -- damage done at maximum range
+SWEP.DamageMax = 40
+SWEP.DamageMin = 10 -- damage done at maximum range
 SWEP.RangeMax = 3000
 SWEP.RangeMin = 750
 SWEP.Penetration = 2
@@ -190,8 +190,8 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
-local mw3e_spas12_ironpos = Vector(-3.65, -6, 1.9)
-local mw3e_spas12_ironang = Angle(0.1, 0.0125, 0)
+local mw3e_spas12_ironpos = Vector(-3.75, -6, 1.45)
+local mw3e_spas12_ironang = Angle(0, 0.4, 0)
 
 SWEP.IronSights = {
     Pos = mw3e_spas12_ironpos,
@@ -212,8 +212,8 @@ SWEP.IronSightsHook = function(self)
     local newang = mw3e_spas12_ironang
 
     if attached["stock_l"] then
-        newPos = Vector(-1, -6, 0.25)
-        newAng = Angle(0, 0, 0)
+        newpos = Vector(-1, -6, 0.25)
+        newang = Angle(0, 0, 0)
     end
 
     return {
@@ -224,8 +224,6 @@ SWEP.IronSightsHook = function(self)
         CrosshairInSights = false,
     }
 end
-
-
 
 SWEP.HoldTypeHolstered = "passive"
 SWEP.HoldType = "ar2"
