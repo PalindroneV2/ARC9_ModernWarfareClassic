@@ -177,8 +177,8 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
-local mw3e_m4a1_ironpos = Vector(-2.82, -2, 0.67)
-local mw3e_m4a1_ironang = Angle(0.01, 0.067, 0)
+local mw3e_m4a1_ironpos = Vector(-2.825, -2, 0.7)
+local mw3e_m4a1_ironang = Angle(0.025, 0, 0)
 
 SWEP.IronSights = {
     Pos = mw3e_m4a1_ironpos,
@@ -201,16 +201,12 @@ SWEP.IronSightsHook = function(self)
     local newang = mw3e_m4a1_ironang
 
     if attached["classic_irons"] then
-        newpos = Vector(-2.825, -2, 0.16)
-        newang = Angle(0.01, -1.1, 0)
-        if attached["barrel_mk12"] then
-            newpos = Vector(-2.825, -2, 0.12)
-            newang = Angle(0.01, -0.75, 0)
-            end
+        newpos = Vector(-2.825, -2, 0.165)
+        newang = Angle(0, -1.2, 0)
     end
     if attached["matech_irons"] then
         newpos = Vector(-2.825, -2, 0.1)
-        newang = Angle(0.02, -0.1, 0)
+        newang = Angle(0.05, -0.2, 0)
     end
 
     return {
