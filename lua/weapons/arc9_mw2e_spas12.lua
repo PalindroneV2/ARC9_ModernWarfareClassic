@@ -190,8 +190,8 @@ SWEP.ProceduralIronFire = false
 
 SWEP.CaseBones = {}
 
-local mw3e_spas12_ironpos = Vector(-3.65, -6, 1.9)
-local mw3e_spas12_ironang = Angle(0.1, 0.0125, 0)
+local mw3e_spas12_ironpos = Vector(-3.74, -6, 1.42)
+local mw3e_spas12_ironang = Angle(0.02, 0.5, 0)
 
 SWEP.IronSights = {
     Pos = mw3e_spas12_ironpos,
