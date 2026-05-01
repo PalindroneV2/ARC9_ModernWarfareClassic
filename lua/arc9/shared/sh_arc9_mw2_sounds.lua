@@ -3,7 +3,7 @@
 
 sound.Add( {
     name = "ARC9_MW2E.M4M16_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -13,7 +13,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.M4M16_Sil",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 1,
     level = 100,
     sound = {
@@ -25,7 +25,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.AK47_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -63,7 +63,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.AK47_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -75,7 +75,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.FNFAL_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -113,7 +113,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.FNFAL_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -125,7 +125,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.FAMAS_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -163,7 +163,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.FAMAS_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -175,7 +175,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.SCARH_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -222,7 +222,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.SCARH_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -234,7 +234,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.ACR_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -243,7 +243,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.ACR_Sil",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 1,
     level = 100,
     sound = {
@@ -280,7 +280,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.ACR_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -292,7 +292,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.M240_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -304,7 +304,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.AUG_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -342,7 +342,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.AUG_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -354,7 +354,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.MG4_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -427,7 +427,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.MG4_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -439,7 +439,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.F2000_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -486,7 +486,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.F2000_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -495,7 +495,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.F2000_FirstLift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -507,7 +507,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.Tavor_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -544,7 +544,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.Tavor_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -556,7 +556,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.PP2000_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -593,7 +593,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.PP2000_FirstLift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -603,7 +603,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.PP2000_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -617,7 +617,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.Vector_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -653,7 +653,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.Vector_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -662,7 +662,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.Vector_FirstLift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -674,7 +674,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.M79_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -684,7 +684,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.M79_Out",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -738,7 +738,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.M79_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -750,7 +750,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.CheyTac_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 1,
     level = 100,
     sound = {
@@ -805,7 +805,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.CheyTac_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -817,7 +817,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.Ranger_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.6,
     level = 100,
     sound = {
@@ -871,7 +871,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.Ranger_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -883,7 +883,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MWC.MK_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -920,7 +920,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MWC.MK_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -932,7 +932,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.Stinger_Lift",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -953,7 +953,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.Javelin_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_WEAPON,
     volume = 0.75,
     level = 100,
     sound = {
@@ -962,7 +962,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.Javelin_Ignition",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 0.75,
     level = 100,
     sound = {
@@ -972,7 +972,7 @@ sound.Add( {
 
 sound.Add( {
     name = "ARC9_MW2E.Javelin_FireDist",
-    channel = CHAN_WEAPON,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {
@@ -981,7 +981,7 @@ sound.Add( {
 } )
 sound.Add( {
     name = "ARC9_MW2E.Javelin_IgnitionDist",
-    channel = CHAN_WEAPON,
+    channel = CHAN_STATIC,
     volume = 1.0,
     level = 100,
     sound = {

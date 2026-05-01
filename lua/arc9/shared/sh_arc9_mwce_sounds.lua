@@ -4,7 +4,7 @@
 
 sound.Add( {
     name = "ARC9_MWCE.MCX_SPEAR_Fire",
-    channel = CHAN_AUTO,
+    channel = CHAN_STATIC,
     volume = 0.75,
     level = 100,
     pitch = {105,110},

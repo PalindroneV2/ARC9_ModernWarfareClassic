@@ -90,10 +90,8 @@ if SERVER then
         local drunk = false
 
         if self.FireAndForget or self.SemiActive then
-            if self.SemiActive then
-                if IsValid(self.Weapon) then
-                    self.ShootEntData = self.Weapon:RunHook("Hook_GetShootEntData", {})
-                end
+            if self.SemiActive and IsValid(self.Weapon) then
+                self.ShootEntData = self.Weapon:RunHook("Hook_GetShootEntData", {})
             end
 
             if self.ShootEntData.Target and IsValid(self.ShootEntData.Target) then
@@ -206,10 +204,10 @@ if SERVER then
 
         if self:WaterLevel() > 0 then
             util.Effect( "WaterSurfaceExplosion", effectdata )
-            --self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO)
+            --self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_STATIC)
         else
             util.Effect( "Explosion", effectdata)
-            --self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
+            --self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_STATIC)
         end
 
         util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), self.Radius, self.DamageOverride or self.Damage)
