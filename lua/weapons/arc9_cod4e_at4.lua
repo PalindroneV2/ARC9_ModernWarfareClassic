@@ -5,15 +5,15 @@ SWEP.SubCategory = "Specials/Explosives"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "AT4"
-SWEP.Class = "Rocket Launcher"
-SWEP.Description = [[American single-use rocket launcher that shoots unguided 66mm anti-tank payloads.]]
+SWEP.Class = "Anti-tank Launcher"
+SWEP.Description = [[Swedish / American single-use anti-tank launcher that shoots unguided 84mm anti-tank payloads.]]
 SWEP.Trivia = {
-    Manufacturer = "Saab Bofors Dynamics",
+    Manufacturer = "Saab Bofors Dynamics, Alliant Techsystems",
     Calibre = "84mm HEAT Round",
-    Mechanism = "Rocket Propelled Grenade",
-    Country = "USA",
+    Mechanism = "Recoilless",
+    Country = "Sweden, USA",
     Year = 1987,
-    Games = [[COD4, MW2]]
+    Games = [[COD4, MW2, COD:O, Mobile]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

@@ -14,8 +14,8 @@ SWEP.Trivia = {
     Calibre = "9x19mm Parabellum",
     Mechanism = "Short Recoil",
     Country = "Italy",
-    Year = 1975,
-    Games = [[COD4, MW2, Ghosts, MW]]
+    Year = 1995,
+    Games = [[COD4, MW2, COD:O, Ghosts, MW19]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

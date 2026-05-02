@@ -11,10 +11,10 @@ Also serves as a door breaching tool.]]
 SWEP.Trivia = {
     Manufacturer = "Benelli",
     Calibre = "12 Gauge",
-    Mechanism = "Gas-Operated",
-    Country = "USA",
-    Year = 1990,
-    Games = [[COD4, MW2]]
+    Mechanism = "Gas-Operated, rotating bolt",
+    Country = "Italy",
+    Year = 1999,
+    Games = [[COD4, MW2, COD:O, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Roller-Delayed Blowback",
     Country = "West Germany",
     Year = 1964,
-    Games = [[COD4, MW3, BO2, MW19, BOCW, MW22]]
+    Games = [[COD4, MW2, BO1, MW3, BO2, MW19, Mobile, BOCW, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"
@@ -285,12 +285,12 @@ SWEP.AttachmentElements = {
 
 SWEP.IronSightsHook = function(self)
     local attached = self:GetElements()
-    local newpos = Vector(-3.15, -1, 1.2)
-    local newang = Angle(0, -0.2, 0)
+    local newpos = Vector(-3.15, -1, 1.3)
+    local newang = Angle(0.06, -0.3, 0)
 
     if attached["top_g36c"] then
         newpos = Vector(-3.175, -3.25, 0.4)
-        newang = Angle(0.025, 0, 0)
+        newang = Angle(-0.05, 0, 0)
     end
 
     return {Pos = newpos, Ang = newang, Magnification = 1.1, ViewModelFOV = 60, CrosshairInSights = false,}

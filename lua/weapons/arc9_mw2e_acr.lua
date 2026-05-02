@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Gas Piston, Rotating Bolt",
     Country = "USA",
     Year = 2006,
-    Games = [[MW2, MW3]]
+    Games = [[MW2, MW3, COD:O, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

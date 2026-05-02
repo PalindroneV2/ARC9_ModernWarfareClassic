@@ -11,9 +11,9 @@ Everyone knows what an AK is.]]
 SWEP.Trivia = {
     Manufacturer = "Izhmash",
     Calibre = "7.62x39mm M43",
-    Mechanism = "Gas Piston",
+    Mechanism = "Long-stroke gas Piston",
     Country = "USSR",
-    Year = 1947,
+    Year = 1949,
     Games = [[COD4, MW2, BO1, MW3, BO2, AW, BO3, MW19, BOCW]]
 }
 SWEP.Credits = {

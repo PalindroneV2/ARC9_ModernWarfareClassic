@@ -11,9 +11,9 @@ Remains in the 7.62x39mm M43 round rather than the AK-74's 5.45x39mm.]]
 SWEP.Trivia = {
     Manufacturer = "Izhmash",
     Calibre = "7.62x39mm M43",
-    Mechanism = "Gas Piston",
+    Mechanism = "Long-stroke gas Piston",
     Country = "USSR",
-    Year = 1947,
+    Year = 1949,
     Games = [[COD4, MW2, BO1, MW3, BO2, AW, BO3, MW19, BOCW]]
 }
 SWEP.Credits = {

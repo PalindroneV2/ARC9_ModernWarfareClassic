@@ -12,8 +12,8 @@ SWEP.Trivia = {
     Calibre = "12 Gauge",
     Mechanism = "Gas-Operated",
     Country = "South Korea",
-    Year = 1972,
-    Games = [[MW2, MW3]]
+    Year = 1989,
+    Games = [[MW3, BO6]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

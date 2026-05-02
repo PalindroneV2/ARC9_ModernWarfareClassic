@@ -11,9 +11,9 @@ Although these are supposed to have an automatic extractor, this one in particul
 SWEP.Trivia = {
     Manufacturer = "Izhevsk Mechanical Plant",
     Calibre = ".357 Magnum",
-    Mechanism = "Revolver",
-    Country = "USA",
-    Year = 1983,
+    Mechanism = "Double-action, single-action",
+    Country = "Russia",
+    Year = 1993,
     Games = [[Call of Duty: Modern Warfare 3]]
 }
 SWEP.Credits = {

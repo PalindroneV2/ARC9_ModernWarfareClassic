@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Rocket Propelled Grenade",
     Country = "USSR",
     Year = 1958,
-    Games = [[COD4, MW2, BO1, MW3, BO1, AW, ]]
+    Games = [[COD4, MW2, BO1, MW3, BO2, MW19, BOCW, MW22, MW23, BO6]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

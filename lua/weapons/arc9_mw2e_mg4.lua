@@ -5,15 +5,15 @@ SWEP.SubCategory = "Light Machine Guns"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "MG4"
-SWEP.Class = "General Purpose Machine Gun"
-SWEP.Description = [[German light machine gun. Standard squad automatic weapon for the Bundeswehr.]]
+SWEP.Class = "Light Machine Gun"
+SWEP.Description = [[German light machine gun with blistering rate of fire. Standard squad automatic weapon for the Bundeswehr.]]
 SWEP.Trivia = {
     Manufacturer = "Heckler & Koch",
     Calibre = "5.56x45mm NATO",
     Mechanism = "Gas-operated, rotating bolt",
     Country = "Germany",
     Year = 2001,
-    Games = [[Modern Warfare 2]]
+    Games = [[MW2, COD:O]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

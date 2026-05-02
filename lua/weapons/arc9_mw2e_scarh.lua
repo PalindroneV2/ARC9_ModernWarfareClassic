@@ -14,8 +14,8 @@ SWEP.Trivia = {
     Calibre = "7.62x51mm NATO",
     Mechanism = "Gas-Operated",
     Country = "Belgium",
-    Year = 2010,
-    Games = [[MW2, BO2, MW3, MW19]]
+    Year = 2009,
+    Games = [[MW2, BO2, MW3, COD:O, MW19, Mobile, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

@@ -5,13 +5,13 @@ SWEP.SubCategory = "Light Machine Guns"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "MK46"
-SWEP.Class = "General Purpose Machine Gun"
+SWEP.Class = "Light Machine Gun"
 SWEP.Description = [[Belgian light machine gun. Standard squad automatic weapon for the United States armed forces.
 Paratrooper variant.]]
 SWEP.Trivia = {
     Manufacturer = "FN Herstal",
     Calibre = "5.56x45mm NATO",
-    Mechanism = "Short-stroke gas piston",
+    Mechanism = "Long-stroke gas piston, open bolt",
     Country = "Belgium",
     Year = 1984,
     Games = [[COD4, MW2, MW3, BO2]]

@@ -13,8 +13,8 @@ SWEP.Trivia = {
     Calibre = "7.62x54mm R",
     Mechanism = "Gas-Operated",
     Country = "Russia",
-    Year = 1969,
-    Games = [[Call of Duty: Modern Warfare 3]]
+    Year = 2001,
+    Games = [[MW3, COD:O, MW19, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"
@@ -327,6 +327,7 @@ SWEP.Attachments = {
         Pos = Vector(-4, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"mwc_stock_h"},
+        Installed = "mwc_stock_h",
         Integral = true,
     },
     {

@@ -15,7 +15,7 @@ SWEP.Trivia = {
     Mechanism = "Gas-Operated",
     Country = "Germany",
     Year = 2001,
-    Games = [[MW3, MW3E, MW19]]
+    Games = [[MW3, BO2, MW19, MW22, MW23, Mobile]]
 }
 SWEP.Credits = {
     Author = "Palindrone"
@@ -176,8 +176,8 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSights = {
-    Pos = Vector(-3.525, -3, 0.725),
-    Ang = Angle(-0.05, 0, 0),
+    Pos = Vector(-3.525, -3, 0.65),
+    Ang = Angle(-0.08, 0, 0),
     Magnification = 1.1,
     ViewModelFOV = 60,
     CrosshairInSights = false,

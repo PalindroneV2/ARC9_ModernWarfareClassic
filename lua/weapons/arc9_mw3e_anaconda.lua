@@ -10,9 +10,9 @@ SWEP.Description = [[Magnum caliber revolver. Upscaled version of the .357 Magnu
 SWEP.Trivia = {
     Manufacturer = "Colt",
     Calibre = ".44 Magnum",
-    Mechanism = "Revolver",
+    Mechanism = "Double-Action, single-Action",
     Country = "USA",
-    Year = 1983,
+    Year = 1990,
     Games = [[MW2, MW3]]
 }
 SWEP.Credits = {

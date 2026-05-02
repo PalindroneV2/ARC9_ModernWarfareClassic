@@ -5,15 +5,15 @@ SWEP.SubCategory = "Light Machine Guns"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "L86 LSW"
-SWEP.Class = "General Purpose Machine Gun"
-SWEP.Description = [[Belgian light machine gun. Standard squad automatic weapon for the United States armed forces. Paratrooper variant.]]
+SWEP.Class = "Light Machine Gun"
+SWEP.Description = [[Light support weapon variant of the SA80 platform designed for fire support at a squad level while still being relatively lightweight.]]
 SWEP.Trivia = {
-    Manufacturer = "Steyr",
+    Manufacturer = "Royal Small Arms Factory",
     Calibre = "5.56x45mm NATO",
     Mechanism = "Short-stroke gas piston",
-    Country = "Austria",
-    Year = 1984,
-    Games = [[MW2, BO1, MW3]]
+    Country = "United Kingdom",
+    Year = 1985,
+    Games = [[MW2, MW3, COD:O, MW19, Mobile]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

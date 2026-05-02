@@ -12,7 +12,7 @@ It is incredibly popular with police and military, as well as civilians.]]
 SWEP.Trivia = {
     Manufacturer = "FN Herstal",
     Calibre = "5.7x28mm",
-    Mechanism = "Short Recoil",
+    Mechanism = "Delayed Blowback",
     Country = "Belgium",
     Year = 1998,
     Games = [[MW3, BO2]]

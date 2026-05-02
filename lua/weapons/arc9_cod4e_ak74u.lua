@@ -9,10 +9,10 @@ SWEP.Class = "Assault Rifle"
 SWEP.Description = [[A carbine length version of the AK-74. Affectionally nicknamed the Krinkov, this weapon was issued to only Soviet tank crews, special forces, and support units.]]
 SWEP.Trivia = {
     Manufacturer = "Izhmash",
-    Calibre = "5.45x39mm R",
-    Mechanism = "Gas Piston",
+    Calibre = "5.45x39mm",
+    Mechanism = "Long-stroke gas Piston",
     Country = "USSR",
-    Year = 1974,
+    Year = 1979,
     Games = [[COD4, MW2, BO1, MW3, BO2, AW, BO3, MW19, BOCW]]
 }
 SWEP.Credits = {

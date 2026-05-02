@@ -10,10 +10,10 @@ SWEP.Description = [[Originally designed and known as the Atchisson Assault Shot
 SWEP.Trivia = {
     Manufacturer = "Maxwell Atchisson",
     Calibre = "12 Gauge",
-    Mechanism = "Gas-Operated",
+    Mechanism = "Blowback",
     Country = "USA",
     Year = 1972,
-    Games = [[MW2, MW3]]
+    Games = [[MW2, MW3, Mobile, MW19]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

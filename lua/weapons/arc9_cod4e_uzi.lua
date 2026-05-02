@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Blowback",
     Country = "Israel",
     Year = 1980,
-    Games = [[Call of Duty 4: Modern Warfare]]
+    Games = [[COD4, MW2, COD:O]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

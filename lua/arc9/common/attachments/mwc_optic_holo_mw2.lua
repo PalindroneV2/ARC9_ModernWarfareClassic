@@ -26,7 +26,7 @@ ATT.Category = {"cod_optic", "cod_optic_alt", "cod_optic_lp"}
 ATT.Model = "models/weapons/arc9/atts/mw2e_eotech.mdl"
 ATT.WorldModel = "models/weapons/arc9/atts/mw2e_eotech.mdl"
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-1.5, 0, -0.075)
+ATT.ModelOffset = Vector(-0.9, 0, -0.075)
 
 ATT.Sights = {
     {

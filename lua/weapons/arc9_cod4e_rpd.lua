@@ -5,15 +5,15 @@ SWEP.SubCategory = "Light Machine Guns"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "RPD"
-SWEP.Class = "General Purpose Machine Gun"
+SWEP.Class = "Light Machine Gun"
 SWEP.Description = [[Russian belt-fed machine gun that replaced the DP-28.]]
 SWEP.Trivia = {
     Manufacturer = "Many",
-    Calibre = "7.62x54mmR",
-    Mechanism = "Short-stroke gas piston",
+    Calibre = "7.62×39mm M43",
+    Mechanism = "Gas piston, flapper locking, open-bolt",
     Country = "USSR",
     Year = 1944,
-    Games = [[COD4, MW2, BO1, BO2, BOCW]]
+    Games = [[COD4, MW2, BO2, COD:O, Mobile, BOCW]]
 }
 SWEP.Credits = {
     Author = "Palindrone",

@@ -11,10 +11,10 @@ Fires a powerful cartridge, but is let down by its single stack magazine.]]
 SWEP.Trivia = {
     Manufacturer = "Springfield",
     Calibre = ".45 ACP",
-    Mechanism = "Blowback",
+    Mechanism = "Short recoil operation",
     Country = "USA",
     Year = 1911,
-    Games = [[COD, COD2, COD3, COD4, WAW, MW2, BO1, MW3, BO2, AW, BO3, WWII, Mobile, MW, BOCW, Vanguard]]
+    Games = [[COD4, WAW, MW2, BO1, MW3, BO2, BO3, BOCW]]
 }
 SWEP.Credits = {
     Author = "Palindrone"
