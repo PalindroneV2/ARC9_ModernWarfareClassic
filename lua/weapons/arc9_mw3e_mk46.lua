@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Long-stroke gas piston, open bolt",
     Country = "Belgium",
     Year = 1984,
-    Games = [[COD4, MW2, MW3, BO2]]
+    Games = [[COD4, MW2, MW3, MW19, Mobile, MW23, BO6]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

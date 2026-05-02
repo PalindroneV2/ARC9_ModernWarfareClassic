@@ -6,14 +6,14 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "TAR-21"
 SWEP.Class = "Assault Rifle"
-SWEP.Description = [[Israeli bullpup carbine in 5.56mm NATO.]]
+SWEP.Description = [[Israeli bullpup assault rifle chambered in 5.56mm NATO.]]
 SWEP.Trivia = {
     Manufacturer = "IWI",
     Calibre = "5.56x45mm NATO",
-    Mechanism = "Gas-Operated",
+    Mechanism = "Long-stroke gas-operated, closed rotating bolt",
     Country = "Israel",
-    Year = 2009,
-    Games = [[MW2, BO2]]
+    Year = 2001,
+    Games = [[MW2, MW19, MW23, Mobile]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

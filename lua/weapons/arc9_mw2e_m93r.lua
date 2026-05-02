@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Calibre = "9x19mm Parabellum",
     Mechanism = "Short Recoil",
     Country = "Italy",
-    Year = 1985,
+    Year = 1979,
     Games = [[COD4, MW2, COD:O, Ghosts, Mobile, MW19, BOCW]]
 }
 SWEP.Credits = {

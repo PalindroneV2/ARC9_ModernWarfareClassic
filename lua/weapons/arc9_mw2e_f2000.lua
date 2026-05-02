@@ -10,10 +10,10 @@ SWEP.Description = [[A 5.56×45mm NATO bullpup rifle, designed by FN Herstal in 
 SWEP.Trivia = {
     Manufacturer = "FN Herstal",
     Calibre = "5.56x45mm NATO",
-    Mechanism = "Direct Impingement",
-    Country = "USA",
-    Year = 1994,
-    Games = [[Call of Duty: Modern Warfare 2]]
+    Mechanism = "Gas-operated, rotating bolt",
+    Country = "Belgium",
+    Year = 2001,
+    Games = [[MW2, COD:O, VG, MW23, Mobile]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

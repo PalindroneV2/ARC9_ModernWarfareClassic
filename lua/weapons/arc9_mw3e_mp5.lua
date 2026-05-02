@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Roller-Delayed Blowback",
     Country = "West Germany",
     Year = 1964,
-    Games = [[COD4, MW2, BO1, MW3, BO2, MW19, Mobile, BOCW, MW22, MW23]]
+    Games = [[COD4, MW2, BO1, MW3, BO2, MW19, Mobile, BOCW]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

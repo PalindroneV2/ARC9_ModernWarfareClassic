@@ -12,10 +12,10 @@ Pulling the trigger all the way back fires the weapon in full auto.]]
 SWEP.Trivia = {
     Manufacturer = "Steyr",
     Calibre = "5.56x45mm NATO",
-    Mechanism = "Gas-Operated",
+    Mechanism = "Gas-Operated, open bolt",
     Country = "Austria",
     Year = 1977,
-    Games = [[MW2, BO1, BO4, BOCW]]
+    Games = [[MW2, COD:O, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

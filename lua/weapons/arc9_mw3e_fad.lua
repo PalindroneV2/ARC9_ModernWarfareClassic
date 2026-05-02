@@ -12,10 +12,10 @@ The country was originally intending on purchasing 580,000 AN-94 assault rifles 
 SWEP.Trivia = {
     Manufacturer = "SIMA Electrónica",
     Calibre = "5.56x45mm NATO",
-    Mechanism = "Blowback. Closed Bolt",
+    Mechanism = "Blowback reload, Closed Bolt",
     Country = "Peru",
     Year = 2008,
-    Games = [[Call of Duty: Modern Warfare 3]]
+    Games = [[MW3, Ghosts]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

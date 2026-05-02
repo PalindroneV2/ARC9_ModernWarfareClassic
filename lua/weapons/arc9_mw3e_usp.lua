@@ -8,12 +8,12 @@ SWEP.PrintName = "USP .45"
 SWEP.Class = "Pistol"
 SWEP.Description = [[.45 ACP semi-automatic sidearm with medium capacity and power. Effective at close range.]]
 SWEP.Trivia = {
-    Manufacturer = "Heckler & Kock",
+    Manufacturer = "Heckler & Koch",
     Calibre = ".45 ACP",
     Mechanism = "Short Recoil",
     Country = "Germany",
     Year = 1993,
-    Games = [[COD4, MW2, MW3, MW]]
+    Games = [[COD4, MW3, COD:O, BO6]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

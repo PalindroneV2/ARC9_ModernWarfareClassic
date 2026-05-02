@@ -9,11 +9,11 @@ SWEP.Class = "Sniper Rifle"
 SWEP.Description = [[A high-caliber sniper rifle used by the SAS with some anti-materiel capabilities.]]
 SWEP.Trivia = {
     Manufacturer = "CheyTac USA",
-    Calibre = ".408 CheyTac",
+    Calibre = ".408 Cheyenne Tactical",
     Mechanism = "Bolt-Action",
     Country = "USA",
     Year = 2001,
-    Games = [[Call of Duty: Modern Warfare 2]]
+    Games = [[MW2, COD:O, IW, MWR, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

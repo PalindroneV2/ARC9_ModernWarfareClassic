@@ -6,14 +6,15 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "MG36"
 SWEP.Class = "Light Machine Gun"
-SWEP.Description = [[Belgian light machine gun. Standard squad automatic weapon for the United States armed forces. Paratrooper variant.]]
+SWEP.Description = [[Squad Automatic Weapon variation of the iconic G36 equipped with a heavy barrel for increased heat tolerance and cook-off resistance.
+High rate of fire with solid recoil control.]]
 SWEP.Trivia = {
-    Manufacturer = "Steyr",
+    Manufacturer = "Heckler & Koch",
     Calibre = "5.56x45mm NATO",
     Mechanism = "Short-stroke gas piston",
-    Country = "Austria",
-    Year = 1984,
-    Games = [[MW2, BO1, MW3]]
+    Country = "Germany",
+    Year = 1996,
+    Games = [[MW3, MW19, Mobile, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

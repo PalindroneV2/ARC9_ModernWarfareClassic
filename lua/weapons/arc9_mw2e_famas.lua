@@ -9,11 +9,11 @@ SWEP.Class = "Assault Rifle"
 SWEP.Description = [[A bullpup assault rifle designed and manufactured in France by MAS (Manufacture d'Armes de Saint-Étienne or "Saint-Étienne Weapons Factory" in English) in 1978.
 A year after the Austrian Steyr AUG.]]
 SWEP.Trivia = {
-    Manufacturer = "Colt",
+    Manufacturer = "GIAT Industries",
     Calibre = "5.56x45mm NATO",
-    Mechanism = "Direct Impingement",
-    Country = "USA",
-    Year = 1959,
+    Mechanism = "Lever-delayed blowback",
+    Country = "France",
+    Year = 1978,
     Games = [[COD4, MW2, BO1, MW3, BO2, AW, BO3, MW19, BOCW]]
 }
 SWEP.Credits = {

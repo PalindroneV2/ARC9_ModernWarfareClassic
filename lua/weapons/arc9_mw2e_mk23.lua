@@ -4,17 +4,17 @@ SWEP.Category = "ARC9 - Modern Warfare 2" -- edit this if you like
 SWEP.SubCategory = "Handguns"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "HK Mk 23"
+SWEP.PrintName = "USP .45"
 SWEP.Class = "Pistol"
 SWEP.Description = [[.45 ACP semi-automatic sidearm with medium capacity and power. Effective at close range.
 Developed at the same time as its little brother, the USP]]
 SWEP.Trivia = {
-    Manufacturer = "Heckler & Kock",
+    Manufacturer = "Heckler & Koch",
     Calibre = ".45 ACP",
-    Mechanism = "Short Recoil",
+    Mechanism = "Short recoil, DA/SA, Modified Browning Action, Linkless",
     Country = "Germany",
-    Year = 1993,
-    Games = [[COD4, MW2, MW3, MW]]
+    Year = 1991,
+    Games = [[MW2]]
 }
 SWEP.Credits = {
     Author = "Palindrone"
@@ -305,7 +305,7 @@ SWEP.HookP_NameChange = function(self, name)
 
     local attached = self:GetElements()
 
-    local gunname = "HK Mk 23"
+    local gunname = "Mk 23 MOD 0"
 
     if attached["bo1_pap"] then
         gunname = "Special Operations Commando"
