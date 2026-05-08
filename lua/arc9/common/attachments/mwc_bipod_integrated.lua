@@ -1,8 +1,7 @@
 ATT.PrintName = "Integrated Bipod"
 ATT.CompactName = [[I. BIPOD]]
 ATT.Icon = Material("entities/cod4_generic.png")
-ATT.Description = [[Bipod that goes under the foregrip.
-Belongs to Black Ops II.]]
+ATT.Description = [[Bipod that goes under the foregrip.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 4

@@ -12,10 +12,10 @@ It is almost always referred to as the "M240 Bravo" or just "240" verbally.]]
 SWEP.Trivia = {
     Manufacturer = "FN Herstal",
     Calibre = "7.62x51mm NATO",
-    Mechanism = "Gas-Operated",
+    Mechanism = "Long-stroke gas piston, open bolt",
     Country = "USA",
     Year = 1977,
-    Games = [[MW2]]
+    Games = [[MW2, MW3 (Wii), COD:O]]
 }
 SWEP.Credits = {
     Author = "Palindrone",

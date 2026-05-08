@@ -1,7 +1,8 @@
 ATT.PrintName = [[AUG A3 Rail]]
 ATT.CompactName = [[A3]]
 ATT.Icon = Material("entities/mw2_generic.png")
-ATT.Description = [[AUG A3 rail.]]
+ATT.Description = [[Modernized full-length Picatinny rail for the AUG A3, offering enhanced compatibility with a wide range of optics and accessories.]]
+ATT.CustomCons = {["No iron sights."] = ""}
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false

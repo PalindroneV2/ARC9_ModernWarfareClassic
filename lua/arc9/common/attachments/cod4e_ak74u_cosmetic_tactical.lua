@@ -1,7 +1,7 @@
-ATT.PrintName = "Modernized"
+ATT.PrintName = "AKS-74uM"
 ATT.CompactName = "TAC"
-ATT.Icon = Material("materials/entities/mw2_generic.png")
-ATT.Description = [[Modernized look with railed parts.]]
+ATT.Icon = Material("entities/mw3_generic.png")
+ATT.Description = [[Modernized furniture with railed parts and polymer magazines.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0

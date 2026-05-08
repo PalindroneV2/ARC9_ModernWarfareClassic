@@ -357,15 +357,6 @@ SWEP.Attachments = {
         InstalledElements = {"right_cover"},
     },
     {
-        PrintName = "Tactical Right",
-        DefaultCompactName = "TAC R",
-        Bone = "j_gun",
-        Pos = Vector(6, 1.125, 1.24),
-        Ang = Angle(0, 0, -90),
-        Category = {"cod_tactical"},
-        InstalledElements = {"left_cover"},
-    },
-    {
         PrintName = "Fire Control Group",
         DefaultCompactName = "AUTO",
         Bone = "j_gun",

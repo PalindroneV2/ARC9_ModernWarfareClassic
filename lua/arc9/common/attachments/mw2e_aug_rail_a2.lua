@@ -1,7 +1,8 @@
 ATT.PrintName = [[AUG A2 Rail]]
 ATT.CompactName = [[A2]]
 ATT.Icon = Material("entities/mw2_generic.png")
-ATT.Description = [[AUG A2 rail.]]
+ATT.Description = [[A standard top rail for the AUG A2, allowing for the attachment of various optics and sights.]]
+ATT.CustomCons = {["Rear sight not included."] = ""}
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false

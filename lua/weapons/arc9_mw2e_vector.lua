@@ -8,12 +8,12 @@ SWEP.PrintName = "Vector"
 SWEP.Class = "Submachine Gun"
 SWEP.Description = [[American SMG with a unique recoil absorption system.]]
 SWEP.Trivia = {
-    Manufacturer = "TDI",
+    Manufacturer = "Kriss USA, Inc.",
     Calibre = ".45 ACP",
-    Mechanism = "Gas-Operated",
+    Mechanism = "Off-axis bolt travel blowback, closed bolt",
     Country = "USA",
-    Year = 2006,
-    Games = [[MW2, BO2, Ghosts, COD:O, Mobile, MW19, MWII]]
+    Year = 2009,
+    Games = [[MW2, BO2, Ghosts, COD:O, Mobile, MW19, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

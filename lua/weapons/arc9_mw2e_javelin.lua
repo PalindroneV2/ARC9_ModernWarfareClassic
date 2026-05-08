@@ -11,11 +11,11 @@ Top-attack mode allows the launcher to attack the most vulnerable point of the e
 Will not reliably to target moving aircraft.]]
 SWEP.Trivia = {
     Manufacturer = "Raytheon/Lockheed Martin",
-    Calibre = "Tandem HEAT",
+    Calibre = "Tandem-charge HEAT",
     Mechanism = "Missile",
     Country = "USA",
     Year = 1996,
-    Games = [[COD4, MW2, MW3]]
+    Games = [[COD4, MW2, MW3, MW19, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

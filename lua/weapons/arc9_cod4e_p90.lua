@@ -11,10 +11,10 @@ Great handling and ballistics along with a 50 round capacity, makes this PDW a g
 SWEP.Trivia = {
     Manufacturer = "FN Herstal",
     Calibre = "5.7x28mm",
-    Mechanism = "Gas-Operated",
+    Mechanism = "Straight blowback, closed bolt",
     Country = "Belgium",
     Year = 1990,
-    Games = [[COD4, MW2, MW3, COD:MW]]
+    Games = [[COD4, MW2, MW3, COD:O, MW19, Mobile, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

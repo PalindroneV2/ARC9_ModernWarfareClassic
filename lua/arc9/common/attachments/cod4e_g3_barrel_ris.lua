@@ -1,7 +1,7 @@
 ATT.PrintName = [[RIS Barrel]]
 ATT.CompactName = [[RIS]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
-ATT.Description = [[Long barrel tube.]]
+ATT.Description = [[Modernized handguard with multiple picattiny mounts.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0

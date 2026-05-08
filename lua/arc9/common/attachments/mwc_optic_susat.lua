@@ -3,11 +3,9 @@ ATT.CompactName = [[SUSAT MW2]]
 ATT.Icon = Material("entities/mwc_atts/optics/mw3_acog.png", "mips smooth")
 ATT.Description = [[Medium range combat scope for improved precision at longer ranges.
 Belongs to Modern Warfare 2.]]
-ATT.CustomPros = {
-    ["Zoom Level"] = "4x",
-    ["Backup Irons"] = "True"
-}
-ATT.CustomCons = {}
+ATT.CustomPros = {["Backup Irons"] = "True"}
+ATT.CustomCons = {["Reduced peripheral vision"] = "",
+    ["Obstructive irons"] = ""}
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false
@@ -37,17 +35,17 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(0.015, 7, -2.035),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(0.015, 7, -2.06),
+        Ang = Angle(0.05, 0, 0),
         ViewModelFOV = 50,
-        Magnification = 1,
+        Magnification = 1.25,
         IgnoreExtra = true
     },
     {
         Pos = Vector(0, 6.5, -3.3),
         Ang = Angle(0, -1, 0),
         ViewModelFOV = 50,
-        Magnification = 1.25,
+        Magnification = 1.15,
         IgnoreExtra = false,
         Disassociate = true
     },
@@ -55,7 +53,8 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 8
+ATT.RTScopeMagnification = 4
+ATT.RTScopeNew_ShadowScale = 0.52
 ATT.RTScopeRes = 512
 ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_mwc/scopes/mwc_susat.png", "mips smooth")

@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Short-Stroke Gas Piston, Closed Rotating Bolt",
     Country = "Germany",
     Year = 1996,
-    Games = [[COD4, MW3, MW19]]
+    Games = [[COD4, MW3, COD:O, MW19, Mobile, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

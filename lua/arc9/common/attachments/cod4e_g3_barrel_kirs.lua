@@ -1,7 +1,7 @@
 ATT.PrintName = [[Kurz RIS Barrel]]
 ATT.CompactName = [[KRIS]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
-ATT.Description = [[Medium frame tube.]]
+ATT.Description = [[Chopped down barrel with modernized handguard, featuring multiple picattiny mounts.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0

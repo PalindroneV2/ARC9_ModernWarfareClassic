@@ -14,8 +14,8 @@ SWEP.Trivia = {
     Calibre = "40x46mm HE",
     Mechanism = "Missile",
     Country = "USA",
-    Year = 1981,
-    Games = [[MW2, BO2, BOCW]]
+    Year = 1978,
+    Games = [[MW2, MW3, BO2, COD:O]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

@@ -1,7 +1,7 @@
 ATT.PrintName = [[Short Barrel]]
 ATT.CompactName = [[Short]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
-ATT.Description = [[Short frame tube for LMGs.]]
+ATT.Description = [[Shortened barrel for light machine guns.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0

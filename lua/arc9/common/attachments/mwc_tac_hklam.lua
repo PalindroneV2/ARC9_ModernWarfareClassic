@@ -2,7 +2,7 @@ ATT.PrintName = "HK Mark 23 Prototype Laser Aiming Module"
 ATT.CompactName = [[Mk23 LAM]]
 ATT.Icon = Material("entities/mwc_atts/other/mw3_laser.png", "mips smooth")
 ATT.Description = [[Tacical laser pointer. Tighter aim when firing from hip, less dispersion when moving.
-Belongs to Modern Warfare.]]
+Belongs to Call of Duty 4: Modern Warfare.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 1

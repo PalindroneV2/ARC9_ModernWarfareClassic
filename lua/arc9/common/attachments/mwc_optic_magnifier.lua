@@ -1,4 +1,4 @@
-ATT.PrintName = "EOTech 553 + Magnifier"
+ATT.PrintName = "EOTech EXPS3 + Magnifier"
 ATT.CompactName = [[MAGNIFIER]]
 ATT.Icon = Material("entities/mwc_atts/optics/mw3_holo.png", "mips smooth")
 ATT.Description = [[Typical holograpic sight which uses a holographic reticle for faster sight acquisition Coupled with a 3x Magnifier.
@@ -7,7 +7,7 @@ ATT.CustomPros = {
     ["Clearer sight picture"] = "",
     ["Magnifier"] = "True"
 }
-ATT.CustomCons = {}
+ATT.CustomCons = {["Reduced peripheral vision when magnified."] = ""}
 ATT.SortOrder = 2
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false
@@ -36,14 +36,14 @@ ATT.Sights = {
     {
         Pos = Vector(0, 6, -1.4525),
         Ang = Angle(0, 0, 0),
-        Magnification = 1,
+        Magnification = 1.25,
         ViewModelFOV = 50,
         IgnoreExtra = true,
     },
     {
         Pos = Vector(0, 7.5, -1.45),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.25,
+        Magnification = 1.15,
         ViewModelFOV = 50,
         IgnoreExtra = false,
         ActivateElements = {"magnifier_off"},
@@ -58,11 +58,12 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 8
+ATT.RTScopeMagnification = 4
+ATT.RTScopeNew_ShadowScale = 0.8
 ATT.RTScopeRes = 512
 ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_mwc/scopes/mw3_magnifier.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.95
+ATT.RTScopeReticleScale = 0.45
 ATT.RTScopeShadowIntensity = 1.5
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false

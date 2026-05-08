@@ -1,7 +1,7 @@
 ATT.PrintName = [[Short Barrel]]
 ATT.CompactName = [[Short]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
-ATT.Description = [[Short frame tube for the RPD.]]
+ATT.Description = [[RPD barrel and gas tube chopped down to 14" for CQB missions. A staple of MACV-SOG operators.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0

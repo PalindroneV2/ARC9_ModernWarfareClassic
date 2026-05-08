@@ -11,10 +11,10 @@ Very popular all over the world with civilians, police and is even the standard 
 SWEP.Trivia = {
     Manufacturer = "Glock",
     Calibre = "9x19mm Parabellum",
-    Mechanism = "Short Recoil",
+    Mechanism = "Short Recoil, tilting barrel",
     Country = "Austria",
     Year = 1982,
-    Games = [[MW2, MW3]]
+    Games = [[MW19, MW22, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

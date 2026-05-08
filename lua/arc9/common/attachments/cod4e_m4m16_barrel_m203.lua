@@ -1,7 +1,7 @@
 ATT.PrintName = [[M203 Heatshield]]
 ATT.CompactName = [[HEAT]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
-ATT.Description = [[M203 frame tube.]]
+ATT.Description = [[Classic, heavy duty handguard designed for use with the M203 grenade launcher.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0

@@ -3,10 +3,8 @@ ATT.CompactName = [[ZF 3X4]]
 ATT.Icon = Material("entities/mwc_atts/optics/mw3_acog.png", "mips smooth")
 ATT.Description = [[Medium range combat scope for improved precision at longer ranges.
 Belongs to Modern Warfare 3.]]
-ATT.CustomPros = {
-    ["Zoom Level"] = "4x",
-}
-ATT.CustomCons = {}
+ATT.CustomPros = {}
+ATT.CustomCons = {["Reduced peripheral vision."] = ""}
 ATT.SortOrder = 4
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false
@@ -37,20 +35,22 @@ end
 ATT.Sights = {
     {
         Pos = Vector(-0.0115, 6, -1.125),
-        Ang = Angle(0, 0, 0),
+        Ang = Angle(0.1, 0, 0),
         ViewModelFOV = 50,
-        Magnification = 1,
+        Magnification = 1.25,
         IgnoreExtra = true
     },
 }
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 45
+ATT.RTScopeMagnification = 3
+ATT.RTScopeNew_ShadowScale = 2
+ATT.RTScopeNew_ReticleBlackBox = true
 ATT.RTScopeRes = 512
 ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_mwc/scopes/mw3_acog_m68.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.85
+ATT.RTScopeReticleScale = 0.65
 ATT.RTScopeShadowIntensity = 1.5
 ATT.RTScopeNoPP = false
 ATT.RTScopeColorable = true

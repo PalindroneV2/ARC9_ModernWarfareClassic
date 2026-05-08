@@ -13,7 +13,7 @@ SWEP.Trivia = {
     Calibre = "9x19mm Parabellum",
     Mechanism = "Roller-Delayed Blowback",
     Country = "West Germany",
-    Year = 1964,
+    Year = 1966,
     Games = [[COD4, MW2, BO1, MW3, BO2, MW19, Mobile, BOCW]]
 }
 SWEP.Credits = {

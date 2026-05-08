@@ -1,7 +1,7 @@
 ATT.PrintName = [[Machine Gun Carry Handle]]
 ATT.CompactName = [[MG Handle]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
-ATT.Description = [[Draw time increased.]]
+ATT.Description = [[Carry handle used for carry and quick barrel change. Lightweight metal/polymer construction decreases draw time.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - MWC Attachments"
 ATT.Free = false

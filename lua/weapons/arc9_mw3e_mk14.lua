@@ -5,15 +5,15 @@ SWEP.SubCategory = "Assault Rifles"
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "MK14"
-SWEP.Class = "Battle Rifle"
+SWEP.Class = "Designated Marksman Rifle"
 SWEP.Description = [[Heavily modified M14 rifle put in marksman and sniper roles.]]
 SWEP.Trivia = {
     Manufacturer = "Springfield Armory",
     Calibre = "7.62x51mm NATO",
     Mechanism = "Gas-Operated",
     Country = "USA",
-    Year = 1959,
-    Games = [[COD4, MW2, BO1, MW3, BO2, Ghosts, AW, MW19, Mobile, BOCW]]
+    Year = 2002,
+    Games = [[MW2, MW3, COD:O, Ghosts, MW19, Mobile, MW23]]
 }
 SWEP.Credits = {
     Author = "Palindrone"

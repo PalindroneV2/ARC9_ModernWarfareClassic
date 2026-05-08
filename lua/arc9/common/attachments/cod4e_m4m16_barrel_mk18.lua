@@ -1,7 +1,7 @@
 ATT.PrintName = [[Mk. 18 Barrel]]
 ATT.CompactName = [[Mk. 18]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
-ATT.Description = [[Mk. 18 frame tube.]]
+ATT.Description = [[M4 barrel chopped down to 10.5" with KAC handguard.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0

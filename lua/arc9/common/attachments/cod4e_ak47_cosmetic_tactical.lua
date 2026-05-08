@@ -1,7 +1,7 @@
 ATT.PrintName = "Modernized"
 ATT.CompactName = "TAC"
 ATT.Icon = Material("materials/entities/mw2_generic.png")
-ATT.Description = [[Modernized look with railed parts.]]
+ATT.Description = [[Modernization of the AK-47 utilising foreign parts.]]
 ATT.CustomPros = {}
 ATT.CustomCons = {}
 ATT.SortOrder = 0
