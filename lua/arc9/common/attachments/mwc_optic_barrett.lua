@@ -30,7 +30,7 @@ ATT.Sights = {
     {
         Pos = Vector(-0.012, 6, -1.865),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 45,
+        ViewModelFOV = 40,
         Magnification = 1.25,
         IgnoreExtra = true
     },
@@ -53,8 +53,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeMagnificationMin = 4
 ATT.RTScopeMagnificationMax = 8
-ATT.RTScopeNew_ShadowScale = 0.9
-ATT.RTScopeReticleScale = 1.2
+ATT.RTScopeReticleScale = 1.55
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
 ATT.RTScopeRes = 1024
@@ -63,3 +62,4 @@ ATT.RTScopeReticle = Material("hud/arc9_mwc/scopes/mw3_scope.png", "mips smooth"
 ATT.RTScopeShadowIntensity = 1.5
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
+ATT.RTScopeNew_ReticleBlackBox = true

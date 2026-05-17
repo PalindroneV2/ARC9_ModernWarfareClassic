@@ -37,14 +37,14 @@ ATT.Sights = {
     {
         Pos = Vector(0.015, 7, -2.06),
         Ang = Angle(0.05, 0, 0),
-        ViewModelFOV = 50,
+        ViewModelFOV = 40,
         Magnification = 1.25,
         IgnoreExtra = true
     },
     {
         Pos = Vector(0, 6.5, -3.3),
         Ang = Angle(0, -1, 0),
-        ViewModelFOV = 50,
+        ViewModelFOV = 40,
         Magnification = 1.15,
         IgnoreExtra = false,
         Disassociate = true
@@ -58,7 +58,8 @@ ATT.RTScopeNew_ShadowScale = 0.52
 ATT.RTScopeRes = 512
 ATT.RTScopeSurface = Material("models/weapons/arc9/mw3/mw3_optics/hamr_lens")
 ATT.RTScopeReticle = Material("hud/arc9_mwc/scopes/mwc_susat.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.85
+ATT.RTScopeReticleScale = 1.33
 ATT.RTScopeShadowIntensity = 1.5
 ATT.RTScopeNoPP = false
 ATT.RTScopeColorable = true
+ATT.RTScopeNew_ReticleBlackBox = true

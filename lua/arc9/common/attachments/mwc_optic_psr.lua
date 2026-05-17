@@ -20,9 +20,9 @@ ATT.ActivateElements = {"mw3_psrscope"}
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.025, 8, -4.13),
+        Pos = Vector(0, 8, -4.13),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 35,
+        ViewModelFOV = 20,
         Magnification = 1.25,
         IgnoreExtra = true
     },
@@ -46,7 +46,7 @@ ATT.RTScopeSubmatIndex = 3
 ATT.RTScopeMagnificationMin = 4
 ATT.RTScopeMagnificationMax = 8
 ATT.RTScopeNew_ShadowScale = 0.5
-ATT.RTScopeReticleScale = 1.6
+ATT.RTScopeReticleScale = 2.25
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
 ATT.RTScopeRes = 1024
@@ -55,3 +55,4 @@ ATT.RTScopeReticle = Material("hud/arc9_mwc/scopes/mw3_scope.png", "mips smooth"
 ATT.RTScopeShadowIntensity = 1.5
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
+ATT.RTScopeNew_ReticleBlackBox = true

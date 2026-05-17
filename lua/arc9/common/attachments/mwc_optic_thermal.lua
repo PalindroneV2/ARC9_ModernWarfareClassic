@@ -21,7 +21,7 @@ ATT.Sights = {
     {
         Pos = Vector(0, 7.5, -0.915),
         Ang = Angle(0, 0, 0),
-        ViewModelFOV = 40,
+        ViewModelFOV = 25,
         Magnification = 1.5,
         IgnoreExtra = true
     },
@@ -35,9 +35,10 @@ ATT.RTScopeNew_DisableRTVM = true
 ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("hud/arc9_mwc/scopes/mwc_thermal.png", "mips smooth")
 ATT.RTScopeShadowIntensity = 1.5
-ATT.RTScopeReticleScale = 0.7
+ATT.RTScopeReticleScale = 1.66
 ATT.RTScopeNoPP = false
 ATT.RTScopeNoShadow = false
+ATT.RTScopeNew_ReticleBlackBox = true
 
 ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRSolid = true
