@@ -127,7 +127,7 @@ SWEP.RestoreBreathTime = 10
 SWEP.FreeAimRadius = 0
 SWEP.FreeAimRadiusMultSights = 0
 
-SWEP.RPM = 600
+SWEP.RPM = 500
 SWEP.AmmoPerShot = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -138,7 +138,7 @@ SWEP.ManualActionChamber = 1 -- How many shots we go between needing to cycle ag
 SWEP.ManualAction = true -- Pump/bolt action. Play the "cycle" animation after firing, when the trigger is released.
 SWEP.ManualActionNoLastCycle = false -- Do not cycle on the last shot.
 SWEP.SlamFire = false
-SWEP.CycleTime = 1
+SWEP.CycleTime = 0.89
 
 SWEP.ARC9WeaponCategory = 5
 SWEP.NPCWeight = 100

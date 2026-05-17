@@ -137,7 +137,7 @@ SWEP.ManualActionChamber = 1 -- How many shots we go between needing to cycle ag
 SWEP.ManualAction = true -- Pump/bolt action. Play the "cycle" animation after firing, when the trigger is released.
 SWEP.ManualActionNoLastCycle = false -- Do not cycle on the last shot.
 SWEP.SlamFire = false
-SWEP.CycleTime = 1
+SWEP.CycleTime = 0.89
 
 SWEP.ARC9WeaponCategory = 5
 SWEP.NPCWeight = 100

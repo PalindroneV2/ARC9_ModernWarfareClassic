@@ -126,7 +126,7 @@ SWEP.RestoreBreathTime = 10
 SWEP.FreeAimRadius = 0
 SWEP.FreeAimRadiusMultSights = 0
 
-SWEP.RPM = 750
+SWEP.RPM = 550
 SWEP.AmmoPerShot = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {

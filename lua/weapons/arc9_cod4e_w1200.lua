@@ -73,7 +73,7 @@ SWEP.ClipSize = 7 -- DefaultClip is automatically set.
 SWEP.SupplyLimit = 7
 SWEP.SecondarySupplyLimit = 7
 SWEP.ShotgunReload = true
-SWEP.ReloadTime = 1
+SWEP.ReloadTime = 0.75
 
 SWEP.Crosshair = true
 SWEP.CanBlindFire = false
