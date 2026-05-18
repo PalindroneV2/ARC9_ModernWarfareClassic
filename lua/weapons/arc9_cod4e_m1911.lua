@@ -14,7 +14,7 @@ SWEP.Trivia = {
     Mechanism = "Short recoil operation",
     Country = "USA",
     Year = 1911,
-    Games = [[COD4, WAW, MW2, BO1, MW3, BO2, BO3, BOCW]]
+    Games = [[COD, COD2, COD3, COD4, WAW, MW2, BO1, MW3, BO2, AW, BO3, WWII, Mobile, MW19, BOCW, Vanguard, BO7]]
 }
 SWEP.Credits = {
     Author = "Palindrone"
