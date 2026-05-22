@@ -135,7 +135,7 @@ SWEP.Firemodes = {
 }
 SWEP.ManualActionChamber = 1 -- How many shots we go between needing to cycle again.
 SWEP.ManualAction = true -- Pump/bolt action. Play the "cycle" animation after firing, when the trigger is released.
-SWEP.ManualActionNoLastCycle = false -- Do not cycle on the last shot.
+SWEP.ManualActionNoLastCycle = true -- Do not cycle on the last shot.
 SWEP.SlamFire = false
 SWEP.CycleTime = 0.89
 
@@ -357,7 +357,7 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "cycle",
         Time = 0.93, -- 45 / 30 ; 30 / 30
-        EjectAt = 0.5,
+        EjectAt = 0.3,
         EventTable = {
             {s = "ARC9_MW2E.CheyTac_Open", t = 6 / 30}, -- 9 / 30 ; 6 / 30
             {s = "ARC9_MW2E.CheyTac_Close", t = 20 / 30}, -- 30 / 30 ; 20 / 30
@@ -366,7 +366,7 @@ SWEP.Animations = {
     ["cycle_iron"] = {
         Source = "cycle_ads",
         Time = 0.93, -- 45 / 30 ; 30 / 30
-        EjectAt = 0.5,
+        EjectAt = 0.3,
         EventTable = {
             {s = "ARC9_MW2E.CheyTac_Open", t = 6 / 30}, -- 9 / 30 ; 6 / 30
             {s = "ARC9_MW2E.CheyTac_Close", t = 20 / 30}, -- 30 / 30 ; 20 / 30
@@ -383,6 +383,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         Time = 4.26,
+        EjectAt = 0.6,
         EventTable = {
             {s = "ARC9_MW2E.CheyTac_Open", t = 8 / 30},
             {s = "ARC9_MW2E.CheyTac_MagOut", t = 50 / 30},

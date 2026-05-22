@@ -133,6 +133,7 @@ SWEP.Firemodes = {
     {
         Mode = 1,
         ManualAction = true,
+		ManualActionNoLastCycle = true,
         PrintName = "PUMP",
         EjectDelay = 0.2,
         SpreadMult = 0.8,
@@ -431,7 +432,7 @@ SWEP.Animations = {
             "pump",
         },
         Time = 0.933,
-        EjectAt = 8 / 35,
+        EjectAt = 7 / 35,
         MinProgress = 0.7,
         EventTable = {
             {s = "ARC9_MW3E.SPAS12_Back", t = 8 / 35},
@@ -443,7 +444,7 @@ SWEP.Animations = {
             "pump_ads",
         },
         Time = 0.93,
-        EjectAt = 8 / 35,
+        EjectAt = 7 / 35,
         MinProgress = 0.7,
         EventTable = {
             {s = "ARC9_MW3E.SPAS12_Back", t = 8 / 35},
