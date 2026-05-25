@@ -53,6 +53,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeMagnificationMin = 4
 ATT.RTScopeMagnificationMax = 8
+ATT.RTScopeNew_ShadowScale = 1
 ATT.RTScopeReticleScale = 2.45
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
