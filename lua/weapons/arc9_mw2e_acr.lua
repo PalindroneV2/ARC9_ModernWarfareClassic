@@ -106,8 +106,12 @@ SWEP.VisualRecoilCenter = Vector(0, 0, 0)
 SWEP.VisualRecoilUp = 0.24
 SWEP.VisualRecoilSide = 0.2
 SWEP.VisualRecoilRoll = 1
-SWEP.VisualRecoilPunch = 1.7
-SWEP.VisualRecoilSights = 0.4
+SWEP.VisualRecoilPunch = 2
+-- SWEP.VisualRecoilSights = 0.4
+SWEP.VisualRecoilUpMultSights = 0.2
+SWEP.VisualRecoilSideMultSights = 0.2
+SWEP.VisualRecoilRollMultSights = 1
+SWEP.VisualRecoilPunchMultSights = 1 / 2
 
 SWEP.Speed = 0.95
 
