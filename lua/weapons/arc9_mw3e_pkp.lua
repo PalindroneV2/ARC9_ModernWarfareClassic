@@ -331,7 +331,7 @@ SWEP.Attachments = {
         Pos = Vector(-4, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"mwc_stock_h"},
-        Installed = "mwc_stock_h",
+        Installed = "mwc_stock_heavy",
         Integral = true,
     },
     {
