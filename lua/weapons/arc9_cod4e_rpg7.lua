@@ -329,6 +329,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.1,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_COD4E.RPG_Lift", t = 1 / 30},
             {s = "ARC9_COD4E.RPG_Insert", t = 25 / 30},

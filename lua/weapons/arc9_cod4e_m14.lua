@@ -508,6 +508,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.M14_MagOut", t = 0.6},
             {s = "ARC9_COD4E.M14_MagInTac", t = 1.75}
         },
+        MinProgress = 1.75 / 2.7,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -530,7 +532,6 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
-        MinProgress = 2.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -540,6 +541,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.M14_MagIn", t = 1.75},
             {s = "ARC9_COD4E.M14_Chamber", t = 2.5}
         },
+        MinProgress = 2.5 / 3.5,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -562,7 +565,6 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
-        MinProgress = 2.5,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
@@ -626,7 +628,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.M14_MagOut", t = 0.6},
             {s = "ARC9_COD4E.M14_MagIn", t = 1.5},
         },
-        MinProgress = 2.5,
+        MinProgress = 1.6 / 2.7,
+        FireASAP = 1,
     },
     ["reload_empty_m203"] = {
         Source = "reload_empty_gl",
@@ -641,7 +644,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.M14_MagIn", t = 1.75},
             {s = "ARC9_COD4E.M14_Chamber", t = 2.5}
         },
-        MinProgress = 2.5,
+        MinProgress = 2.5 / 3.5,
+        FireASAP = 1,
     },
     ["enter_sprint_m203"] = {
         Source = "sprint_in_gl",

@@ -368,21 +368,23 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         Time = 2.8,
+        MinProgress = 47 / 84,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.FMG9_MagOut", t = 16 / 30},
             {s = "ARC9_MW3E.FMG9_MagIn", t = 47 / 30},
         },
-        MinProgress = 2,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         Time = 3.25,
+        MinProgress = 65 / 98,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.FMG9_MagOut", t = 16 / 30},
             {s = "ARC9_MW3E.FMG9_MagIn", t = 47 / 30},
             {s = "ARC9_MW3E.FMG9_Chamber", t = 65 / 30},
         },
-        MinProgress = 2.5,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

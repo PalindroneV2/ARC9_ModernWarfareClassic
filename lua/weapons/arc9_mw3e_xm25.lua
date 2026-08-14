@@ -346,7 +346,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.XM25_Hit", t = 2.6},
             {s = "ARC9_MW3E.XM25_Chamber", t = 3},
         },
-        MinProgress = 3.5,
+        MinProgress = 3.2 / 4.4,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

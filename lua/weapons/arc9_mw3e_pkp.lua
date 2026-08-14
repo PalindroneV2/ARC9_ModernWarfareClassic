@@ -421,7 +421,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.PKP_Close", t = 6},
             {s = "ARC9_MW3E.PKP_Chamber", t = 6.75},
         },
-        MinProgress = 7,
+        MinProgress = 3.5 / 8.666,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,

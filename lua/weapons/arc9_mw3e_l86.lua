@@ -418,7 +418,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.L86_Hit", t = 2.4},
             {s = "ARC9_MW3E.L86_Chamber", t = 2.75},
         },
-        MinProgress = 2.0,
+        MinProgress = 2.8 / 4.03,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

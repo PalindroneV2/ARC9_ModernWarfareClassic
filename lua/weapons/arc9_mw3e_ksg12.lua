@@ -456,6 +456,8 @@ SWEP.Animations = {
         Source = "reload_in",
         Time = 40 / 30,
         RestoreAmmo = 1,
+        MinProgress = 20 / 40,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.KSG_Lift", t = 1 / 30},
             {s = "ARC9_MW3E.KSG_In", t = 20 / 30},
@@ -463,7 +465,9 @@ SWEP.Animations = {
     },
     ["reload_insert"] = {
         Source = "reload_loop",
-        Time = 0.74,
+        Time = 24 / 30,
+        MinProgress = 10 / 24,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.KSG_In", t = 10 / 30},
         },
@@ -472,6 +476,8 @@ SWEP.Animations = {
         Source = "reload_in",
         Time = 40 / 30,
         RestoreAmmo = 8,
+        MinProgress = 20 / 40,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.KSG_Lift", t = 1 / 30},
             {s = "ARC9_MW3E.KSG_In", t = 20 / 30},
@@ -479,8 +485,10 @@ SWEP.Animations = {
     },
     ["reload_insert_pap"] = {
         Source = "reload_loop",
-        Time = 0.74,
+        Time = 24 / 30,
         RestoreAmmo = 7,
+        MinProgress = 10 / 24,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.KSG_In", t = 10 / 30},
         },

@@ -461,7 +461,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.MG4_HitCover", t = 7.5},
             {s = "ARC9_MW2E.MG4_Lift", t = 8.5},
         },
-        MinProgress = 8.5,
+        MinProgress = 4 / 9.69,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -498,7 +499,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.MG4_Close", t = 7},
             {s = "ARC9_MW2E.MG4_Lift", t = 8.5},
         },
-        MinProgress = 8.5,
+        MinProgress = 4 / 9.69,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,

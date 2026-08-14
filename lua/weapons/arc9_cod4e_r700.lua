@@ -382,7 +382,8 @@ SWEP.Animations = {
         Time = 60 / 30,
         -- EjectAt = 20 / 30,
         RestoreAmmo = 1,
-        MinProgress = 0.75,
+        MinProgress = 35 / 60,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_COD4E.M40_Start", t = 5 / 30},
             {s = "ARC9_COD4E.M40_In", t = 35 / 30},
@@ -391,7 +392,8 @@ SWEP.Animations = {
     ["reload_insert"] = {
         Source = "reload_loop",
         Time = 26 / 40,
-        MinProgress = 13 / 30,
+        MinProgress = 3 / 26,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_COD4E.M40_In", t = 3 / 30},
         }
@@ -400,7 +402,8 @@ SWEP.Animations = {
         Source = "reload_in",
         Time = 60 / 30,
         RestoreAmmo = 5,
-        MinProgress = 1,
+        MinProgress = 35 / 60,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_COD4E.M40_Start", t = 5 / 30},
             {s = "ARC9_COD4E.M40_In", t = 35 / 30},
@@ -409,7 +412,8 @@ SWEP.Animations = {
     ["reload_insert_pap"] = {
         Source = "reload_loop",
         Time = 26 / 40,
-        MinProgress = 13 / 30,
+        MinProgress = 3 / 26,
+        FireASAP = 1,
         RestoreAmmo = 4,
         EventTable = {
             {s = "ARC9_COD4E.M40_In", t = 3 / 30},

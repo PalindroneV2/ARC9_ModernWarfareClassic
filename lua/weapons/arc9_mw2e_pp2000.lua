@@ -363,7 +363,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.PP2000_MagOut", t = 0.25},
             {s = "ARC9_MW2E.PP2000_MagIn", t = 1.2},
         },
-        MinProgress = 2,
+        MinProgress = 1.2 / 2,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -373,7 +374,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.PP2000_MagIn", t = 1.2},
             {s = "ARC9_MW2E.PP2000_Chamber", t = 1.8}
         },
-        MinProgress = 2.7,
+        MinProgress = 1.8 / 2.7,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

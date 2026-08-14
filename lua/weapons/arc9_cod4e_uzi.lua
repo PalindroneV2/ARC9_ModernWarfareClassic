@@ -409,7 +409,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.UZI_MagOut", t = 0.25},
             {s = "ARC9_COD4E.UZI_MagIn", t = 1.6},
         },
-        MinProgress = 2,
+        MinProgress = 1.6 / 2.5,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -423,7 +424,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.UZI_MagIn", t = 1.6},
             {s = "ARC9_COD4E.UZI_Chamber", t = 2.3}
         },
-        MinProgress = 2.7,
+        MinProgress = 2.4 / 3.36,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

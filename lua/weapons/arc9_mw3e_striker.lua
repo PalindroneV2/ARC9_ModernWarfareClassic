@@ -369,7 +369,8 @@ SWEP.Animations = {
         Source = "reload_in",
         Time = 40 / 30,
         RestoreAmmo = 1, -- loads a shell since the first reload has a shell in animation
-        MinProgress = 1,
+        MinProgress = 21 / 40,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.Striker_Lift", t = 1 / 30},
             {s = "ARC9_MW3E.Striker_Shell", t = 21 / 30},
@@ -379,7 +380,8 @@ SWEP.Animations = {
         Source = "reload_in",
         Time = 40 / 30,
         RestoreAmmo = 12, -- loads a shell since the first reload has a shell in animation
-        MinProgress = 1,
+        MinProgress = 21 / 40,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.Striker_Lift", t = 1 / 30},
             {s = "ARC9_MW3E.Striker_Shell", t = 21 / 30},
@@ -387,16 +389,18 @@ SWEP.Animations = {
     },
     ["reload_insert"] = {
         Source = "reload_loop",
-        Time = 0.9,
-        MinProgress = 15 / 30,
+        Time = 27 / 30,
+        MinProgress = 10 / 27,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.Striker_Shell", t = 10 / 30},
         },
     },
     ["reload_insert_pap"] = {
         Source = "reload_loop",
-        Time = 0.9,
-        MinProgress = 15 / 30,
+        Time = 27 / 30,
+        MinProgress = 10 / 27,
+        FireASAP = 1,
         RestoreAmmo = 11,
         EventTable = {
             {s = "ARC9_MW3E.Striker_Shell", t = 10 / 30},

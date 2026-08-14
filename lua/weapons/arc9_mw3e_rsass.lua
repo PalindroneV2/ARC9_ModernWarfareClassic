@@ -472,6 +472,8 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         Time = 2.7,
+        MinProgress = 1.85 / 2.7,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.RSASS_MagOut", t = 0.75},
             {s = "ARC9_MW3E.RSASS_MagIn", t = 1.75}
@@ -498,11 +500,12 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
-        MinProgress = 2.5,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         Time = 2.96,
+        MinProgress = 2.45 / 2.96,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_MW3E.RSASS_MagOut", t = 0.75},
             {s = "ARC9_MW3E.RSASS_MagIn", t = 1.75},
@@ -530,7 +533,6 @@ SWEP.Animations = {
                 rhik = 1
             },
         },
-        MinProgress = 2.5,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

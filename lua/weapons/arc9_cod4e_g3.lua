@@ -476,37 +476,12 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         Time = 3.23,
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.85,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.95,
-                lhik = 1,
-                rhik = 0
-            },
-        },
         EventTable = {
             {s = "ARC9_COD4E.G3_MagOut", t = 0.15},
             {s = "ARC9_COD4E.G3_MagIn", t = 1.75}
         },
-        MinProgress = 2.5,
-    },
-    ["reload_empty"] = {
-        Source = "reload_empty",
-        Time = 4.46,
+        MinProgress = 2 / 3.23,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -529,13 +504,40 @@ SWEP.Animations = {
                 rhik = 0
             },
         },
+    },
+    ["reload_empty"] = {
+        Source = "reload_empty",
+        Time = 4.46,
         EventTable = {
             {s = "ARC9_COD4E.G3_Chamber", t = 0.1},
             {s = "ARC9_COD4E.G3_MagOut", t = 0.9},
             {s = "ARC9_COD4E.G3_MagIn", t = 2.45},
             {s = "ARC9_COD4E.G3_Chamber", t = 3.5}
         },
-        MinProgress = 4,
+        MinProgress = 3.7 / 4.46,
+        FireASAP = 1,
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.85,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
+                lhik = 1,
+                rhik = 0
+            },
+        },
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
@@ -581,7 +583,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.G3_MagOut", t = 0.15},
             {s = "ARC9_COD4E.G3_MagIn", t = 1.75}
         },
-        MinProgress = 2.5,
+        MinProgress = 2 / 3.23,
+        FireASAP = 1,
     },
     ["reload_empty_m203"] = {
         Source = "reload_empty_gl",
@@ -592,7 +595,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.G3_MagIn", t = 2.45},
             {s = "ARC9_COD4E.G3_Chamber", t = 3.5}
         },
-        MinProgress = 4,
+        MinProgress = 3.7 / 4.46,
+        FireASAP = 1,
     },
     ["enter_sprint_m203"] = {
         Source = "sprint_in_gl",

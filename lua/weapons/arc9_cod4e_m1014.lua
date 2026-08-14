@@ -399,7 +399,8 @@ SWEP.Animations = {
         Time = 40 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_MAGIC,
         RestoreAmmo = 1,
-        MinProgress = 1,
+        MinProgress = 21 / 40,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_COD4E.M1014_Lift", t = 1 / 30},
             {s = "ARC9_COD4E.M1014_Shell", t = 21 / 30},
@@ -410,7 +411,8 @@ SWEP.Animations = {
         Time = 40 / 30,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_MAGIC,
         RestoreAmmo = 12,
-        MinProgress = 1,
+        MinProgress = 21 / 40,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_COD4E.M1014_Lift", t = 1 / 30},
             {s = "ARC9_COD4E.M1014_Shell", t = 21 / 30},
@@ -418,20 +420,22 @@ SWEP.Animations = {
     },
     ["reload_insert"] = {
         Source = "reload_loop",
-        Time = 0.75,
+        Time = 30 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_MAGIC,
         TPAnimStartTime = 0.3,
-        MinProgress = 15 / 30,
+        MinProgress = 10 / 30,
+        FireASAP = 1,
         EventTable = {
             {s = "ARC9_COD4E.M1014_Shell", t = 10 / 30},
         },
     },
     ["reload_insert_pap"] = {
         Source = "reload_loop",
-        Time = 0.9,
+        Time = 30 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_MAGIC,
         TPAnimStartTime = 0.3,
-        MinProgress = 15 / 30,
+        MinProgress = 10 / 30,
+        FireASAP = 1,
         RestoreAmmo = 12,
         EventTable = {
             {s = "ARC9_COD4E.M1014_Shell", t = 10 / 30},

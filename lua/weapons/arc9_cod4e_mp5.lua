@@ -414,7 +414,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.MP5_MagOut", t = 0.25},
             {s = "ARC9_COD4E.MP5_MagIn", t = 1.6},
         },
-        MinProgress = 2,
+        MinProgress = 1.7 / 2.5,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -446,7 +447,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.MP5_MagIn", t = 1.6},
             {s = "ARC9_COD4E.MP5_Chamber", t = 2.2}
         },
-        MinProgress = 2.7,
+        MinProgress = 2.4 / 3.36,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,

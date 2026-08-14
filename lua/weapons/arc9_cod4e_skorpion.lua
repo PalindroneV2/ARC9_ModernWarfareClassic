@@ -372,21 +372,19 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.Skorpion_MagOut", t = 0.25},
             {s = "ARC9_COD4E.Skorpion_MagIn", t = 1.6},
         },
-        MinProgress = 2,
+        MinProgress = 1.7 / 2.5,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
         Time = 3.36,
-        TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0.2,
         EventTable = {
             {s = "ARC9_COD4E.Skorpion_MagOut", t = 0.25},
             {s = "ARC9_COD4E.Skorpion_MagIn", t = 1.7},
             {s = "ARC9_COD4E.Skorpion_Chamber", t = 2.3}
         },
-        MinProgress = 2.7,
+        MinProgress = 2.3 / 3.36,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

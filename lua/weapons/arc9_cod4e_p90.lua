@@ -391,17 +391,18 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 3.1,
+        Time = 93 / 30,
         EventTable = {
             {s = "ARC9_COD4E.P90_MagOut", t = 10 / 30},
             {s = "ARC9_COD4E.P90_MagIn", t = 50 / 30},
             {s = "ARC9_COD4E.P90_Hit", t = 60 / 30},
         },
-        MinProgress = 70 / 30,
+        MinProgress = 60 / 93,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 3.6,
+        Time = 108 / 30,
         EventTable = {
             {s = "ARC9_COD4E.P90_MagOut", t = 10 / 30},
             {s = "ARC9_COD4E.P90_MagIn", t = 50 / 30},
@@ -409,6 +410,7 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.P90_Chamber", t = 80 / 30},
         },
         MinProgress = 85 / 30,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

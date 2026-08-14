@@ -483,16 +483,16 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.M1887_Lift", t = 1 / 30},
             {s = "ARC9_MW3E.M1887_Open", t = 8 / 30},
         },
-        MinProgress = 20 / 30,
     },
     ["reload_insert"] = {
         Source = "reload_loop_b",
-        Time = 0.75,
-        RestoreAmmo = 1,
+        Time = 24 / 30,
+        RestoreAmmo = 0,
         EventTable = {
             {s = "ARC9_MW3E.M1887_Shell", t = 10 / 30},
         },
-        MinProgress = 10 / 30,
+        MinProgress = 10 / 24,
+        FireASAP = 1,
     },
     ["reload_finish"] = {
         Source = "reload_out_b",
@@ -509,15 +509,15 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.M1887_Lift", t = 1 / 30},
             {s = "ARC9_MW3E.M1887_Open", t = 8 / 30},
         },
-        MinProgress = 20 / 30,
     },
     ["reload_insert_right"] = {
         Source = "reload_loop_b1",
-        Time = 0.75,
+        Time = 24 / 30,
         EventTable = {
             {s = "ARC9_MW3E.M1887_Shell", t = 10 / 30},
         },
-        MinProgress = 10 / 30,
+        MinProgress = 10 / 24,
+        FireASAP = 1,
     },
     ["reload_finish_right"] = {
         Source = "reload_out_b1",
@@ -534,15 +534,15 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.M1887_Lift", t = 1 / 30},
             {s = "ARC9_MW3E.M1887_Open", t = 8 / 30},
         },
-        MinProgress = 20 / 30,
     },
     ["reload_insert_left"] = {
         Source = "reload_loop_b2",
-        Time = 0.75,
+        Time = 24 / 30,
         EventTable = {
             {s = "ARC9_MW3E.M1887_Shell", t = 10 / 30},
         },
-        MinProgress = 10 / 30,
+        MinProgress = 10 / 24,
+        FireASAP = 1,
     },
     ["reload_finish_left"] = {
         Source = "reload_out_b2",
