@@ -178,20 +178,17 @@ SWEP.NoShellEject = true
 SWEP.NoShellEjectManualAction = true
 
 SWEP.BulletBones = {
-    [0] = "j_bullets0",
-    [1] = "j_bullets1",
-    [2] = "j_bullets2",
-    [3] = "j_bullets3",
-    [4] = "j_bullets4",
-    [5] = "j_bullets5",
-    [6] = "j_bullets6",
-    [7] = "j_bullets7",
-    [8] = "j_bullets8",
-    [9] = "j_bullets9",
-    [10] = "j_bullets10",
-    [11] = "j_bullets11",
-    [12] = "j_bullets12",
-    [13] = "j_bullets13",
+    [1] = "j_bullets0",
+    [2] = "j_bullets1",
+    [3] = "j_bullets2",
+    [4] = "j_bullets3",
+    [5] = "j_bullets4",
+    [6] = "j_bullets5",
+    [7] = "j_bullets6",
+    [8] = "j_bullets7",
+    [9] = "j_bullets8",
+    [10] = "j_bullets9",
+    [11] = "j_bullets10",
 }
 
 SWEP.ProceduralRegularFire = false
@@ -429,7 +426,9 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         Time = 281 / 35,
-        LastClip1OutTime = 110 / 35,
+        MinProgress = 200 / 281,
+        FireASAP = 1,
+        MagSwapTime = 110 / 35,
         EventTable = {
             {s = "ARC9_COD4E.M60_Chamber", t = 17 / 35},
             {s = "ARC9_COD4E.M60_Open", t = 57 / 35},
@@ -465,7 +464,9 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload",
         Time = 281 / 35,
-        LastClip1OutTime = 110 / 35,
+        MinProgress = 200 / 281,
+        FireASAP = 1,
+        MagSwapTime = 110 / 35,
         EventTable = {
             {s = "ARC9_COD4E.M60_Chamber", t = 17 / 35},
             {s = "ARC9_COD4E.M60_Open", t = 57 / 35},

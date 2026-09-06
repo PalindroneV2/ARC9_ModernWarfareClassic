@@ -469,6 +469,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.P99_MagOut", t = 0.25},
             {s = "ARC9_MW3E.P99_MagIn", t = 1}
         },
+        MinProgress = 1.1 / 1.5,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -478,6 +480,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.P99_MagIn", t = 1},
             {s = "ARC9_MW3E.P99_Chamber", t = 1.5}
         },
+        MinProgress = 1.6 / 2,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
@@ -560,6 +564,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.P99_MagOut", t = 0.25},
             {s = "ARC9_MW3E.P99_MagIn", t = 1}
         },
+        MinProgress = 1.1 / 1.5,
+        FireASAP = 1,
     },
     ["reload_empty_k"] = {
         Source = "reload_empty_k",
@@ -569,6 +575,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.P99_MagIn", t = 1},
             {s = "ARC9_MW3E.P99_Chamber", t = 1.5}
         },
+        MinProgress = 1.6 / 2,
+        FireASAP = 1,
     },
     ["enter_sprint_k"] = {
         Source = "sprint_in_k",
@@ -654,7 +662,7 @@ SWEP.Animations = {
         EjectAt = 1 / 30,
     },
     ["fire_iron_empty_m"] = {
-        Source = "fire_last_ads_m",
+        Source = "fire_last_m",
         Time = 8 / 30,
         EjectAt = 1 / 30,
     },
@@ -669,6 +677,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.P99_MagOut", t = 0.25},
             {s = "ARC9_MW3E.P99_MagIn", t = 1}
         },
+        MinProgress = 1.1 / 1.5,
+        FireASAP = 1,
     },
     ["reload_empty_m"] = {
         Source = "reload_empty_m",
@@ -682,6 +692,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.P99_MagIn", t = 1},
             {s = "ARC9_MW3E.P99_Chamber", t = 1.5}
         },
+        MinProgress = 1.6 / 2,
+        FireASAP = 1,
     },
     ["enter_sprint_m"] = {
         Source = "sprint_in_m",

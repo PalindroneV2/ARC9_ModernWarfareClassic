@@ -447,6 +447,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.FNFAL_MagOut", t = 0.75},
             {s = "ARC9_MW2E.FNFAL_MagIn", t = 1.5},
         },
+        MinProgress = 1.7 / 2.7,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -478,6 +480,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.FNFAL_MagIn", t = 1.5},
             {s = "ARC9_MW2E.FNFAL_Chamber", t = 2.05},
         },
+        MinProgress = 2.25 / 3.26,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
@@ -526,6 +530,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.FNFAL_MagOut", t = 0.75},
             {s = "ARC9_MW2E.FNFAL_MagIn", t = 1.5},
         },
+        MinProgress = 1.7 / 2.7,
+        FireASAP = 1,
     },
     ["reload_empty_gl"] = {
         Source = "reload_empty_gl",
@@ -535,6 +541,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.FNFAL_MagIn", t = 1.5},
             {s = "ARC9_MW2E.FNFAL_Chamber", t = 2.05},
         },
+        MinProgress = 2.25 / 3.26,
+        FireASAP = 1,
     },
     ["enter_sprint_gl"] = {
         Source = "sprint_in_gl",
@@ -582,6 +590,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.FNFAL_MagOut", t = 0.75},
             {s = "ARC9_MW2E.FNFAL_MagIn", t = 1.5},
         },
+        MinProgress = 1.7 / 2.7,
+        FireASAP = 1,
     },
     ["reload_empty_mk"] = {
         Source = "reload_empty_mk",
@@ -591,6 +601,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.FNFAL_MagIn", t = 1.5},
             {s = "ARC9_MW2E.FNFAL_Chamber", t = 2.05},
         },
+        MinProgress = 2.25 / 3.26,
+        FireASAP = 1,
     },
     ["enter_sprint_mk"] = {
         Source = "sprint_in_mk",

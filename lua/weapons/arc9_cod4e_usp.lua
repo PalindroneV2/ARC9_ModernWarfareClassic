@@ -377,6 +377,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.1911_Out", t = 0.25},
             {s = "ARC9_COD4E.1911_In", t = 1}
         },
+        MinProgress = 1.1 / 1.5,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -386,6 +388,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.1911_In", t = 1},
             {s = "ARC9_COD4E.1911_Chamber", t = 1.5}
         },
+        MinProgress = 1.6 / 2,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

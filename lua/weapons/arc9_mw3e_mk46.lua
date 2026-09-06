@@ -193,7 +193,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     [15] = "j_ammo_015",
     [16] = "j_ammo_016",
     [17] = "j_ammo_017",
-    [18] = "j_ammo_18",
+    [18] = "j_ammo_018",
 }
 
 SWEP.ProceduralRegularFire = false
@@ -439,8 +439,9 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.MK46_Close", t = 6},
             {s = "ARC9_MW3E.MK46_Chamber", t = 6.75},
         },
-        MinProgress = 3 / 8.666,
+        MinProgress = 6.75 / 8.666,
         FireASAP = 1,
+        MagSwapTime = 3,
         IKTimeLine = {
             {
                 t = 0,
@@ -476,8 +477,9 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.MK46_Close", t = 6},
             {s = "ARC9_MW3E.MK46_Chamber", t = 6.75},
         },
-        MinProgress = 3 / 8.666,
+        MinProgress = 6.75 / 8.666,
         FireASAP = 1,
+        MagSwapTime = 3,
         IKTimeLine = {
             {
                 t = 0,

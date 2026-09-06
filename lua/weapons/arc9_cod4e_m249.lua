@@ -476,6 +476,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.M249_In", t = 3.25},
             {s = "ARC9_COD4E.M249_Close", t = 4.25},
         },
+        MinProgress = 4.25 / 5.16,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -510,6 +512,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.M249_In", t = 3.25},
             {s = "ARC9_COD4E.M249_Close", t = 4.25},
         },
+        MinProgress = 4.25 / 5.16,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,

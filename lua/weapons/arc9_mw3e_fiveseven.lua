@@ -374,6 +374,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.FiveSeven_MagOut", t = 0.25},
             {s = "ARC9_MW3E.FiveSeven_MagIn", t = 1}
         },
+        MinProgress = 1.2 / 1.76,
+        FireASAP = 1,
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -384,6 +386,8 @@ SWEP.Animations = {
             {s = "ARC9_MW3E.FiveSeven_Open", t = 1.6},
             {s = "ARC9_MW3E.FiveSeven_Chamber", t = 1.75}
         },
+        MinProgress = 1.85 / 2.46,
+        FireASAP = 1,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",

@@ -451,6 +451,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.Elite_Out", t = 0.25},
             {s = "ARC9_COD4E.Elite_In", t = 0.5}
         },
+        MinProgress = 1.1 / 1.5,
+        FireASAP = 1,
     },
     ["elite_reload_empty"] = {
         Source = "reload_empty",
@@ -460,5 +462,7 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.Elite_In", t = 0.5},
             {s = "ARC9_COD4E.Elite_Chamber", t = 1.5}
         },
+        MinProgress = 1.6 / 2,
+        FireASAP = 1,
     },
 }

@@ -311,7 +311,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         Bone = "j_reload",
-        Pos = Vector(-6, 0.25, 0.6),
+        Pos = Vector(-6, 0.3125, 0.6),
         Ang = Angle(0, 0, 0),
         Category = {"cod_optic", "cod_rail_riser"},
         InstalledElements = {"mount"},
@@ -461,7 +461,7 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.MG4_HitCover", t = 7.5},
             {s = "ARC9_MW2E.MG4_Lift", t = 8.5},
         },
-        MinProgress = 4 / 9.69,
+        MinProgress = 7 / 9.69,
         FireASAP = 1,
         IKTimeLine = {
             {
@@ -499,7 +499,7 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.MG4_Close", t = 7},
             {s = "ARC9_MW2E.MG4_Lift", t = 8.5},
         },
-        MinProgress = 4 / 9.69,
+        MinProgress = 7 / 9.69,
         FireASAP = 1,
         IKTimeLine = {
             {

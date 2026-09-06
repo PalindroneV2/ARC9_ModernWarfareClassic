@@ -458,6 +458,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.F2000_MagOut", t = 18 / 35},
             {s = "ARC9_MW2E.F2000_MagIn", t = 58 / 35},
         },
+        MinProgress = 2 / 2.6,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -490,6 +492,8 @@ SWEP.Animations = {
             {s = "ARC9_MW2E.F2000_MagIn", t = 58 / 35},
             {s = "ARC9_MW2E.F2000_Chamber", t = 80 / 35},
         },
+        MinProgress = 2.75 / 3.2,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,

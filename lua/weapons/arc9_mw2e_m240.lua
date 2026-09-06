@@ -443,6 +443,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.RPD_Close", t = 200 / 35},
             {s = "ARC9_COD4E.RPD_Hit", t = 210 / 35},
         },
+        MinProgress = 200 / 281,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
@@ -478,6 +480,8 @@ SWEP.Animations = {
             {s = "ARC9_COD4E.RPD_Close", t = 200 / 35},
             {s = "ARC9_COD4E.RPD_Hit", t = 210 / 35},
         },
+        MinProgress = 200 / 281,
+        FireASAP = 1,
         IKTimeLine = {
             {
                 t = 0,
