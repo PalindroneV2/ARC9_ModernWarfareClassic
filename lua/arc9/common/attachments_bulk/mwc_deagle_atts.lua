@@ -253,7 +253,8 @@ ATT.Ammo = "357"
 ATT.DamageMaxMult = 2
 ATT.DamageMinMult = 3
 
-ATT.SpreadMult = 0.75
+ATT.SpreadAdd = -0.033
+ATT.SpreadMultShooting = 0.8
 ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 2.5
 
@@ -280,6 +281,7 @@ ATT.ExplosionEffect = "ManhackSparks"
 
 ATT.Trivia = {
     Manufacturer = "Misriah Armory",
+    Description = "The M6D is a recoil-operated, magazine-fed handgun, chambered in 12.7x40mm ammunition-typically employed with semi-armor-piercing, high-explosive (SAPHE) rounds-and feeding from 12-round detachable box magazines. The weapon is capable of both semi-automatic and automatic firing, which is somewhat unusual for a handgun. The M6D is one of the M6 series' upscaled variants, being larger than normal M6s by approximately 117%",
     Calibre = "12.7x40mm SAPHE",
     Mechanism = "Short Recoil / Semi-Automatic",
     Country = "Mars",

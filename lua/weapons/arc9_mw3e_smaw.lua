@@ -229,10 +229,11 @@ SWEP.SprintVerticalOffset = false
 SWEP.SprintPos = Vector(0, 0, -1)
 SWEP.SprintAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(-3, 40, 4)
+SWEP.CustomizePos = Vector(-3, 45, 4)
 SWEP.CustomizeAng = Angle(80, -15, 15)
 SWEP.CustomizeSnapshotPos = Vector(-2.5, 30, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(-3, -6, -10) -- Guess what?
 
 SWEP.BarrelLength = 0 -- = 25
 

@@ -219,6 +219,7 @@ SWEP.SprintAng = SWEP.ActiveAng
 
 SWEP.CustomizePos = Vector(8.5, 30, 4.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(8.5, -3, -3.5)
 
 SWEP.BarrelLength = 0 -- = 25
 

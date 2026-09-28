@@ -223,7 +223,8 @@ SWEP.SprintAng = Angle(0, 0, 0)
 SWEP.CustomizePos = Vector(16, 25, 3.33)
 SWEP.CustomizeAng = Angle(90, 0, -1.5)
 SWEP.CustomizeSnapshotPos = Vector(0, -5, 2)
-SWEP.CustomizeSnapshotAng = Angle(0,0,0)
+SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(16, -3, -3.5)
 
 SWEP.BarrelLength = 0 -- = 9
 
@@ -232,14 +233,14 @@ SWEP.ExtraSightDist = 15
 SWEP.AttachmentElements = {
     ["halomagnum"] = {
         Bodygroups  = {
-            {0,1},
-            {1,1},
-            {3,1},
+            {0, 1},
+            {1, 1},
+            {3, 1},
         }
     },
     ["mwc_boloknife"] = {
         Bodygroups  = {
-            {4,1},
+            {4, 1},
         }
     },
     ["rail_lamp"] = {
@@ -271,12 +272,32 @@ SWEP.IronSightsHook = function(self)
     end
 
     if attached["halomagnum"] then
-            newpos = Vector(0, -3, -2)
-            newang = Angle(0, 0, 0)
-            magni = 2
+        newpos = Vector(0, -3, -2)
+        newang = Angle(0, 0, 0)
+        magni = 2
     end
 
     return {Pos = newpos, Ang = newang, Magnification = magni, ViewModelFOV = 60, CrosshairInSights = false,}
+end
+
+SWEP.CustomizePosHook = function(self)
+    local attached = self:GetElements()
+    local newCustPose
+    local newSnapPose = Vector(5, -8, 0)
+    if attached["mwc_boloknife"] then
+        newCustPose = Vector(20, 27.5, 2)
+        newSnapPose = Vector(-1, -8, 0)
+    end
+    self.CustomizeSnapshotPos = newSnapPose
+    return newCustPose
+end
+SWEP.CustomizeSnapshotPosHook = function(self)
+    local attached = self:GetElements()
+    local newSnapPose
+    if attached["mwc_boloknife"] then
+        newSnapPose = Vector(-20, -8, 0)
+    end
+    return newSnapPose
 end
 
 SWEP.Hook_ModifyBodygroups = function(self, data)

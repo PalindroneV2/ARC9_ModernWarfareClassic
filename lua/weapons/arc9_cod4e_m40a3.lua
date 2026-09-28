@@ -204,7 +204,7 @@ SWEP.ActivePos = Vector(0, 0, -1)
 SWEP.ActiveAng = Angle(0, 0, -5)
 
 SWEP.BipodPos = Vector(-4.2, 0, -2)
-SWEP.BipodAng = Angle(0,0,0)
+SWEP.BipodAng = Angle(0, 0, 0)
 
 local movingoffset = Vector(0, -0.25, -0.25)
 SWEP.MovingPos = movingoffset
@@ -228,6 +228,7 @@ SWEP.SprintAng = SWEP.ActiveAng
 SWEP.CustomizePos = Vector(16, 33.5, 3.75)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotFOV = 100
+SWEP.CustomizeRotateAnchor = Vector(16, -4, -3.5)
 
 SWEP.BarrelLength = 0 -- = 25
 

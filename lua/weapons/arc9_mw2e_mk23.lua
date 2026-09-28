@@ -226,6 +226,7 @@ SWEP.CustomizePos = Vector(14, 27.5, 3)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(5,-8, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(14, -2.5, -3.5)
 
 SWEP.BarrelLength = 0 -- = 9
 
@@ -255,10 +256,10 @@ end
 SWEP.CustomizePosHook = function(self)
     local attached = self:GetElements()
     local newCustPose
-    local newSnapPose = Vector(5,-8, 0)
+    local newSnapPose = Vector(5, -8, 0)
     if attached["mwc_boloknife"] then
-        newCustPose = Vector(20, 25, 3)
-        newSnapPose = Vector(-1,-8, 0)
+        newCustPose = Vector(20, 30, 2)
+        newSnapPose = Vector(-1, -8, 0)
     end
     self.CustomizeSnapshotPos = newSnapPose
     return newCustPose

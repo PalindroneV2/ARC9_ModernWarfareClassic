@@ -245,8 +245,9 @@ SWEP.SprintVerticalOffset = false
 SWEP.SprintPos = SWEP.ActivePos
 SWEP.SprintAng = SWEP.ActiveAng
 
-SWEP.CustomizePos = Vector(19.5, 30, 4.5)
+SWEP.CustomizePos = Vector(19.5, 32.5, 4.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(19.5, -3.75, -3.5)
 
 SWEP.BarrelLength = 0 -- = 25
 
@@ -361,6 +362,7 @@ SWEP.Attachments = {
         Pos = Vector(-4, 0, 2),
         Ang = Angle(0, 0, 0),
         Category = {"mwc_stock_lm"},
+        Installed = "mwc_stock_medium",
     },
     {
         PrintName = "Perk",

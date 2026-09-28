@@ -194,6 +194,7 @@ SWEP.SprintAng = Angle(0, 0, -5)
 
 SWEP.CustomizePos = Vector(5, 30, 10)
 SWEP.CustomizeAng = Angle(35, -50, 0)
+SWEP.CustomizeRotateAnchor = Vector(6, 1, 0) -- Same issue as the Black Ops Pack frag.
 
 SWEP.RestPos = Vector(0, 0, 0)
 SWEP.RestAng = Angle(0, 0, 0)

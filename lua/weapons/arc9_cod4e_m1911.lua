@@ -219,7 +219,8 @@ SWEP.SprintAng = SWEP.ActiveAng
 SWEP.CustomizePos = Vector(14, 25, 3.5)
 SWEP.CustomizeAng = Angle(90, 0, -1.5)
 SWEP.CustomizeSnapshotPos = Vector(0, -5, 2)
-SWEP.CustomizeSnapshotAng = Angle(0,0,0)
+SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(14, -2.5, -3.5)
 
 SWEP.BarrelLength = 0 -- = 9
 
@@ -271,7 +272,7 @@ SWEP.HookP_NameChange = function(self, name)
 
     local attached = self:GetElements()
 
-    local gunname = "1911-A1"
+    local gunname = "M1911-A1"
 
     if attached["bo1_pap"] then
         gunname = "Pain"

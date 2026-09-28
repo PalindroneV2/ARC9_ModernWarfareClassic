@@ -245,6 +245,7 @@ SWEP.CustomizePos = Vector(21, 37.5, 5.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeSnapshotPos = Vector(3.5, 10, 0)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(21, -4, -7.5)
 
 SWEP.BarrelLength = 0 -- = 25
 
@@ -322,7 +323,7 @@ SWEP.Attachments = {
         Hidden = true,
         PrintName = "Optic",
         Bone = "j_reload",
-        Pos = Vector(0,0,0),
+        Pos = Vector(0, 0, 0),
         -- Pos = Vector(-8.15, 0.3, -4.6),
         Ang = Angle(0, 0, 0),
         Category = {"mw2_mg4_scope"},

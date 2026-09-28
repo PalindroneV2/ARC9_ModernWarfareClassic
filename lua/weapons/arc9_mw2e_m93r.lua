@@ -245,13 +245,15 @@ SWEP.SprintAng = SWEP.ActiveAng
 SWEP.CustomizePos = Vector(14.5, 27.5, 3)
 SWEP.CustomizeAng = Angle(90, 0, -1.5)
 SWEP.CustomizeSnapshotPos = Vector(0, -5, 2)
-SWEP.CustomizeSnapshotAng = Angle(0,0,0)
--- SWEP.CustomizeAngHook = function(self)
---     local attached = self:GetElements()
---     if attached["fcg_bst"] then
---         return Angle(90,0,0)
---     end
--- end
+SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(14.5, -2.25, -3.5)
+
+SWEP.CustomizeAngHook = function(self)
+    local attached = self:GetElements()
+    if attached["fcg_bst"] then
+        return Angle(90, 0, 0)
+    end
+end
 
 SWEP.BarrelLength = 0 -- = 9
 
@@ -282,7 +284,7 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     local color = 0
     local serration = 0
     local snapPos = Vector(0, -5, 2)
-    local snapAng = Angle(0,0,0)
+    local snapAng = Angle(0, 0, 0)
     if attached["stars"] then
         color = 2
         serration = serration + 1

@@ -224,6 +224,7 @@ SWEP.SprintAng = Angle(0, 0, -5)
 
 SWEP.CustomizePos = Vector(11, 32.5, 3.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(11, -2.75, -3.5)
 
 SWEP.RestPos = Vector(0, 0, -1)
 SWEP.RestAng = Angle(0, 0, -5)
