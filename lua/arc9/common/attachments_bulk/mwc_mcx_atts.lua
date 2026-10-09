@@ -1,5 +1,7 @@
 local ATT = {}
 
+ATT = {}
+
 ATT.PrintName = [[LT 5.56mm NATO Conversion]]
 ATT.CompactName = [[5.56mm/30 RND]]
 ATT.Icon = Material("entities/mw3_generic.png")
@@ -53,7 +55,9 @@ ATT.Trivia = {
 
 ARC9.LoadAttachment(ATT, "mwc_mcx_ltmod")
 
+
 ATT = {}
+
 ATT.PrintName = [[Matech Flip=Up Irons]]
 ATT.CompactName = [[MATECH]]
 ATT.Icon = Material("entities/mw2_generic.png")
@@ -68,7 +72,9 @@ ATT.ActivateElements = {"matech"}
 
 ARC9.LoadAttachment(ATT, "mwc_mcx_altirons_matech")
 
+
 ATT = {}
+
 ATT.PrintName = [[HK Diopter Irons]]
 ATT.CompactName = [[HK]]
 ATT.Icon = Material("entities/mw2_generic.png")
@@ -83,7 +89,9 @@ ATT.ActivateElements = {"hkirons"}
 
 ARC9.LoadAttachment(ATT, "mwc_mcx_altirons_hk")
 
+
 ATT = {}
+
 ATT.PrintName = [[XM7 Barrel]]
 ATT.CompactName = [[XM7]]
 ATT.Icon = Material("entities/mw3_generic.png")

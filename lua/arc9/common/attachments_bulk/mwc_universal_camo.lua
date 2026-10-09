@@ -13,6 +13,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "cod4_camo_brock")
 
+
 ATT = {}
 
 ATT.PrintName = "Bushdweller"
@@ -27,6 +28,7 @@ ATT.Folder = "MWC CAMOS/COD4"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "cod4_camo_bush")
+
 
 ATT = {}
 
@@ -43,6 +45,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "cod4_camo_bwmarpat")
 
+
 ATT = {}
 
 ATT.PrintName = "Commando Tiger"
@@ -57,6 +60,7 @@ ATT.Folder = "MWC CAMOS/COD4"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "cod4_camo_commando_tiger")
+
 
 ATT = {}
 
@@ -73,6 +77,7 @@ ATT.CustomCamoScale = 1.9
 
 ARC9.LoadAttachment(ATT, "cod4_camo_mcmillan")
 
+
 ATT = {}
 
 ATT.PrintName = "Arctic"
@@ -87,6 +92,7 @@ ATT.Folder = "MWC CAMOS/MW2"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_arctic")
+
 
 ATT = {}
 
@@ -103,6 +109,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_blue_tiger")
 
+
 ATT = {}
 
 ATT.PrintName = "Red Tiger"
@@ -117,6 +124,7 @@ ATT.Folder = "MWC CAMOS/MW2"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_red_tiger")
+
 
 ATT = {}
 
@@ -133,6 +141,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_desert")
 
+
 ATT = {}
 
 ATT.PrintName = "Digital"
@@ -147,6 +156,7 @@ ATT.Folder = "MWC CAMOS/MW2"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_digital")
+
 
 ATT = {}
 
@@ -163,6 +173,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_orange_fall")
 
+
 ATT = {}
 
 ATT.PrintName = "Red Urban"
@@ -177,6 +188,7 @@ ATT.Folder = "MWC CAMOS/MW2"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_red_urban")
+
 
 ATT = {}
 
@@ -193,6 +205,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_blue_urban")
 
+
 ATT = {}
 
 ATT.PrintName = "Woodland"
@@ -207,6 +220,7 @@ ATT.Folder = "MWC CAMOS/MW2"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw2_camo_woodland")
+
 
 ATT = {}
 
@@ -223,6 +237,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "cod4_camo_stagger_blue")
 
+
 ATT = {}
 
 ATT.PrintName = "Autumn"
@@ -237,6 +252,7 @@ ATT.Folder = "MWC CAMOS/MW3"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_autumn")
+
 
 ATT = {}
 
@@ -253,6 +269,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_blue")
 
+
 ATT = {}
 
 ATT.PrintName = "Choco"
@@ -267,6 +284,7 @@ ATT.Folder = "MWC CAMOS/MW3"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_choco")
+
 
 ATT = {}
 
@@ -283,6 +301,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_classic")
 
+
 ATT = {}
 
 ATT.PrintName = "Urban"
@@ -297,6 +316,7 @@ ATT.Folder = "MWC CAMOS/MW3"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_durban")
+
 
 ATT = {}
 
@@ -313,6 +333,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_hex")
 
+
 ATT = {}
 
 ATT.PrintName = "Marine"
@@ -327,6 +348,7 @@ ATT.Folder = "MWC CAMOS/MW3"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_marine")
+
 
 ATT = {}
 
@@ -343,6 +365,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_multicam")
 
+
 ATT = {}
 
 ATT.PrintName = "Digital Red"
@@ -357,6 +380,7 @@ ATT.Folder = "MWC CAMOS/MW3"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_red")
+
 
 ATT = {}
 
@@ -373,6 +397,7 @@ ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_snake")
 
+
 ATT = {}
 
 ATT.PrintName = "Snow"
@@ -387,6 +412,7 @@ ATT.Folder = "MWC CAMOS/MW3"
 ATT.CustomCamoScale = 5
 
 ARC9.LoadAttachment(ATT, "mw3_camo_snow")
+
 
 ATT = {}
 

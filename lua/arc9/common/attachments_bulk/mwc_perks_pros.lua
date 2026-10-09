@@ -1,7 +1,67 @@
 local ATT = {}
 
--- RED PERKS
+------------ Tier 1 Perks (Blue)
+ATT = {}
 
+ATT.PrintName = [[Sleight of Hand]]
+ATT.CompactName = [[SLEIGHT]]
+ATT.Icon = Material("entities/mwc_atts/perks/sleight.png")
+ATT.Description = [[Reload speed is halved.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+ATT.Folder = "TIER 1"
+
+ATT.Category = {"mwc_perk"}
+ATT.ActivateElements = {"speedcola"}
+ATT.ReloadTimeMult = 0.5
+
+ARC9.LoadAttachment(ATT, "mwc_perk_speedcola")
+
+
+ATT = {}
+
+ATT.PrintName = [[Conditioning]]
+ATT.CompactName = [[STAMINA]]
+ATT.Icon = Material("entities/mwc_atts/perks/conditioning.png")
+ATT.Description = [[10% higher overall speed.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+ATT.Folder = "TIER 1"
+
+ATT.Category = {"mwc_perk"}
+ATT.ActivateElements = {"staminup"}
+ATT.SpeedMult = 1.1
+
+ARC9.LoadAttachment(ATT, "mwc_perk_staminup")
+
+
+ATT = {}
+
+ATT.PrintName = [[Scavenger]]
+ATT.CompactName = [[SCAV]]
+ATT.Icon = Material("entities/mwc_atts/perks/scavenger.png")
+ATT.Description = [[Enemies drop ammo pack on death.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+ATT.Folder = "TIER 1"
+
+ATT.Category = {"mwc_perk"}
+ATT.ActivateElements = {"scavenger"}
+
+ARC9.LoadAttachment(ATT, "mwc_perk_scavenger")
+
+
+
+------------ Tier 2 Perks (Red)
 ATT = {}
 
 ATT.PrintName = [[Quickdraw]]
@@ -23,6 +83,7 @@ ATT.DeployTimeMult = 0.5
 
 ARC9.LoadAttachment(ATT, "mwc_perk_quickdraw")
 
+
 ATT = {}
 
 ATT.PrintName = [[Double Tap]]
@@ -43,6 +104,7 @@ ATT.CycleTimeMult = 0.85
 
 ARC9.LoadAttachment(ATT, "mwc_perk_doubletap")
 
+
 ATT = {}
 
 ATT.PrintName = [[Stopping Power]]
@@ -62,6 +124,7 @@ ATT.DamageMinMult = 1.4
 ATT.DamageMaxMult = 1.4
 
 ARC9.LoadAttachment(ATT, "mwc_perk_doubletap2")
+
 
 ATT = {}
 
@@ -87,6 +150,7 @@ ATT.ActivateElements = {"juggernaut"}
 
 ARC9.LoadAttachment(ATT, "mwc_perk_juggernaut")
 
+
 ATT = {}
 
 ATT.PrintName = [[Blast Shield]]
@@ -106,6 +170,7 @@ ATT.Category = {"mwc_perk"}
 ATT.ActivateElements = {"blast_shield"}
 
 ARC9.LoadAttachment(ATT, "mwc_perk_blast_shield")
+
 
 -- ATT = {}
 
@@ -127,6 +192,7 @@ ARC9.LoadAttachment(ATT, "mwc_perk_blast_shield")
 
 -- ARC9.LoadAttachment(ATT, "mwc_perk_sonicboom")
 
+
 ATT = {}
 
 ATT.PrintName = [[Assassin]]
@@ -147,66 +213,9 @@ ATT.BashDamageMult = 2
 
 ARC9.LoadAttachment(ATT, "mwc_perk_assassin")
 
--- BLUE PERKS
 
-ATT = {}
 
-ATT.PrintName = [[Sleight of Hand]]
-ATT.CompactName = [[SLEIGHT]]
-ATT.Icon = Material("entities/mwc_atts/perks/sleight.png")
-ATT.Description = [[Reload speed is halved.]]
-ATT.CustomPros = {}
-ATT.CustomCons = {}
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - MWC Attachments"
-ATT.Free = false
-ATT.Folder = "TIER 1"
-
-ATT.Category = {"mwc_perk"}
-ATT.ActivateElements = {"speedcola"}
-ATT.ReloadTimeMult = 0.5
-
-ARC9.LoadAttachment(ATT, "mwc_perk_speedcola")
-
-ATT = {}
-
-ATT.PrintName = [[Conditioning]]
-ATT.CompactName = [[STAMINA]]
-ATT.Icon = Material("entities/mwc_atts/perks/conditioning.png")
-ATT.Description = [[10% higher overall speed.]]
-ATT.CustomPros = {}
-ATT.CustomCons = {}
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - MWC Attachments"
-ATT.Free = false
-ATT.Folder = "TIER 1"
-
-ATT.Category = {"mwc_perk"}
-ATT.ActivateElements = {"staminup"}
-ATT.SpeedMult = 1.1
-
-ARC9.LoadAttachment(ATT, "mwc_perk_staminup")
-
-ATT = {}
-
-ATT.PrintName = [[Scavenger]]
-ATT.CompactName = [[SCAV]]
-ATT.Icon = Material("entities/mwc_atts/perks/scavenger.png")
-ATT.Description = [[Enemies drop ammo pack on death.]]
-ATT.CustomPros = {}
-ATT.CustomCons = {}
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - MWC Attachments"
-ATT.Free = false
-ATT.Folder = "TIER 1"
-
-ATT.Category = {"mwc_perk"}
-ATT.ActivateElements = {"scavenger"}
-
-ARC9.LoadAttachment(ATT, "mwc_perk_scavenger")
-
--- YELLOW PERKS
-
+------------ Tier 3 Perks (Yellow/Green)
 ATT = {}
 
 ATT.PrintName = [[Stalker]]
@@ -226,6 +235,7 @@ ATT.SpeedMultSights = 1.2
 
 ARC9.LoadAttachment(ATT, "mwc_perk_stalker")
 
+
 ATT = {}
 
 ATT.PrintName = [[Marksman]]
@@ -244,6 +254,7 @@ ATT.ActivateElements = {"marksman"}
 ATT.HeadshotDamageMult = 2
 
 ARC9.LoadAttachment(ATT, "mwc_perk_marksman")
+
 
 ATT = {}
 
@@ -265,6 +276,7 @@ ATT.SpreadMultShooting = 0.85
 
 ARC9.LoadAttachment(ATT, "mwc_perk_steadyaim")
 
+
 ATT = {}
 
 ATT.PrintName = [[Commando]]
@@ -284,6 +296,7 @@ ATT.Bash = true
 ATT.BashLungeRangeMult = 2
 
 ARC9.LoadAttachment(ATT, "mwc_perk_commando")
+
 
 ATT = {}
 
@@ -307,6 +320,7 @@ ATT.RestoreBreathTimeMult = 0.75
 
 ARC9.LoadAttachment(ATT, "mwc_perk_ironlung")
 
+
 ATT = {}
 
 ATT.PrintName = [[Deep Impact]]
@@ -326,8 +340,9 @@ ATT.PenetrationMult = 1.5
 
 ARC9.LoadAttachment(ATT, "mwc_perk_deepimpact")
 
--- PROFICIENCIES
 
+
+------------ Proficiencies
 ATT = {}
 
 ATT.PrintName = [[Kick]]
@@ -346,6 +361,7 @@ ATT.RecoilMult = 0.9
 ATT.RecoilKickMult = 0.9
 
 ARC9.LoadAttachment(ATT, "mwc_pro_kick")
+
 
 ATT = {}
 
@@ -366,6 +382,7 @@ ATT.DamageMaxMult = 1.1
 
 ARC9.LoadAttachment(ATT, "mwc_pro_damage")
 
+
 ATT = {}
 
 ATT.PrintName = [[Precision]]
@@ -383,6 +400,7 @@ ATT.ActivateElements = {"pro_precision"}
 ATT.SpreadMult = 0.9
 
 ARC9.LoadAttachment(ATT, "mwc_pro_precision")
+
 
 ATT = {}
 
@@ -403,6 +421,7 @@ ATT.SwayMultSights = 0.85
 
 ARC9.LoadAttachment(ATT, "mwc_pro_stability")
 
+
 ATT = {}
 
 ATT.PrintName = [[Speed]]
@@ -421,6 +440,7 @@ ATT.SpeedMult = 1.1
 
 ARC9.LoadAttachment(ATT, "mwc_pro_speed")
 
+
 ATT = {}
 
 ATT.PrintName = [[Impact]]
@@ -438,6 +458,7 @@ ATT.ActivateElements = {"pro_impact"}
 ATT.PenetrationMult = 1.1
 
 ARC9.LoadAttachment(ATT, "mwc_pro_impact")
+
 
 ATT = {}
 
@@ -459,6 +480,7 @@ ATT.PostBashTime = 0.25
 
 ARC9.LoadAttachment(ATT, "mwc_pro_melee")
 
+
 ATT = {}
 
 ATT.PrintName = [[Range]]
@@ -478,8 +500,9 @@ ATT.RangeMinMult = 1.25
 
 ARC9.LoadAttachment(ATT, "mwc_pro_range")
 
--- HOOKS FOR PERK FUNCTIONALITY
 
+
+------------ Perk Functionality Hooks
 hook.Add("EntityTakeDamage", "ARC9_MWC_PERK_BLASTSHIELD", function(ent, dmg)
     if !(ent:IsPlayer() or ent:IsNPC()) then return end
     local wep = ent:GetActiveWeapon()

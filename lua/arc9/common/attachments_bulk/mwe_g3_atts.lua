@@ -16,6 +16,7 @@ ATT.ExcludeElements = {}
 
 ARC9.LoadAttachment(ATT, "mwe_g3_hand_polymer")
 
+
 ATT = {}
 
 ATT.PrintName = [[Wide Handguard]]
@@ -45,6 +46,7 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "mwe_g3_hand_wide")
+
 
 ATT = {}
 
@@ -103,6 +105,7 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "mwe_g3_hand_ris")
 
+
 ATT = {}
 
 ATT.PrintName = [[RIS Handguard]]
@@ -160,6 +163,7 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "mwe_g3_hand_ris_51")
 
+
 ATT = {}
 
 ATT.PrintName = [[Kurz Barrel]]
@@ -192,6 +196,7 @@ ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ARC9.LoadAttachment(ATT, "mwe_g3_barrel_kurz")
+
 
 ATT = {}
 
@@ -237,6 +242,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.6
 
 ARC9.LoadAttachment(ATT, "mwe_g3_barrel_hk51")
 
+
 ATT = {}
 
 ATT.PrintName = [[Picatinny Rail]]
@@ -269,3 +275,199 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "mwe_g3_ubrail")
+
+
+ATT = {}
+
+ATT.PrintName = [[Kurz Barrel]]
+ATT.CompactName = [[KURZ]]
+ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
+ATT.Description = [[Chopped down barrel and handguard configuration in service with British special forces.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+
+ATT.Category = {"cod4e_g3_barrel"}
+ATT.ActivateElements = {"barrel_k", "kbarrel", "newbarrel"}
+ATT.ExcludeElements = {}
+
+ATT.SpreadMult = 1.15
+ATT.RecoilMult = 1.1
+ATT.SpreadMultHipFire = 0.9
+--ATT.SpreadMultMove = 0.9
+
+ATT.SpeedMult = 1.01
+ATT.SpeedMultSights = 1.05
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.95
+
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+
+ARC9.LoadAttachment(ATT, "cod4e_g3_barrel_k")
+
+
+ATT = {}
+
+ATT.PrintName = [[Kurz RIS Barrel]]
+ATT.CompactName = [[KRIS]]
+ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
+ATT.Description = [[Chopped down barrel with modernized handguard, featuring multiple picattiny mounts.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+
+ATT.Category = {"cod4e_g3_barrel"}
+ATT.ActivateElements = {"barrel_kris", "kbarrel", "newbarrel"}
+ATT.ExcludeElements = {}
+
+ATT.Attachments = {
+    {
+        PrintName = "Underbarrel",
+        DefaultCompactName = "UB",
+        Bone = "j_gun",
+        Pos = Vector(-4, 0, 1.1),
+        Ang = Angle(0, 0, 0),
+        Category = {"mwc_m203", "cod_grips"},
+    },
+    {
+        PrintName = "Tactical Right",
+        DefaultCompactName = "TAC R",
+        Bone = "j_gun",
+        Pos = Vector(-8 , 0.7, 0.4),
+        Ang = Angle(0, 0, -90),
+        Category = {"cod_tactical"},
+    },
+    {
+        PrintName = "Tactical Left",
+        DefaultCompactName = "TAC L",
+        Bone = "j_gun",
+        Pos = Vector(-8, -0.7, 0.4),
+        Ang = Angle(0, 0, 90),
+        Category = {"cod_tactical"},
+    },
+}
+
+ATT.SpreadMult = 1.15
+ATT.RecoilMult = 1.1
+ATT.SpreadMultHipFire = 0.9
+--ATT.SpreadMultMove = 0.9
+
+ATT.SpeedMult = 1.01
+ATT.SpeedMultSights = 1.05
+
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.95
+
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+
+ARC9.LoadAttachment(ATT, "cod4e_g3_barrel_kurz")
+
+
+ATT = {}
+
+ATT.PrintName = [[RIS Barrel]]
+ATT.CompactName = [[RIS]]
+ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
+ATT.Description = [[Modernized handguard with multiple picattiny mounts.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+
+ATT.Category = {"cod4e_g3_barrel"}
+ATT.ActivateElements = {"barrel_ris", "newbarrel"}
+ATT.ExcludeElements = {}
+
+ATT.Attachments = {
+    {
+        PrintName = "Underbarrel",
+        DefaultCompactName = "UB",
+        Bone = "j_gun",
+        Pos = Vector(-4, 0, 1.1),
+        Ang = Angle(0, 0, 0),
+        Category = {"mwc_m203", "cod_grips"},
+    },
+    {
+        PrintName = "Tactical Right",
+        DefaultCompactName = "TAC R",
+        Bone = "j_gun",
+        Pos = Vector(-11 , 0.7, 0.4),
+        Ang = Angle(0, 0, -90),
+        Category = {"cod_tactical"},
+    },
+    {
+        PrintName = "Tactical Left",
+        DefaultCompactName = "TAC L",
+        Bone = "j_gun",
+        Pos = Vector(-11, -0.7, 0.4),
+        Ang = Angle(0, 0, 90),
+        Category = {"cod_tactical"},
+    },
+    {
+        PrintName = "Tactical Bottom",
+        DefaultCompactName = "TAC B",
+        Bone = "j_gun",
+        Pos = Vector(-11, 0, 1.1),
+        Ang = Angle(0, 0, 0),
+        Category = {"cod_tactical"},
+    },
+}
+
+ARC9.LoadAttachment(ATT, "cod4e_g3_barrel_ris")
+
+
+ATT = {}
+
+ATT.PrintName = [[SD Barrel]]
+ATT.CompactName = [[SD]]
+ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
+ATT.Description = [[SD (Schalldampfer in German, or sound suppressor) frame tube for the G3.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+
+ATT.Category = {"cod4e_g3_barrel"}
+ATT.ActivateElements = {"barrel_sd", "newbarrel"}
+ATT.ExcludeElements = {}
+ATT.MuzzleDevice = true
+ATT.Silencer = true
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.DistantShootSoundOverride = ""
+
+ATT.ShootVolumeMult = 4 / 5
+ATT.ShootPitchMult = 1.1
+
+ATT.SpreadMult = 0.99
+ATT.RecoilMult = 0.975
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpreadMultHipFire = 1.05
+--ATT.SpreadMultMove = 1.05
+ATT.RangeMaxMult = 1.1
+ATT.RangeMinMult = 1.1
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+ATT.Attachments = {
+    {
+        PrintName = "Underbarrel",
+        DefaultCompactName = "UB",
+        Bone = "j_gun",
+        Pos = Vector(-4, 0, 1.4),
+        Ang = Angle(0, 0, 0),
+        Category = {"mwc_m203", "cod_rail_underbarrel"},
+    },
+}
+
+ARC9.LoadAttachment(ATT, "cod4e_g3_barrel_sd")

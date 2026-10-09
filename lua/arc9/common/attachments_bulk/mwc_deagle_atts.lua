@@ -1,5 +1,8 @@
 local ATT = {}
 
+------------ Cosmetics
+ATT = {}
+
 ATT.PrintName = "Classic"
 ATT.CompactName = "COD4"
 ATT.Icon = Material("materials/entities/cod4_generic.png", "mips smooth")
@@ -14,6 +17,7 @@ ATT.Category = {"mw3e_deagle_skin"}
 ATT.ActivateElements = {"classic_eagle"}
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_classic")
+
 
 ATT = {}
 
@@ -32,6 +36,7 @@ ATT.ActivateElements = {"classic_2tone"}
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_classic_tt")
 
+
 ATT = {}
 
 ATT.PrintName = "Classic Gold"
@@ -49,6 +54,7 @@ ATT.ActivateElements = {"classic_gold_eagle"}
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_classic_gold")
 
+
 ATT = {}
 
 ATT.PrintName = "Silver Eagle"
@@ -65,6 +71,7 @@ ATT.Category = {"mw3e_deagle_skin"}
 ATT.ActivateElements = {"silver_eagle"}
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_silver")
+
 
 ATT = {}
 
@@ -97,6 +104,9 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_tactical")
 
+
+
+------------ BOCW Handcannon
 ATT = {}
 
 ATT.PrintName = "Annihilator Handcannon"
@@ -117,6 +127,7 @@ ATT.ExplosionEffect = "ManhackSparks"
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_handcannon")
 
+
 ATT = {}
 
 ATT.PrintName = "Hybrid Handcannon"
@@ -134,7 +145,50 @@ ATT.ActivateElements = {"hybrid_eagle"}
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_skin_hybrid")
 
--- MAGS / CALIBERS
+
+ATT = {}
+
+ATT.PrintName = "P-2000 Maxx Laser"
+ATT.CompactName = [[P-2000]]
+ATT.Icon = Material("entities/mwc_atts/other/mw3_laser.png", "mips smooth")
+ATT.Description = [[Tacical laser pointer. Tighter aim when firing from hip, less dispersion when moving. Iron sights on top.
+Belongs to Black Ops Cold War.]]
+ATT.CustomPros = {}
+ATT.CustomCons = {}
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - MWC Attachments"
+ATT.Free = false
+-- ATT.Folder = "RDS"
+
+ATT.Category = {"mw3e_deagle_tactical"}
+ATT.ActivateElements = {"maxx_lazer"}
+
+ATT.Model = "models/weapons/arc9/atts/bocw_handcannon_laser.mdl"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0,0,-0.15)
+
+ATT.Laser = true
+ATT.LaserStrength = 3
+ATT.LaserColor = Color(0, 255, 34)
+ATT.LaserAttachment = 1
+
+ATT.SpreadMultHipFire = 0.8
+--ATT.SpreadMultMove = 0.8
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0.005, 12, -1.8),
+        Ang = Angle(0, 0.3, 0),
+        Magnification = 1.1,
+        IgnoreExtra = false
+    },
+}
+
+ARC9.LoadAttachment(ATT, "bocw_tac_annihilator")
+
+
+
+------------  Magazines and Alernate Calibers
 ATT = {}
 
 ATT.PrintName = [[.44 Magnum 8 Round Magazine]]
@@ -181,6 +235,7 @@ ATT.Trivia = {
 }
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_mag_44")
+
 
 ATT = {}
 
@@ -229,17 +284,18 @@ ATT.Trivia = {
 
 ARC9.LoadAttachment(ATT, "mw3e_deagle_mag_50")
 
+
+
+------------ Halo: Combat Evolved M6D Magnum
 ATT = {}
 
-ATT.PrintName = [[M6D 12.7mm Conversion]]
+ATT.PrintName = [[M6D Magnum 12.7mm Conversion]]
 ATT.CompactName = [[M6D]]
 ATT.Icon = Material("entities/cod4_generic.png", "mips smooth")
 ATT.Description = [[Converts the sidearm into the M6D Personal Defense Weapon System. 
 This upsized frame fires 12.7x40mm Semi-Armor-Piercing High-Explosive (SAPHE) rounds, effectively turning a pistol into a hand-cannon capable of taking down shielded targets. 
 The internal recoil-compensation allows for high kinetic impact, though the massive caliber limits magazine capacity and increases kick.]]
-ATT.CustomPros = {
-    ["Semi-Armor-Piercing High-Explosive Rounds"] = "",
-}
+ATT.CustomPros = {["Semi-Armor-Piercing High-Explosive Rounds"] = ""}
 ATT.CustomCons = {}
 ATT.SortOrder = 5
 ATT.MenuCategory = "ARC9 - MWC Attachments"

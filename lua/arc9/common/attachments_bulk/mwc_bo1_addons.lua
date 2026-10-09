@@ -1,5 +1,7 @@
 local ATT = {}
 
+ATT = {}
+
 ATT.PrintName = "Call of Duty 4: Modern Warfare"
 ATT.CompactName = "COD4"
 ATT.Icon = Material("materials/entities/cod4_generic.png")
