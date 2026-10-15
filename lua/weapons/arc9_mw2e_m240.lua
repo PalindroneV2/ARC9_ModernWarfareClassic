@@ -303,7 +303,7 @@ SWEP.HookP_NameChange = function(self, name)
     local gunname = "M240 \"Bravo\""
 
     if attached["bo1_pap"] then
-        gunname = "Terminal Shredder"
+        gunname = "Cyrillic Eraser"
     end
 
     return gunname
