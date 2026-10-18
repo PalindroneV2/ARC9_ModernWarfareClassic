@@ -488,7 +488,7 @@ SWEP.Animations = {
     ["reload_insert"] = {
         Source = "reload_loop_b",
         Time = 24 / 30,
-        RestoreAmmo = 0,
+        RestoreAmmo = 2,
         EventTable = {
             {s = "ARC9_MW3E.M1887_Shell", t = 10 / 30},
         },
