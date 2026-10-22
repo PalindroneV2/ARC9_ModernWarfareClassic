@@ -114,6 +114,7 @@ SWEP.VisualRecoilRollMultSights = 1
 SWEP.VisualRecoilPunchMultSights = 1 / 2
 
 SWEP.Speed = 1
+SWEP.CanFireUnderwater = true
 
 SWEP.ShootWhileSprint = true
 SWEP.ReloadInSights = false
